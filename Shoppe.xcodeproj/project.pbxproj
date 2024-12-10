@@ -7,6 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		675EF6C32D081A7A00436A70 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6B12D081A7900436A70 /* Raleway-ThinItalic.ttf */; };
+		675EF6C42D081A7A00436A70 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6B22D081A7900436A70 /* Raleway-ExtraLightItalic.ttf */; };
+		675EF6C52D081A7A00436A70 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6B32D081A7900436A70 /* Raleway-ExtraBold.ttf */; };
+		675EF6C62D081A7A00436A70 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6B42D081A7900436A70 /* Raleway-SemiBold.ttf */; };
+		675EF6C72D081A7A00436A70 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6B52D081A7900436A70 /* Raleway-Italic.ttf */; };
+		675EF6C82D081A7A00436A70 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6B62D081A7900436A70 /* Raleway-Regular.ttf */; };
+		675EF6C92D081A7A00436A70 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6B72D081A7900436A70 /* Raleway-Medium.ttf */; };
+		675EF6CA2D081A7A00436A70 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6B82D081A7900436A70 /* Raleway-Bold.ttf */; };
+		675EF6CB2D081A7A00436A70 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6B92D081A7A00436A70 /* Raleway-Thin.ttf */; };
+		675EF6CC2D081A7A00436A70 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6BA2D081A7A00436A70 /* Raleway-LightItalic.ttf */; };
+		675EF6CD2D081A7A00436A70 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6BB2D081A7A00436A70 /* Raleway-BlackItalic.ttf */; };
+		675EF6CE2D081A7A00436A70 /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6BC2D081A7A00436A70 /* Raleway-ExtraBoldItalic.ttf */; };
+		675EF6CF2D081A7A00436A70 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6BD2D081A7A00436A70 /* Raleway-Black.ttf */; };
+		675EF6D02D081A7A00436A70 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6BE2D081A7A00436A70 /* Raleway-ExtraLight.ttf */; };
+		675EF6D12D081A7A00436A70 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6BF2D081A7A00436A70 /* Raleway-Light.ttf */; };
+		675EF6D22D081A7A00436A70 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6C02D081A7A00436A70 /* Raleway-BoldItalic.ttf */; };
+		675EF6D32D081A7A00436A70 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6C12D081A7A00436A70 /* Raleway-MediumItalic.ttf */; };
+		675EF6D42D081A7A00436A70 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6C22D081A7A00436A70 /* Raleway-SemiBoldItalic.ttf */; };
+		675EF6D92D0827AB00436A70 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675EF6D72D0827AB00436A70 /* WelcomeScreenViewController.swift */; };
+		675EF6DA2D0827AB00436A70 /* WelcomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6D82D0827AB00436A70 /* WelcomeScreenViewController.xib */; };
+		675EF6DE2D0837DB00436A70 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675EF6DC2D0837DB00436A70 /* SignUpViewController.swift */; };
+		675EF6DF2D0837DB00436A70 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6DD2D0837DB00436A70 /* SignUpViewController.xib */; };
+		675EF6E32D0850BB00436A70 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675EF6E12D0850BB00436A70 /* SignInViewController.swift */; };
+		675EF6E42D0850BB00436A70 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6E22D0850BB00436A70 /* SignInViewController.xib */; };
+		675EF6E82D085B6E00436A70 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675EF6E62D085B6E00436A70 /* PasswordViewController.swift */; };
+		675EF6E92D085B6E00436A70 /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6E72D085B6E00436A70 /* PasswordViewController.xib */; };
+		675EF6ED2D086C4B00436A70 /* RecoveryPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675EF6EB2D086C4B00436A70 /* RecoveryPassViewController.swift */; };
+		675EF6EE2D086C4B00436A70 /* RecoveryPassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6EC2D086C4B00436A70 /* RecoveryPassViewController.xib */; };
 		678533B22D072D0800B950DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678533B12D072D0800B950DB /* AppDelegate.swift */; };
 		678533B42D072D0800B950DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678533B32D072D0800B950DB /* SceneDelegate.swift */; };
 		678533B62D072D0800B950DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678533B52D072D0800B950DB /* ViewController.swift */; };
@@ -16,6 +44,34 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		675EF6B12D081A7900436A70 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		675EF6B22D081A7900436A70 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		675EF6B32D081A7900436A70 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		675EF6B42D081A7900436A70 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		675EF6B52D081A7900436A70 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		675EF6B62D081A7900436A70 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		675EF6B72D081A7900436A70 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		675EF6B82D081A7900436A70 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		675EF6B92D081A7A00436A70 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		675EF6BA2D081A7A00436A70 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		675EF6BB2D081A7A00436A70 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		675EF6BC2D081A7A00436A70 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		675EF6BD2D081A7A00436A70 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		675EF6BE2D081A7A00436A70 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		675EF6BF2D081A7A00436A70 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		675EF6C02D081A7A00436A70 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		675EF6C12D081A7A00436A70 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		675EF6C22D081A7A00436A70 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		675EF6D72D0827AB00436A70 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
+		675EF6D82D0827AB00436A70 /* WelcomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeScreenViewController.xib; sourceTree = "<group>"; };
+		675EF6DC2D0837DB00436A70 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		675EF6DD2D0837DB00436A70 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		675EF6E12D0850BB00436A70 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		675EF6E22D0850BB00436A70 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		675EF6E62D085B6E00436A70 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		675EF6E72D085B6E00436A70 /* PasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordViewController.xib; sourceTree = "<group>"; };
+		675EF6EB2D086C4B00436A70 /* RecoveryPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPassViewController.swift; sourceTree = "<group>"; };
+		675EF6EC2D086C4B00436A70 /* RecoveryPassViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecoveryPassViewController.xib; sourceTree = "<group>"; };
 		678533AE2D072D0800B950DB /* Shoppe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoppe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		678533B12D072D0800B950DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		678533B32D072D0800B950DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +93,88 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		675EF6AE2D0813BE00436A70 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				675EF6BD2D081A7A00436A70 /* Raleway-Black.ttf */,
+				675EF6BB2D081A7A00436A70 /* Raleway-BlackItalic.ttf */,
+				675EF6B82D081A7900436A70 /* Raleway-Bold.ttf */,
+				675EF6C02D081A7A00436A70 /* Raleway-BoldItalic.ttf */,
+				675EF6B32D081A7900436A70 /* Raleway-ExtraBold.ttf */,
+				675EF6BC2D081A7A00436A70 /* Raleway-ExtraBoldItalic.ttf */,
+				675EF6BE2D081A7A00436A70 /* Raleway-ExtraLight.ttf */,
+				675EF6B22D081A7900436A70 /* Raleway-ExtraLightItalic.ttf */,
+				675EF6B52D081A7900436A70 /* Raleway-Italic.ttf */,
+				675EF6BF2D081A7A00436A70 /* Raleway-Light.ttf */,
+				675EF6BA2D081A7A00436A70 /* Raleway-LightItalic.ttf */,
+				675EF6B72D081A7900436A70 /* Raleway-Medium.ttf */,
+				675EF6C12D081A7A00436A70 /* Raleway-MediumItalic.ttf */,
+				675EF6B62D081A7900436A70 /* Raleway-Regular.ttf */,
+				675EF6B42D081A7900436A70 /* Raleway-SemiBold.ttf */,
+				675EF6C22D081A7A00436A70 /* Raleway-SemiBoldItalic.ttf */,
+				675EF6B92D081A7A00436A70 /* Raleway-Thin.ttf */,
+				675EF6B12D081A7900436A70 /* Raleway-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		675EF6D52D08272400436A70 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				675EF6EA2D0866D100436A70 /* PasswordRecovery */,
+				675EF6E52D085B5500436A70 /* Password */,
+				675EF6E02D0850A100436A70 /* SignIn */,
+				675EF6DB2D0837C400436A70 /* SignUp */,
+				675EF6D62D08273700436A70 /* WelcomeScreen */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		675EF6D62D08273700436A70 /* WelcomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				675EF6D72D0827AB00436A70 /* WelcomeScreenViewController.swift */,
+				675EF6D82D0827AB00436A70 /* WelcomeScreenViewController.xib */,
+			);
+			path = WelcomeScreen;
+			sourceTree = "<group>";
+		};
+		675EF6DB2D0837C400436A70 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				675EF6DC2D0837DB00436A70 /* SignUpViewController.swift */,
+				675EF6DD2D0837DB00436A70 /* SignUpViewController.xib */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		675EF6E02D0850A100436A70 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				675EF6E12D0850BB00436A70 /* SignInViewController.swift */,
+				675EF6E22D0850BB00436A70 /* SignInViewController.xib */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		675EF6E52D085B5500436A70 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				675EF6E62D085B6E00436A70 /* PasswordViewController.swift */,
+				675EF6E72D085B6E00436A70 /* PasswordViewController.xib */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		675EF6EA2D0866D100436A70 /* PasswordRecovery */ = {
+			isa = PBXGroup;
+			children = (
+				675EF6EB2D086C4B00436A70 /* RecoveryPassViewController.swift */,
+				675EF6EC2D086C4B00436A70 /* RecoveryPassViewController.xib */,
+			);
+			path = PasswordRecovery;
+			sourceTree = "<group>";
+		};
 		678533A52D072D0800B950DB = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +194,8 @@
 		678533B02D072D0800B950DB /* Shoppe */ = {
 			isa = PBXGroup;
 			children = (
+				675EF6D52D08272400436A70 /* Auth */,
+				675EF6AE2D0813BE00436A70 /* Fonts */,
 				678533B12D072D0800B950DB /* AppDelegate.swift */,
 				678533B32D072D0800B950DB /* SceneDelegate.swift */,
 				678533B52D072D0800B950DB /* ViewController.swift */,
@@ -125,9 +265,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675EF6D22D081A7A00436A70 /* Raleway-BoldItalic.ttf in Resources */,
+				675EF6D02D081A7A00436A70 /* Raleway-ExtraLight.ttf in Resources */,
+				675EF6C52D081A7A00436A70 /* Raleway-ExtraBold.ttf in Resources */,
+				675EF6C42D081A7A00436A70 /* Raleway-ExtraLightItalic.ttf in Resources */,
+				675EF6CD2D081A7A00436A70 /* Raleway-BlackItalic.ttf in Resources */,
+				675EF6DF2D0837DB00436A70 /* SignUpViewController.xib in Resources */,
 				678533BE2D072D0A00B950DB /* LaunchScreen.storyboard in Resources */,
+				675EF6C32D081A7A00436A70 /* Raleway-ThinItalic.ttf in Resources */,
+				675EF6C82D081A7A00436A70 /* Raleway-Regular.ttf in Resources */,
 				678533BB2D072D0A00B950DB /* Assets.xcassets in Resources */,
 				678533B92D072D0800B950DB /* Main.storyboard in Resources */,
+				675EF6C92D081A7A00436A70 /* Raleway-Medium.ttf in Resources */,
+				675EF6CA2D081A7A00436A70 /* Raleway-Bold.ttf in Resources */,
+				675EF6D42D081A7A00436A70 /* Raleway-SemiBoldItalic.ttf in Resources */,
+				675EF6CB2D081A7A00436A70 /* Raleway-Thin.ttf in Resources */,
+				675EF6CE2D081A7A00436A70 /* Raleway-ExtraBoldItalic.ttf in Resources */,
+				675EF6E42D0850BB00436A70 /* SignInViewController.xib in Resources */,
+				675EF6CF2D081A7A00436A70 /* Raleway-Black.ttf in Resources */,
+				675EF6CC2D081A7A00436A70 /* Raleway-LightItalic.ttf in Resources */,
+				675EF6E92D085B6E00436A70 /* PasswordViewController.xib in Resources */,
+				675EF6D12D081A7A00436A70 /* Raleway-Light.ttf in Resources */,
+				675EF6D32D081A7A00436A70 /* Raleway-MediumItalic.ttf in Resources */,
+				675EF6C72D081A7A00436A70 /* Raleway-Italic.ttf in Resources */,
+				675EF6C62D081A7A00436A70 /* Raleway-SemiBold.ttf in Resources */,
+				675EF6EE2D086C4B00436A70 /* RecoveryPassViewController.xib in Resources */,
+				675EF6DA2D0827AB00436A70 /* WelcomeScreenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +301,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				675EF6ED2D086C4B00436A70 /* RecoveryPassViewController.swift in Sources */,
 				678533B62D072D0800B950DB /* ViewController.swift in Sources */,
+				675EF6D92D0827AB00436A70 /* WelcomeScreenViewController.swift in Sources */,
+				675EF6E32D0850BB00436A70 /* SignInViewController.swift in Sources */,
+				675EF6E82D085B6E00436A70 /* PasswordViewController.swift in Sources */,
 				678533B22D072D0800B950DB /* AppDelegate.swift in Sources */,
 				678533B42D072D0800B950DB /* SceneDelegate.swift in Sources */,
+				675EF6DE2D0837DB00436A70 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

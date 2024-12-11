@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans_10pt-Light.ttf">
+            <string>NunitoSans10pt-Light</string>
+        </array>
+        <array key="NunitoSans_10pt-Regular.ttf">
+            <string>NunitoSans10pt-Regular</string>
+        </array>
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="gTV-IL-0wX" customClass="OnboardingCollectionViewCell" customModule="Shoppe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="614"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="614"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Boarding1" translatesAutoresizingMaskIntoConstraints="NO" id="eTI-iI-W7D">
+                        <rect key="frame" x="0.0" y="0.0" width="326" height="338"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="338" id="j2e-sr-bkS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q33-LS-igO">
+                        <rect key="frame" x="127" y="384" width="72.333333333333314" height="33"/>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="28"/>
+                        <color key="textColor" name="Black"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mi5-Ds-7MR">
+                        <rect key="frame" x="13" y="438" width="300" height="132"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0I-aU-srm">
+                                <rect key="frame" x="24.666666666666657" y="0.0" width="250.99999999999997" height="132"/>
+                                <fontDescription key="fontDescription" name="NunitoSans10pt-Light" family="Nunito Sans 10pt" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URP-V2-MXz">
+                                <rect key="frame" x="50" y="0.0" width="200" height="50"/>
+                                <color key="backgroundColor" name="theme"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="V9z-7U-xPq"/>
+                                    <constraint firstAttribute="height" constant="50" id="lJm-IL-yyx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NunitoSans10pt-Regular" family="Nunito Sans 10pt" pointSize="22"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Let's Start">
+                                    <color key="titleColor" name="white"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="eTI-iI-W7D" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0zi-1s-cdu"/>
+                <constraint firstAttribute="bottom" secondItem="mi5-Ds-7MR" secondAttribute="bottom" constant="44" id="ETP-Yk-Eaz"/>
+                <constraint firstItem="Q33-LS-igO" firstAttribute="top" secondItem="eTI-iI-W7D" secondAttribute="bottom" constant="46" id="X3D-h1-mGD"/>
+                <constraint firstItem="mi5-Ds-7MR" firstAttribute="top" secondItem="Q33-LS-igO" secondAttribute="bottom" constant="21" id="bXI-1n-wcz"/>
+                <constraint firstItem="mi5-Ds-7MR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="13" id="gNO-TT-Oxm"/>
+                <constraint firstItem="Q33-LS-igO" firstAttribute="centerX" secondItem="eTI-iI-W7D" secondAttribute="centerX" id="iY6-Sb-t6D"/>
+                <constraint firstAttribute="trailing" secondItem="mi5-Ds-7MR" secondAttribute="trailing" constant="13" id="lGL-B1-Tz5"/>
+                <constraint firstItem="eTI-iI-W7D" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lOD-Ze-9h0"/>
+                <constraint firstAttribute="trailing" secondItem="eTI-iI-W7D" secondAttribute="trailing" id="vNs-Ph-XhB"/>
+            </constraints>
+            <connections>
+                <outlet property="btnStart" destination="URP-V2-MXz" id="95j-Pc-oqS"/>
+                <outlet property="onboardingHead" destination="Q33-LS-igO" id="ViX-co-fKz"/>
+                <outlet property="onboardingImg" destination="eTI-iI-W7D" id="IyZ-Vq-eOu"/>
+                <outlet property="onboardingSubHead" destination="L0I-aU-srm" id="ZB2-pP-I8u"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Boarding1" width="326" height="338"/>
+        <namedColor name="Black">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="theme">
+            <color red="0.0" green="0.29800000786781311" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -8,6 +8,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="EHf-IW-A2E">
@@ -17,29 +22,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="4pb-n3-fv6">
-                                <rect key="frame" x="114.33333333333333" y="260" width="185.66666666666669" height="236.33333333333337"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWi-jb-7wu">
+                                <rect key="frame" x="92" y="268.33333333333331" width="230" height="219.33333333333331"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appIcon" translatesAutoresizingMaskIntoConstraints="NO" id="7FB-Ph-L3K">
-                                        <rect key="frame" x="0.0" y="0.0" width="185.66666666666666" height="150"/>
+                                        <rect key="frame" x="48" y="0.0" width="134" height="134"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="134" id="eZl-1B-gM2"/>
+                                            <constraint firstAttribute="width" constant="134" id="gzf-mM-0do"/>
+                                        </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shoppe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQ3-So-E6i">
-                                        <rect key="frame" x="0.0" y="174" width="185.66666666666666" height="62.333333333333343"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
+                                        <rect key="frame" x="19" y="158" width="192" height="61.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="52"/>
                                         <color key="textColor" name="Black"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstItem="IQ3-So-E6i" firstAttribute="top" secondItem="7FB-Ph-L3K" secondAttribute="bottom" constant="24" id="Y3C-o0-PGf"/>
+                                    <constraint firstItem="IQ3-So-E6i" firstAttribute="centerX" secondItem="7FB-Ph-L3K" secondAttribute="centerX" id="1JL-ms-KfK"/>
+                                    <constraint firstItem="7FB-Ph-L3K" firstAttribute="top" secondItem="dWi-jb-7wu" secondAttribute="top" id="E7Q-df-wk8"/>
+                                    <constraint firstItem="7FB-Ph-L3K" firstAttribute="centerX" secondItem="dWi-jb-7wu" secondAttribute="centerX" id="UM1-ev-0xw"/>
+                                    <constraint firstItem="IQ3-So-E6i" firstAttribute="top" secondItem="7FB-Ph-L3K" secondAttribute="bottom" constant="24" id="W4s-38-TON"/>
+                                    <constraint firstAttribute="bottom" secondItem="IQ3-So-E6i" secondAttribute="bottom" constant="1.1368683772161603e-13" id="dVP-OW-A0N"/>
                                 </constraints>
-                            </stackView>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4pb-n3-fv6" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fx4-86-bT6"/>
-                            <constraint firstItem="4pb-n3-fv6" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="yPJ-GI-Ufb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dWi-jb-7wu" secondAttribute="trailing" constant="92" id="6gn-Iv-6na"/>
+                            <constraint firstItem="dWi-jb-7wu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="HdV-bI-2pt"/>
+                            <constraint firstItem="dWi-jb-7wu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="aoS-p7-Wcl"/>
+                            <constraint firstItem="dWi-jb-7wu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="keD-rJ-WVG"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -22,6 +22,31 @@
 		<string>Raleway-SemiBoldItalic.ttf</string>
 		<string>Raleway-Thin.ttf</string>
 		<string>Raleway-ThinItalic.ttf</string>
+		<string>NunitoSans_7pt_Condensed-Black.ttf</string>
+		<string>NunitoSans_7pt_Condensed-BlackItalic.ttf</string>
+		<string>NunitoSans_7pt_Condensed-Bold.ttf</string>
+		<string>NunitoSans_7pt_Condensed-BoldItalic.ttf</string>
+		<string>NunitoSans_7pt_Condensed-ExtraBold.ttf</string>
+		<string>NunitoSans_7pt_Condensed-ExtraBoldItalic.ttf</string>
+		<string>NunitoSans_7pt_Condensed-ExtraLight.ttf</string>
+		<string>NunitoSans_7pt_Condensed-ExtraLightItalic.ttf</string>
+		<string>NunitoSans_7pt_Condensed-Italic.ttf</string>
+		<string>NunitoSans_7pt_Condensed-LightItalic.ttf</string>
+		<string>NunitoSans_7pt_Condensed-Medium.ttf</string>
+		<string>NunitoSans_7pt_Condensed-MediumItalic.ttf</string>
+		<string>NunitoSans_7pt_Condensed-Regular.ttf</string>
+		<string>NunitoSans_7pt_Condensed-SemiBold.ttf</string>
+		<string>NunitoSans_7pt_Condensed-SemiBoldItalic.ttf</string>
+		<string>NunitoSans_7pt_Expanded-Black.ttf</string>
+		<string>NunitoSans_7pt_Expanded-BlackItalic.ttf</string>
+		<string>NunitoSans_7pt_Expanded-Bold.ttf</string>
+		<string>NunitoSans_7pt_Expanded-ExtraBold.ttf</string>
+		<string>NunitoSans_7pt_Expanded-ExtraBoldItalic.ttf</string>
+		<string>NunitoSans_7pt_Expanded-ExtraLight.ttf</string>
+		<string>NunitoSans_7pt_Expanded-ExtraLightItalic.ttf</string>
+		<string>NunitoSans_7pt_Expanded-Italic.ttf</string>
+		<string>NunitoSans_7pt_Expanded-Light.ttf</string>
+		<string>NunitoSans_7pt_Expanded-LightItalic.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

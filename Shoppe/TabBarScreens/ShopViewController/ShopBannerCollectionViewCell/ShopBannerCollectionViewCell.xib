@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShopBannerCollectionViewCell" id="gTV-IL-0wX" customClass="ShopBannerCollectionViewCell" customModule="Shoppe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="ShopBannerCollectionViewCell" image="shopBanner" translatesAutoresizingMaskIntoConstraints="NO" id="3H6-TD-ykJ">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="130"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="335" id="18a-gf-ge7"/>
+                            <constraint firstAttribute="height" constant="130" id="oQy-Bu-nro"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3H6-TD-ykJ" secondAttribute="bottom" id="HSr-9o-vm2"/>
+                <constraint firstItem="3H6-TD-ykJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MXU-xN-XnJ"/>
+                <constraint firstItem="3H6-TD-ykJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aBu-C5-01j"/>
+                <constraint firstAttribute="trailing" secondItem="3H6-TD-ykJ" secondAttribute="trailing" id="gxT-Z0-CDI"/>
+            </constraints>
+            <connections>
+                <outlet property="shopBannerImg" destination="3H6-TD-ykJ" id="P7E-Pp-rmW"/>
+            </connections>
+            <point key="canvasLocation" x="38.931297709923662" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="shopBanner" width="335" height="130"/>
+    </resources>
+</document>

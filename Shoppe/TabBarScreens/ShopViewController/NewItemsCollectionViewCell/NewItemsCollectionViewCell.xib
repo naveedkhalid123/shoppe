@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans_10pt-Light.ttf">
+            <string>NunitoSans10pt-Light</string>
+        </array>
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NewItemsCollectionViewCell" id="gTV-IL-0wX" customClass="NewItemsCollectionViewCell" customModule="Shoppe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="140" height="204"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="140" height="204"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AqV-EQ-tMa">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="item4" translatesAutoresizingMaskIntoConstraints="NO" id="MMt-ka-VR2">
+                                <rect key="frame" x="5" y="5" width="130" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="7HW-qI-RcU"/>
+                                    <constraint firstAttribute="width" constant="130" id="LGQ-eh-fAt"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="MMt-ka-VR2" secondAttribute="trailing" constant="5" id="8iC-sv-FMH"/>
+                            <constraint firstAttribute="bottom" secondItem="MMt-ka-VR2" secondAttribute="bottom" constant="5" id="HVP-hi-pXJ"/>
+                            <constraint firstItem="MMt-ka-VR2" firstAttribute="leading" secondItem="AqV-EQ-tMa" secondAttribute="leading" constant="5" id="QMI-Lh-PmI"/>
+                            <constraint firstItem="MMt-ka-VR2" firstAttribute="top" secondItem="AqV-EQ-tMa" secondAttribute="top" constant="5" id="oqj-ti-Hfm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet consectetur." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nn6-zX-l4M">
+                        <rect key="frame" x="0.0" y="145" width="122" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="9ba-rf-mWw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NunitoSans10pt-Light" family="Nunito Sans 10pt" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$17,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OvC-Xw-Q2k">
+                        <rect key="frame" x="2" y="176" width="65" height="25"/>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="21"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AqV-EQ-tMa" secondAttribute="trailing" id="4og-mU-gzY"/>
+                <constraint firstItem="AqV-EQ-tMa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AkL-x2-nNn"/>
+                <constraint firstItem="OvC-Xw-Q2k" firstAttribute="top" secondItem="nn6-zX-l4M" secondAttribute="bottom" constant="-3" id="GhA-gn-Two"/>
+                <constraint firstAttribute="bottom" secondItem="OvC-Xw-Q2k" secondAttribute="bottom" constant="3" id="Gkj-C8-QDa"/>
+                <constraint firstAttribute="trailing" secondItem="nn6-zX-l4M" secondAttribute="trailing" constant="18" id="Nfl-Dq-9vv"/>
+                <constraint firstItem="AqV-EQ-tMa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T5m-qg-JFN"/>
+                <constraint firstItem="nn6-zX-l4M" firstAttribute="top" secondItem="AqV-EQ-tMa" secondAttribute="bottom" constant="5" id="dyc-Km-yET"/>
+                <constraint firstItem="nn6-zX-l4M" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h9n-po-IdJ"/>
+                <constraint firstItem="OvC-Xw-Q2k" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="kuF-Na-bqs"/>
+            </constraints>
+            <connections>
+                <outlet property="newItemDes" destination="nn6-zX-l4M" id="Dj9-4o-dDh"/>
+                <outlet property="newItemImg" destination="MMt-ka-VR2" id="msV-pU-s0V"/>
+                <outlet property="newItemPrice" destination="OvC-Xw-Q2k" id="F6U-R0-iLT"/>
+            </connections>
+            <point key="canvasLocation" x="56.488549618320612" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="item4" width="130" height="131"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

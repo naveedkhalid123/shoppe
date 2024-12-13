@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FlashSaleCollectionViewCell" id="gTV-IL-0wX" customClass="FlashSaleCollectionViewCell" customModule="Shoppe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="109" height="114"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="109" height="114"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omK-PL-yBZ">
+                        <rect key="frame" x="0.0" y="0.0" width="109" height="114"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sale1" translatesAutoresizingMaskIntoConstraints="NO" id="03Y-iA-3jS">
+                                <rect key="frame" x="5" y="5" width="99" height="103"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tov-tz-6Ku">
+                                <rect key="frame" x="65" y="6" width="39" height="18"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aY-m0-nFp">
+                                        <rect key="frame" x="4" y="1" width="31" height="16"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="13"/>
+                                        <color key="textColor" name="white"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Dark Pink"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="Pej-YV-daG"/>
+                                    <constraint firstAttribute="width" constant="39" id="zWd-nf-gPy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="03Y-iA-3jS" secondAttribute="trailing" constant="5" id="1xW-9c-eBL"/>
+                            <constraint firstAttribute="bottom" secondItem="03Y-iA-3jS" secondAttribute="bottom" constant="6" id="HLC-Ax-l7v"/>
+                            <constraint firstItem="03Y-iA-3jS" firstAttribute="leading" secondItem="omK-PL-yBZ" secondAttribute="leading" constant="5" id="Ig0-QQ-4Zu"/>
+                            <constraint firstAttribute="trailing" secondItem="Tov-tz-6Ku" secondAttribute="trailing" constant="5" id="UK2-zc-o3G"/>
+                            <constraint firstItem="Tov-tz-6Ku" firstAttribute="top" secondItem="omK-PL-yBZ" secondAttribute="top" constant="6" id="dJX-c1-E94"/>
+                            <constraint firstItem="03Y-iA-3jS" firstAttribute="top" secondItem="omK-PL-yBZ" secondAttribute="top" constant="5" id="kEl-qm-9Gi"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="9"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="omK-PL-yBZ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Fq7-oe-4ki"/>
+                <constraint firstItem="omK-PL-yBZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OgQ-9a-Zd6"/>
+                <constraint firstAttribute="trailing" secondItem="omK-PL-yBZ" secondAttribute="trailing" id="Qh1-na-9hB"/>
+                <constraint firstAttribute="bottom" secondItem="omK-PL-yBZ" secondAttribute="bottom" id="hts-Ju-GXz"/>
+            </constraints>
+            <connections>
+                <outlet property="discountPercentageLbl" destination="1aY-m0-nFp" id="hZO-QD-px4"/>
+                <outlet property="flashDealsImg" destination="03Y-iA-3jS" id="uJH-7b-bO1"/>
+            </connections>
+            <point key="canvasLocation" x="138.1679389312977" y="19.718309859154932"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sale1" width="99" height="103.33333587646484"/>
+        <namedColor name="Dark Pink">
+            <color red="1" green="0.34099999070167542" blue="0.56499999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

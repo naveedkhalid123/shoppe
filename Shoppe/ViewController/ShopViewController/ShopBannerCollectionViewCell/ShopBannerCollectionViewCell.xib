@@ -17,10 +17,6 @@
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="ShopBannerCollectionViewCell" image="shopBanner" translatesAutoresizingMaskIntoConstraints="NO" id="3H6-TD-ykJ">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="130"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="335" id="18a-gf-ge7"/>
-                            <constraint firstAttribute="height" constant="130" id="oQy-Bu-nro"/>
-                        </constraints>
                     </imageView>
                 </subviews>
             </view>

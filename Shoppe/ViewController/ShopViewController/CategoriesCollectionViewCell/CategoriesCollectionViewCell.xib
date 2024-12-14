@@ -25,52 +25,57 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hk2-Ci-qVT">
                         <rect key="frame" x="0.0" y="0.0" width="165" height="192"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DwC-Me-grL">
-                                <rect key="frame" x="6" y="6" width="154" height="75"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="s3E-sS-63Z">
+                                <rect key="frame" x="6" y="6" width="154" height="154"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kZG-8e-LAg">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="ahf-IF-K2j"/>
-                                            <constraint firstAttribute="width" constant="75" id="ffZ-Us-cAy"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iUK-dT-Bbq">
-                                        <rect key="frame" x="79" y="0.0" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="75" id="9Ii-yW-O8g"/>
-                                            <constraint firstAttribute="width" constant="75" id="wHa-wv-5KW"/>
-                                        </constraints>
-                                    </imageView>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Zsn-Pn-1cq">
-                                <rect key="frame" x="6" y="85" width="154" height="75"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cV8-oM-fxG">
-                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="AeA-LA-wCO"/>
-                                            <constraint firstAttribute="height" constant="75" id="hmo-yy-7iH"/>
-                                        </constraints>
-                                    </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJz-sM-yse">
-                                        <rect key="frame" x="79" y="0.0" width="75" height="75"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="75" id="IdF-AM-x65"/>
-                                            <constraint firstAttribute="height" constant="75" id="ggL-Df-40g"/>
-                                        </constraints>
-                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="DwC-Me-grL">
+                                        <rect key="frame" x="0.0" y="0.0" width="154" height="75"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kZG-8e-LAg">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="ahf-IF-K2j"/>
+                                                    <constraint firstAttribute="width" constant="75" id="ffZ-Us-cAy"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iUK-dT-Bbq">
+                                                <rect key="frame" x="79" y="0.0" width="75" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="75" id="9Ii-yW-O8g"/>
+                                                    <constraint firstAttribute="width" constant="75" id="wHa-wv-5KW"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Zsn-Pn-1cq">
+                                        <rect key="frame" x="0.0" y="79" width="154" height="75"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cV8-oM-fxG">
+                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="AeA-LA-wCO"/>
+                                                    <constraint firstAttribute="height" constant="75" id="hmo-yy-7iH"/>
+                                                </constraints>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fJz-sM-yse">
+                                                <rect key="frame" x="79" y="0.0" width="75" height="75"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="75" id="IdF-AM-x65"/>
+                                                    <constraint firstAttribute="height" constant="75" id="ggL-Df-40g"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Watch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEu-68-F1g">
-                                <rect key="frame" x="6" y="166" width="53" height="20"/>
+                                <rect key="frame" x="12" y="166" width="53" height="20"/>
                                 <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phR-rA-kZL">
-                                <rect key="frame" x="122" y="166" width="38" height="20"/>
+                                <rect key="frame" x="117" y="166" width="38" height="20"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="218" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCx-yO-0cp">
                                         <rect key="frame" x="9" y="3.0000000000000009" width="20" height="14.333333333333336"/>
@@ -81,26 +86,23 @@
                                 </subviews>
                                 <color key="backgroundColor" name="Light blue"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="38" id="0aS-sh-Yah"/>
                                     <constraint firstItem="qCx-yO-0cp" firstAttribute="centerY" secondItem="phR-rA-kZL" secondAttribute="centerY" id="C9o-FT-Msw"/>
+                                    <constraint firstAttribute="trailing" secondItem="qCx-yO-0cp" secondAttribute="trailing" constant="9" id="RjH-LR-pd2"/>
                                     <constraint firstAttribute="height" constant="20" id="WIE-me-wXx"/>
-                                    <constraint firstItem="qCx-yO-0cp" firstAttribute="centerX" secondItem="phR-rA-kZL" secondAttribute="centerX" id="b9Z-Pk-QzP"/>
+                                    <constraint firstItem="qCx-yO-0cp" firstAttribute="leading" secondItem="phR-rA-kZL" secondAttribute="leading" constant="9" id="bha-D7-Zhd"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Zsn-Pn-1cq" firstAttribute="leading" secondItem="hk2-Ci-qVT" secondAttribute="leading" constant="6" id="BOI-5m-YUM"/>
-                            <constraint firstAttribute="trailing" secondItem="DwC-Me-grL" secondAttribute="trailing" constant="5" id="CUm-2i-qEM"/>
-                            <constraint firstItem="DwC-Me-grL" firstAttribute="top" secondItem="hk2-Ci-qVT" secondAttribute="top" constant="6" id="UPL-U4-wdj"/>
-                            <constraint firstAttribute="trailing" secondItem="phR-rA-kZL" secondAttribute="trailing" constant="5" id="ZDb-dN-DKR"/>
-                            <constraint firstItem="fEu-68-F1g" firstAttribute="top" secondItem="Zsn-Pn-1cq" secondAttribute="bottom" constant="6" id="aUk-Ql-ejm"/>
+                            <constraint firstItem="s3E-sS-63Z" firstAttribute="leading" secondItem="hk2-Ci-qVT" secondAttribute="leading" constant="6" id="2dQ-uM-j4p"/>
+                            <constraint firstItem="fEu-68-F1g" firstAttribute="top" secondItem="s3E-sS-63Z" secondAttribute="bottom" constant="6" id="Wqy-SW-EYs"/>
+                            <constraint firstAttribute="trailing" secondItem="phR-rA-kZL" secondAttribute="trailing" constant="10" id="ZDb-dN-DKR"/>
                             <constraint firstItem="phR-rA-kZL" firstAttribute="centerY" secondItem="fEu-68-F1g" secondAttribute="centerY" id="beI-BB-XQG"/>
-                            <constraint firstItem="Zsn-Pn-1cq" firstAttribute="top" secondItem="DwC-Me-grL" secondAttribute="bottom" constant="4" id="dkn-al-7PH"/>
+                            <constraint firstItem="s3E-sS-63Z" firstAttribute="top" secondItem="hk2-Ci-qVT" secondAttribute="top" constant="6" id="egf-6V-402"/>
                             <constraint firstAttribute="bottom" secondItem="fEu-68-F1g" secondAttribute="bottom" constant="6" id="fpg-DV-20R"/>
-                            <constraint firstAttribute="trailing" secondItem="Zsn-Pn-1cq" secondAttribute="trailing" constant="5" id="inM-XR-gTJ"/>
-                            <constraint firstItem="fEu-68-F1g" firstAttribute="leading" secondItem="hk2-Ci-qVT" secondAttribute="leading" constant="6" id="mUu-28-Vzq"/>
-                            <constraint firstItem="DwC-Me-grL" firstAttribute="leading" secondItem="hk2-Ci-qVT" secondAttribute="leading" constant="6" id="yKA-zs-nPF"/>
+                            <constraint firstItem="fEu-68-F1g" firstAttribute="leading" secondItem="hk2-Ci-qVT" secondAttribute="leading" constant="12" id="mUu-28-Vzq"/>
+                            <constraint firstAttribute="trailing" secondItem="s3E-sS-63Z" secondAttribute="trailing" constant="5" id="qSY-zD-Wh1"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">

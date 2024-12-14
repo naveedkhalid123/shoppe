@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		673612932D0D6F14001C85CC /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673612922D0D6F14001C85CC /* WishListViewController.swift */; };
 		675B536A2D0AB11300819013 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675B53692D0AB11300819013 /* TabBarViewController.swift */; };
 		675B536D2D0AB78200819013 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675B536C2D0AB78200819013 /* ShopViewController.swift */; };
 		675B53702D0AC3FD00819013 /* ShopBannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675B536E2D0AC3FD00819013 /* ShopBannerCollectionViewCell.swift */; };
@@ -45,6 +46,8 @@
 		675EF6E92D085B6E00436A70 /* PasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6E72D085B6E00436A70 /* PasswordViewController.xib */; };
 		675EF6ED2D086C4B00436A70 /* RecoveryPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675EF6EB2D086C4B00436A70 /* RecoveryPassViewController.swift */; };
 		675EF6EE2D086C4B00436A70 /* RecoveryPassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 675EF6EC2D086C4B00436A70 /* RecoveryPassViewController.xib */; };
+		676781872D0D8C71005E9AA3 /* WishListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676781852D0D8C71005E9AA3 /* WishListTableViewCell.swift */; };
+		676781882D0D8C71005E9AA3 /* WishListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 676781862D0D8C71005E9AA3 /* WishListTableViewCell.xib */; };
 		676D859B2D09542000F02EAA /* PasswordRecoveryOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D85992D09542000F02EAA /* PasswordRecoveryOTPViewController.swift */; };
 		676D859C2D09542000F02EAA /* PasswordRecoveryOTPViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 676D859A2D09542000F02EAA /* PasswordRecoveryOTPViewController.xib */; };
 		676D85A02D095A2A00F02EAA /* NewPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 676D859E2D095A2A00F02EAA /* NewPasswordViewController.swift */; };
@@ -226,11 +229,10 @@
 		67D3A0DA2D0B4EE2007FB92D /* FlashSaleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D3A0D82D0B4EE2007FB92D /* FlashSaleCollectionViewCell.xib */; };
 		67D3A0DE2D0B58CC007FB92D /* MostPopularCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D3A0DC2D0B58CC007FB92D /* MostPopularCollectionViewCell.swift */; };
 		67D3A0DF2D0B58CC007FB92D /* MostPopularCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67D3A0DD2D0B58CC007FB92D /* MostPopularCollectionViewCell.xib */; };
-		67DE05A72D0C080A00858977 /* JustForYouCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE05A52D0C080A00858977 /* JustForYouCollectionViewCell.swift */; };
-		67DE05A82D0C080A00858977 /* JustForYouCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67DE05A62D0C080A00858977 /* JustForYouCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		673612922D0D6F14001C85CC /* WishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
 		675B53692D0AB11300819013 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		675B536C2D0AB78200819013 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		675B536E2D0AC3FD00819013 /* ShopBannerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopBannerCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -269,6 +271,8 @@
 		675EF6E72D085B6E00436A70 /* PasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordViewController.xib; sourceTree = "<group>"; };
 		675EF6EB2D086C4B00436A70 /* RecoveryPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoveryPassViewController.swift; sourceTree = "<group>"; };
 		675EF6EC2D086C4B00436A70 /* RecoveryPassViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecoveryPassViewController.xib; sourceTree = "<group>"; };
+		676781852D0D8C71005E9AA3 /* WishListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListTableViewCell.swift; sourceTree = "<group>"; };
+		676781862D0D8C71005E9AA3 /* WishListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WishListTableViewCell.xib; sourceTree = "<group>"; };
 		676D85992D09542000F02EAA /* PasswordRecoveryOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryOTPViewController.swift; sourceTree = "<group>"; };
 		676D859A2D09542000F02EAA /* PasswordRecoveryOTPViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordRecoveryOTPViewController.xib; sourceTree = "<group>"; };
 		676D859E2D095A2A00F02EAA /* NewPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordViewController.swift; sourceTree = "<group>"; };
@@ -452,8 +456,6 @@
 		67D3A0D82D0B4EE2007FB92D /* FlashSaleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlashSaleCollectionViewCell.xib; sourceTree = "<group>"; };
 		67D3A0DC2D0B58CC007FB92D /* MostPopularCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularCollectionViewCell.swift; sourceTree = "<group>"; };
 		67D3A0DD2D0B58CC007FB92D /* MostPopularCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MostPopularCollectionViewCell.xib; sourceTree = "<group>"; };
-		67DE05A52D0C080A00858977 /* JustForYouCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JustForYouCollectionViewCell.swift; sourceTree = "<group>"; };
-		67DE05A62D0C080A00858977 /* JustForYouCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JustForYouCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -467,13 +469,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		675B53672D0AADC300819013 /* TabBarScreens */ = {
+		673612912D0D6ECA001C85CC /* WishListViewController */ = {
 			isa = PBXGroup;
 			children = (
-				675B536B2D0AB74900819013 /* ShopViewController */,
-				675B53682D0AB0F300819013 /* TabBarController */,
+				676781842D0D8C23005E9AA3 /* WishListTableViewCell */,
+				673612922D0D6F14001C85CC /* WishListViewController.swift */,
 			);
-			path = TabBarScreens;
+			path = WishListViewController;
 			sourceTree = "<group>";
 		};
 		675B53682D0AB0F300819013 /* TabBarController */ = {
@@ -487,7 +489,6 @@
 		675B536B2D0AB74900819013 /* ShopViewController */ = {
 			isa = PBXGroup;
 			children = (
-				67DE05A42D0C07EA00858977 /* JustForYouCollectionViewCell */,
 				67D3A0DB2D0B58A5007FB92D /* MostPopularCollectionViewCell */,
 				67D3A0D62D0B4CE0007FB92D /* FlashSaleCollectionViewcell */,
 				675B537D2D0B03BC00819013 /* NewItemsCollectionViewCell */,
@@ -780,6 +781,15 @@
 			path = PasswordRecovery;
 			sourceTree = "<group>";
 		};
+		676781842D0D8C23005E9AA3 /* WishListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				676781852D0D8C71005E9AA3 /* WishListTableViewCell.swift */,
+				676781862D0D8C71005E9AA3 /* WishListTableViewCell.xib */,
+			);
+			path = WishListTableViewCell;
+			sourceTree = "<group>";
+		};
 		676D85982D0953F700F02EAA /* PassRecoveryOTP */ = {
 			isa = PBXGroup;
 			children = (
@@ -830,6 +840,9 @@
 			isa = PBXGroup;
 			children = (
 				678533B52D072D0800B950DB /* ViewController.swift */,
+				673612912D0D6ECA001C85CC /* WishListViewController */,
+				675B536B2D0AB74900819013 /* ShopViewController */,
+				675B53682D0AB0F300819013 /* TabBarController */,
 				676D86E72D09704500F02EAA /* Onboarding */,
 				675EF6D52D08272400436A70 /* Auth */,
 			);
@@ -880,7 +893,6 @@
 		678533B02D072D0800B950DB /* Shoppe */ = {
 			isa = PBXGroup;
 			children = (
-				675B53672D0AADC300819013 /* TabBarScreens */,
 				676D86F62D09B4C000F02EAA /* HelpingClasses */,
 				676D86F22D09B43D00F02EAA /* Deletagte */,
 				676D86F12D09B43200F02EAA /* ViewController */,
@@ -909,15 +921,6 @@
 				67D3A0DD2D0B58CC007FB92D /* MostPopularCollectionViewCell.xib */,
 			);
 			path = MostPopularCollectionViewCell;
-			sourceTree = "<group>";
-		};
-		67DE05A42D0C07EA00858977 /* JustForYouCollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-				67DE05A52D0C080A00858977 /* JustForYouCollectionViewCell.swift */,
-				67DE05A62D0C080A00858977 /* JustForYouCollectionViewCell.xib */,
-			);
-			path = JustForYouCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1088,6 +1091,7 @@
 				676D86BB2D09629500F02EAA /* NunitoSans_7pt_SemiCondensed-Italic.ttf in Resources */,
 				676D86752D09629500F02EAA /* NunitoSans_7pt_Expanded-Medium.ttf in Resources */,
 				676D867E2D09629500F02EAA /* NunitoSans_10pt_SemiCondensed-ExtraBold.ttf in Resources */,
+				676781882D0D8C71005E9AA3 /* WishListTableViewCell.xib in Resources */,
 				676D86482D09629500F02EAA /* NunitoSans_10pt_Condensed-Black.ttf in Resources */,
 				676D864B2D09629500F02EAA /* NunitoSans_7pt-Medium.ttf in Resources */,
 				676D86BA2D09629500F02EAA /* NunitoSans_10pt_Condensed-ExtraBold.ttf in Resources */,
@@ -1146,7 +1150,6 @@
 				676D86B62D09629500F02EAA /* NunitoSans_7pt-Italic.ttf in Resources */,
 				676D86972D09629500F02EAA /* NunitoSans_10pt_SemiCondensed-ExtraLight.ttf in Resources */,
 				676D866C2D09629500F02EAA /* NunitoSans_7pt-Black.ttf in Resources */,
-				67DE05A82D0C080A00858977 /* JustForYouCollectionViewCell.xib in Resources */,
 				676D86A42D09629500F02EAA /* NunitoSans_10pt_SemiCondensed-ExtraLightItalic.ttf in Resources */,
 				676D86DE2D09629500F02EAA /* NunitoSans_7pt_SemiExpanded-BlackItalic.ttf in Resources */,
 				676D86CC2D09629500F02EAA /* NunitoSans_7pt-MediumItalic.ttf in Resources */,
@@ -1189,12 +1192,12 @@
 				675B53762D0AD18900819013 /* CategoriesCollectionViewCell.swift in Sources */,
 				675B537B2D0AF0A300819013 /* ProductsCollectionViewCell.swift in Sources */,
 				67D3A0D92D0B4EE2007FB92D /* FlashSaleCollectionViewCell.swift in Sources */,
-				67DE05A72D0C080A00858977 /* JustForYouCollectionViewCell.swift in Sources */,
 				676D86EF2D09748900F02EAA /* OnboardingCollectionViewCell.swift in Sources */,
 				675EF6ED2D086C4B00436A70 /* RecoveryPassViewController.swift in Sources */,
 				678533B62D072D0800B950DB /* ViewController.swift in Sources */,
 				675EF6D92D0827AB00436A70 /* WelcomeScreenViewController.swift in Sources */,
 				675EF6E32D0850BB00436A70 /* SignInViewController.swift in Sources */,
+				676781872D0D8C71005E9AA3 /* WishListTableViewCell.swift in Sources */,
 				676D86E52D09670400F02EAA /* MaximumAttemptsViewController.swift in Sources */,
 				676D859B2D09542000F02EAA /* PasswordRecoveryOTPViewController.swift in Sources */,
 				675EF6E82D085B6E00436A70 /* PasswordViewController.swift in Sources */,
@@ -1204,6 +1207,7 @@
 				678533B22D072D0800B950DB /* AppDelegate.swift in Sources */,
 				678533B42D072D0800B950DB /* SceneDelegate.swift in Sources */,
 				675B536D2D0AB78200819013 /* ShopViewController.swift in Sources */,
+				673612932D0D6F14001C85CC /* WishListViewController.swift in Sources */,
 				676D85A02D095A2A00F02EAA /* NewPasswordViewController.swift in Sources */,
 				675B53802D0B03DE00819013 /* NewItemsCollectionViewCell.swift in Sources */,
 				675B53702D0AC3FD00819013 /* ShopBannerCollectionViewCell.swift in Sources */,

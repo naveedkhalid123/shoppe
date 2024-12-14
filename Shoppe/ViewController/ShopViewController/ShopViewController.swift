@@ -88,17 +88,25 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         justForYouCollectionView.delegate = self
         justForYouCollectionView.dataSource = self
-        justForYouCollectionView.register(UINib(nibName: "JustForYouCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "JustForYouCollectionViewCell")
+        justForYouCollectionView.register(UINib(nibName: "NewItemsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "NewItemsCollectionViewCell")
         
         
         // Text Field Setup
         shopTxtField.layer.cornerRadius = 18
-        shopTxtField.backgroundColor = UIColor(named: "Bg grey")
         
         // Add padding to the text field
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: shopTxtField.frame.height))
         shopTxtField.leftView = paddingView
         shopTxtField.leftViewMode = .always
+        
+        
+        categoriesCollectionView.dropShadow(color: .black)
+        newItemsCollectionView.dropShadow(color: .black)
+        flashDealsCollectiionView.dropShadow(color: .black)
+        mostPopularCollectionView.dropShadow(color: .black)
+        justForYouCollectionView.dropShadow(color: .black)
+        
+
     }
     
     
@@ -159,10 +167,10 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
             cell.updateLbl.text = popularDealsArr[indexPath.row]["update"]
             return cell
         } else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "JustForYouCollectionViewCell", for: indexPath) as! JustForYouCollectionViewCell
-            cell.forYouImg.image = UIImage(named: justForYouArr[indexPath.row]["image"] ?? "")
-            cell.forYouDesc.text = justForYouArr[indexPath.row]["desc"]
-            cell.forYouPrice.text = justForYouArr[indexPath.row]["price"]
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NewItemsCollectionViewCell", for: indexPath) as! NewItemsCollectionViewCell
+            cell.newItemImg.image = UIImage(named: justForYouArr[indexPath.row]["image"] ?? "")
+            cell.newItemDes.text = justForYouArr[indexPath.row]["desc"]
+            cell.newItemPrice.text = justForYouArr[indexPath.row]["price"]
             return cell
         }
     }
@@ -182,7 +190,7 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
         } else if collectionView == mostPopularCollectionView {
             return CGSize(width: collectionView.frame.width/3.5, height: 140)
         } else {
-            return CGSize(width: ( collectionView.frame.width/2) - 5, height: 240)
+            return CGSize(width: (collectionView.frame.width / 2) - 5, height: 240)
         }
     }
     

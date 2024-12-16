@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         // code for running the screen
-//        let languageVC = OnboardingViewController(nibName: "OnboardingViewController", bundle: nil)
+//        let languageVC = RecentlyViewedViewController(nibName: "RecentlyViewedViewController", bundle: nil)
 //        let navigationController = UINavigationController(rootViewController: languageVC)
 //        navigationController.isNavigationBarHidden = true
 //        self.window = UIWindow(windowScene: windowScene)

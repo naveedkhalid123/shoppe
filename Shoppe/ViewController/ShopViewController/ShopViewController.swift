@@ -11,6 +11,8 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     var shopBannerArr = ["shopBanner", "shopBanner","shopBanner"]
     
+ 
+    
     var categoriesArr = [["item1":"image1","item2":"image2","item3":"image3","item4":"image4","itemName":"Clothing","itemNumber":"109"],
                         ["item1":"image5","item2":"image6","item3":"image7","item4":"image8","itemName":"Shoes","itemNumber":"530"],
                         ["item1":"image9","item2":"image10","item3":"image11","item4":"image12","itemName":"Bags","itemNumber":"87"],
@@ -46,7 +48,8 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
                          ["image":"foryou6","desc":"Lorem ipsum dolor sit amet consectetur","price":"$41,00"],]
     
     
-   
+    
+    @IBOutlet weak var bannerPageControl: UIPageControl!
     @IBOutlet weak var shopTxtField: UITextField!
     @IBOutlet weak var shopBannerCollectionView: UICollectionView!    
     @IBOutlet weak var categoriesCollectionView: UICollectionView!
@@ -106,9 +109,13 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
         mostPopularCollectionView.dropShadow(color: .black)
         justForYouCollectionView.dropShadow(color: .black)
         
-
+        
+        // For page control
+        bannerPageControl.numberOfPages = shopBannerArr.count
     }
     
+    
+
     
     // MARK: - UICollectionView DataSource Methods
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -197,4 +204,14 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
             return 10 // Bottom spacing of 10 points
         }
-}
+    
+    
+    
+    // scrollView page controlling function
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let currentPage = Int(scrollView.contentOffset.x / shopBannerCollectionView.bounds.width)
+        bannerPageControl.currentPage = currentPage
+        }
+    }
+   
+

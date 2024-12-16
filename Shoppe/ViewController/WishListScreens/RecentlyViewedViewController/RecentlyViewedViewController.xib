@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecentlyViewedViewController" customModule="Shoppe" customModuleProvider="target">
+            <connections>
+                <outlet property="datePicker" destination="irZ-cF-S1N" id="zlq-yn-jfV"/>
+                <outlet property="datePickerView" destination="zQD-19-PGF" id="EOv-yg-Ejw"/>
+                <outlet property="dayCollectionView" destination="Stn-WI-UaA" id="UxY-XV-aCd"/>
+                <outlet property="recentlyViewesCollectionView" destination="6rW-nK-pVN" id="04n-ed-l7t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="RecentlyViewedViewController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SZe-E0-P8I">
+                    <rect key="frame" x="0.0" y="20" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recently viewed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Baa-Xc-1vX">
+                            <rect key="frame" x="20" y="8.6666666666666679" width="221" height="33"/>
+                            <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="28"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Baa-Xc-1vX" firstAttribute="leading" secondItem="SZe-E0-P8I" secondAttribute="leading" constant="20" symbolic="YES" id="3Xa-Ya-yg7"/>
+                        <constraint firstItem="Baa-Xc-1vX" firstAttribute="centerY" secondItem="SZe-E0-P8I" secondAttribute="centerY" id="QaA-3u-Oux"/>
+                        <constraint firstAttribute="height" constant="50" id="sWi-dF-0dz"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Stn-WI-UaA">
+                    <rect key="frame" x="20" y="81" width="341" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="tLR-Gr-AOn"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="2" minimumInteritemSpacing="0.0" id="aKj-6v-imQ">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXn-6h-bvE">
+                    <rect key="frame" x="364" y="81" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="eYA-3w-RSb"/>
+                        <constraint firstAttribute="width" constant="30" id="wbl-Lf-4pO"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="Options"/>
+                    <connections>
+                        <action selector="datePickerButtonPresses:" destination="-1" eventType="touchUpInside" id="zsL-J1-b1K"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="6rW-nK-pVN">
+                    <rect key="frame" x="20" y="131" width="374" height="681"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="A77-X4-oSH">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQD-19-PGF">
+                    <rect key="frame" x="20" y="71" width="374" height="345"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" translatesAutoresizingMaskIntoConstraints="NO" id="irZ-cF-S1N">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="345"/>
+                            <color key="backgroundColor" name="white"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </datePicker>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vli-qY-t44">
+                            <rect key="frame" x="162" y="315" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="A1e-9L-3ba"/>
+                                <constraint firstAttribute="width" constant="50" id="uJT-Tv-T84"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="up"/>
+                            <connections>
+                                <action selector="datepickerCloseButtonPressed:" destination="-1" eventType="touchUpInside" id="7Ex-fO-d8V"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Vli-qY-t44" firstAttribute="centerX" secondItem="zQD-19-PGF" secondAttribute="centerX" id="9Cv-aD-u6P"/>
+                        <constraint firstAttribute="trailing" secondItem="irZ-cF-S1N" secondAttribute="trailing" id="E2H-mX-hIF"/>
+                        <constraint firstAttribute="bottom" secondItem="irZ-cF-S1N" secondAttribute="bottom" id="Jkh-el-6F7"/>
+                        <constraint firstItem="irZ-cF-S1N" firstAttribute="leading" secondItem="zQD-19-PGF" secondAttribute="leading" id="Kdh-St-p5m"/>
+                        <constraint firstItem="irZ-cF-S1N" firstAttribute="top" secondItem="zQD-19-PGF" secondAttribute="top" id="lc7-70-g6Y"/>
+                        <constraint firstAttribute="bottom" secondItem="Vli-qY-t44" secondAttribute="bottom" constant="-20" id="pBY-54-8Ap"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SZe-E0-P8I" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="1Cm-GX-UDb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zQD-19-PGF" secondAttribute="trailing" constant="20" id="4HK-OX-Sgd"/>
+                <constraint firstItem="ZXn-6h-bvE" firstAttribute="centerY" secondItem="Stn-WI-UaA" secondAttribute="centerY" id="6yD-Rs-EJf"/>
+                <constraint firstItem="6rW-nK-pVN" firstAttribute="top" secondItem="Stn-WI-UaA" secondAttribute="bottom" constant="20" id="9BD-x8-TeG"/>
+                <constraint firstItem="ZXn-6h-bvE" firstAttribute="leading" secondItem="Stn-WI-UaA" secondAttribute="trailing" constant="3" id="DCR-Vc-6cB"/>
+                <constraint firstItem="Stn-WI-UaA" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="SjB-2V-m6G"/>
+                <constraint firstItem="Stn-WI-UaA" firstAttribute="top" secondItem="SZe-E0-P8I" secondAttribute="bottom" constant="11" id="Stq-Uo-xG3"/>
+                <constraint firstItem="6rW-nK-pVN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="dW2-lG-hbW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="SZe-E0-P8I" secondAttribute="top" id="f9R-Kv-oTf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZXn-6h-bvE" secondAttribute="trailing" constant="20" id="hRo-7A-Hf7"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6rW-nK-pVN" secondAttribute="trailing" constant="20" id="i9Q-9z-S0F"/>
+                <constraint firstItem="zQD-19-PGF" firstAttribute="top" secondItem="ZXn-6h-bvE" secondAttribute="top" constant="-10" id="oe3-wK-Vw5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SZe-E0-P8I" secondAttribute="trailing" id="weT-oq-y2b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="6rW-nK-pVN" secondAttribute="bottom" id="xd1-nW-O4w"/>
+                <constraint firstItem="zQD-19-PGF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="yKu-66-Z9K"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="19.565217391304348"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Options" width="30" height="30"/>
+        <image name="up" width="42" height="42"/>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

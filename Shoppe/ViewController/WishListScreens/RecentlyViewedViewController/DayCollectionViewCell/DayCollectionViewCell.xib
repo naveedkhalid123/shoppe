@@ -25,6 +25,26 @@
                 <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsT-z2-zoX">
+                        <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHY-Na-etj">
+                                <rect key="frame" x="38.333333333333336" y="6" width="69.666666666666657" height="18"/>
+                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="15"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Bg grey"/>
+                        <constraints>
+                            <constraint firstItem="hHY-Na-etj" firstAttribute="centerX" secondItem="ZsT-z2-zoX" secondAttribute="centerX" id="6N0-kU-Wv7"/>
+                            <constraint firstItem="hHY-Na-etj" firstAttribute="centerY" secondItem="ZsT-z2-zoX" secondAttribute="centerY" id="XiW-L9-tB8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
                     <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0yV-kK-m7b">
                         <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
                         <subviews>
@@ -48,26 +68,6 @@
                             <constraint firstItem="Yxz-3x-grk" firstAttribute="centerX" secondItem="0yV-kK-m7b" secondAttribute="centerX" id="U3b-df-Zvp"/>
                             <constraint firstItem="NHZ-6p-6oG" firstAttribute="centerY" secondItem="Yxz-3x-grk" secondAttribute="centerY" id="e3L-g1-pq9"/>
                             <constraint firstItem="Yxz-3x-grk" firstAttribute="centerY" secondItem="0yV-kK-m7b" secondAttribute="centerY" id="zoJ-uk-bvr"/>
-                        </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                <integer key="value" value="15"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZsT-z2-zoX">
-                        <rect key="frame" x="0.0" y="0.0" width="146" height="30"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHY-Na-etj">
-                                <rect key="frame" x="38.333333333333336" y="6" width="69.666666666666657" height="18"/>
-                                <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="15"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" name="Bg grey"/>
-                        <constraints>
-                            <constraint firstItem="hHY-Na-etj" firstAttribute="centerX" secondItem="ZsT-z2-zoX" secondAttribute="centerX" id="6N0-kU-Wv7"/>
-                            <constraint firstItem="hHY-Na-etj" firstAttribute="centerY" secondItem="ZsT-z2-zoX" secondAttribute="centerY" id="XiW-L9-tB8"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">

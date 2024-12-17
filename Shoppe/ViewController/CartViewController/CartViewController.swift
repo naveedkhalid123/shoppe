@@ -15,28 +15,64 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
                        ["image":"list3","desc":"Lorem ipsum dolor sit amet consectetur.","price":"$17,00","color":"Pink","size":"M"],
                        ["image":"list4","desc":"Lorem ipsum dolor sit amet consectetur.","price":"$17,00","color":"Pink","size":"M"],
                        ["image":"list1","desc":"Lorem ipsum dolor sit amet consectetur.","price":"$17,00","color":"Pink","size":"M"],]
+    
+    
+    var cartItemsArr = [["image":"cart1","cartDesc":"Lorem ipsum dolor sit amet consectetur.","cartColorAndSize":"Pink, Size M","price":"$17,00"],
+                        ["image":"list4","cartDesc":"Lorem ipsum dolor sit amet consectetur.","cartColorAndSize":"Pink, Size M","price":"$17,00"],]
   
     @IBOutlet weak var wishListTableView: UITableView!
+    @IBOutlet weak var cartTableView: UITableView!
+    
+    @IBOutlet weak var cartTableViewHeight: NSLayoutConstraint!
+    
+    @IBOutlet weak var wishListTableViewHeight: NSLayoutConstraint!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         wishListTableView.delegate = self
         wishListTableView.dataSource = self
         wishListTableView.register(UINib(nibName: "WishListTableViewCell", bundle: nil), forCellReuseIdentifier: "WishListTableViewCell")
+        
+        cartTableView.delegate = self
+        cartTableView.dataSource = self
+        cartTableView.register(UINib(nibName: "AddCartTableViewCell", bundle: nil), forCellReuseIdentifier: "AddCartTableViewCell")
+        wishListTableView.rowHeight = 109
+        cartTableView.rowHeight = 109
+        
+        wishListTableViewHeight.constant = CGFloat(wishListArr.count * 109)
+        cartTableViewHeight.constant = CGFloat(cartItemsArr.count * 109)
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return wishListArr.count
+        if tableView == wishListTableView {
+            return wishListArr.count
+        } else {
+            return cartItemsArr.count
+        }
+       
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "WishListTableViewCell", for: indexPath) as! WishListTableViewCell
-        cell.wishListImages.image = UIImage(named: wishListArr[indexPath.row]["image"] ?? "")
-        cell.wishListDesc.text = wishListArr[indexPath.row]["desc"]
-        cell.wishListPrice.text = wishListArr[indexPath.row]["price"]
-        cell.wishListColor.text = wishListArr[indexPath.row]["color"]
-        cell.wishListSize.text = wishListArr[indexPath.row]["size"]
-        return cell
+        if tableView == wishListTableView{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "WishListTableViewCell", for: indexPath) as! WishListTableViewCell
+            cell.wishListImages.image = UIImage(named: wishListArr[indexPath.row]["image"] ?? "")
+            cell.wishListDesc.text = wishListArr[indexPath.row]["desc"]
+            cell.wishListPrice.text = wishListArr[indexPath.row]["price"]
+            cell.wishListColor.text = wishListArr[indexPath.row]["color"]
+            cell.wishListSize.text = wishListArr[indexPath.row]["size"]
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "AddCartTableViewCell", for: indexPath) as! AddCartTableViewCell
+            cell.cartImg.image = UIImage(named: cartItemsArr[indexPath.row]["image"] ?? "")
+            cell.cartDesc.text = cartItemsArr[indexPath.row]["cartDesc"]
+            cell.cartColorAndSize.text = cartItemsArr[indexPath.row]["cartColorAndSize"]
+            cell.cartPrice.text = cartItemsArr[indexPath.row]["price"]
+            return cell
+        }
+      
     }
     
 }

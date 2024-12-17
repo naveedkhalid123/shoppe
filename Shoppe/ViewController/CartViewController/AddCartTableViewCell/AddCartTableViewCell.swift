@@ -8,7 +8,14 @@
 import UIKit
 
 class AddCartTableViewCell: UITableViewCell {
-
+    
+    
+    @IBOutlet weak var cartImg: UIImageView!
+    @IBOutlet weak var cartDesc: UILabel!
+    @IBOutlet weak var cartColorAndSize: UILabel!
+    @IBOutlet weak var cartPrice: UILabel!
+    @IBOutlet weak var cartItemCount: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

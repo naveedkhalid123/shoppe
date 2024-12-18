@@ -225,6 +225,18 @@
 		677754F52D11A7820002A974 /* OrderCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677754F32D11A7820002A974 /* OrderCollectionViewCell.xib */; };
 		677754F92D11ACEA0002A974 /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677754F72D11ACEA0002A974 /* StoriesCollectionViewCell.swift */; };
 		677754FA2D11ACEA0002A974 /* StoriesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677754F82D11ACEA0002A974 /* StoriesCollectionViewCell.xib */; };
+		677755002D11CABE0002A974 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677754FE2D11CABE0002A974 /* PaymentViewController.swift */; };
+		677755012D11CABE0002A974 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 677754FF2D11CABE0002A974 /* PaymentViewController.xib */; };
+		678070892D129F9100E27BF2 /* ItemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678070872D129F9100E27BF2 /* ItemsTableViewCell.swift */; };
+		6780708A2D129F9100E27BF2 /* ItemsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 678070882D129F9100E27BF2 /* ItemsTableViewCell.xib */; };
+		6780708E2D12A8ED00E27BF2 /* ShippingOptionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780708C2D12A8ED00E27BF2 /* ShippingOptionsTableViewCell.swift */; };
+		6780708F2D12A8ED00E27BF2 /* ShippingOptionsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6780708D2D12A8ED00E27BF2 /* ShippingOptionsTableViewCell.xib */; };
+		678070932D12BA2E00E27BF2 /* VoucherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678070912D12BA2E00E27BF2 /* VoucherViewController.swift */; };
+		678070942D12BA2E00E27BF2 /* VoucherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 678070922D12BA2E00E27BF2 /* VoucherViewController.xib */; };
+		678070982D12C65600E27BF2 /* VouchersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678070962D12C65600E27BF2 /* VouchersTableViewCell.swift */; };
+		678070992D12C65600E27BF2 /* VouchersTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 678070972D12C65600E27BF2 /* VouchersTableViewCell.xib */; };
+		6780709D2D12DB4400E27BF2 /* ShippingAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6780709B2D12DB4400E27BF2 /* ShippingAddressViewController.swift */; };
+		6780709E2D12DB4400E27BF2 /* ShippingAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6780709C2D12DB4400E27BF2 /* ShippingAddressViewController.xib */; };
 		678533B22D072D0800B950DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678533B12D072D0800B950DB /* AppDelegate.swift */; };
 		678533B42D072D0800B950DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 678533B32D072D0800B950DB /* SceneDelegate.swift */; };
 		678533B92D072D0800B950DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678533B72D072D0800B950DB /* Main.storyboard */; };
@@ -462,6 +474,18 @@
 		677754F32D11A7820002A974 /* OrderCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderCollectionViewCell.xib; sourceTree = "<group>"; };
 		677754F72D11ACEA0002A974 /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 		677754F82D11ACEA0002A974 /* StoriesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoriesCollectionViewCell.xib; sourceTree = "<group>"; };
+		677754FE2D11CABE0002A974 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		677754FF2D11CABE0002A974 /* PaymentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
+		678070872D129F9100E27BF2 /* ItemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsTableViewCell.swift; sourceTree = "<group>"; };
+		678070882D129F9100E27BF2 /* ItemsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsTableViewCell.xib; sourceTree = "<group>"; };
+		6780708C2D12A8ED00E27BF2 /* ShippingOptionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingOptionsTableViewCell.swift; sourceTree = "<group>"; };
+		6780708D2D12A8ED00E27BF2 /* ShippingOptionsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShippingOptionsTableViewCell.xib; sourceTree = "<group>"; };
+		678070912D12BA2E00E27BF2 /* VoucherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoucherViewController.swift; sourceTree = "<group>"; };
+		678070922D12BA2E00E27BF2 /* VoucherViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoucherViewController.xib; sourceTree = "<group>"; };
+		678070962D12C65600E27BF2 /* VouchersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VouchersTableViewCell.swift; sourceTree = "<group>"; };
+		678070972D12C65600E27BF2 /* VouchersTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VouchersTableViewCell.xib; sourceTree = "<group>"; };
+		6780709B2D12DB4400E27BF2 /* ShippingAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingAddressViewController.swift; sourceTree = "<group>"; };
+		6780709C2D12DB4400E27BF2 /* ShippingAddressViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShippingAddressViewController.xib; sourceTree = "<group>"; };
 		678533AE2D072D0800B950DB /* Shoppe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoppe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		678533B12D072D0800B950DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		678533B32D072D0800B950DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -863,6 +887,7 @@
 		676D86F12D09B43200F02EAA /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				677754FB2D11CA550002A974 /* PaymentViewController */,
 				677754EE2D1197440002A974 /* ProfileViewController */,
 				677754EB2D1153350002A974 /* CategoriesViewController */,
 				67BCFB5D2D10543A001C5418 /* CartViewController */,
@@ -934,6 +959,65 @@
 				677754F82D11ACEA0002A974 /* StoriesCollectionViewCell.xib */,
 			);
 			path = StoriesCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		677754FB2D11CA550002A974 /* PaymentViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6780709A2D12DB1400E27BF2 /* ShippingAddressViewController */,
+				678070902D12BA0100E27BF2 /* VoucherPopUp */,
+				6780708B2D12A8C600E27BF2 /* ShippingOptionsTableViewCell */,
+				678070862D129F6700E27BF2 /* ItemsTableViewCell */,
+				677754FE2D11CABE0002A974 /* PaymentViewController.swift */,
+				677754FF2D11CABE0002A974 /* PaymentViewController.xib */,
+			);
+			path = PaymentViewController;
+			sourceTree = "<group>";
+		};
+		678070862D129F6700E27BF2 /* ItemsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				678070872D129F9100E27BF2 /* ItemsTableViewCell.swift */,
+				678070882D129F9100E27BF2 /* ItemsTableViewCell.xib */,
+			);
+			path = ItemsTableViewCell;
+			sourceTree = "<group>";
+		};
+		6780708B2D12A8C600E27BF2 /* ShippingOptionsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				6780708C2D12A8ED00E27BF2 /* ShippingOptionsTableViewCell.swift */,
+				6780708D2D12A8ED00E27BF2 /* ShippingOptionsTableViewCell.xib */,
+			);
+			path = ShippingOptionsTableViewCell;
+			sourceTree = "<group>";
+		};
+		678070902D12BA0100E27BF2 /* VoucherPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				678070952D12C62E00E27BF2 /* VouchersTableViewCell */,
+				678070912D12BA2E00E27BF2 /* VoucherViewController.swift */,
+				678070922D12BA2E00E27BF2 /* VoucherViewController.xib */,
+			);
+			path = VoucherPopUp;
+			sourceTree = "<group>";
+		};
+		678070952D12C62E00E27BF2 /* VouchersTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				678070962D12C65600E27BF2 /* VouchersTableViewCell.swift */,
+				678070972D12C65600E27BF2 /* VouchersTableViewCell.xib */,
+			);
+			path = VouchersTableViewCell;
+			sourceTree = "<group>";
+		};
+		6780709A2D12DB1400E27BF2 /* ShippingAddressViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6780709B2D12DB4400E27BF2 /* ShippingAddressViewController.swift */,
+				6780709C2D12DB4400E27BF2 /* ShippingAddressViewController.xib */,
+			);
+			path = ShippingAddressViewController;
 			sourceTree = "<group>";
 		};
 		678533A52D072D0800B950DB = {
@@ -1113,6 +1197,7 @@
 				676D86C82D09629500F02EAA /* NunitoSans_10pt_SemiExpanded-Regular.ttf in Resources */,
 				676D864C2D09629500F02EAA /* NunitoSans_10pt_SemiCondensed-ExtraBoldItalic.ttf in Resources */,
 				676D86BD2D09629500F02EAA /* NunitoSans_10pt_SemiCondensed-BlackItalic.ttf in Resources */,
+				6780708F2D12A8ED00E27BF2 /* ShippingOptionsTableViewCell.xib in Resources */,
 				675EF6CD2D081A7A00436A70 /* Raleway-BlackItalic.ttf in Resources */,
 				676D867F2D09629500F02EAA /* NunitoSans_10pt-BoldItalic.ttf in Resources */,
 				677754F52D11A7820002A974 /* OrderCollectionViewCell.xib in Resources */,
@@ -1138,7 +1223,9 @@
 				676D86832D09629500F02EAA /* NunitoSans_7pt_SemiCondensed-ExtraLight.ttf in Resources */,
 				676D86CB2D09629500F02EAA /* NunitoSans_10pt_Expanded-BlackItalic.ttf in Resources */,
 				676D86CF2D09629500F02EAA /* NunitoSans_7pt_Condensed-SemiBold.ttf in Resources */,
+				6780709E2D12DB4400E27BF2 /* ShippingAddressViewController.xib in Resources */,
 				676D86C22D09629500F02EAA /* NunitoSans_10pt_Condensed-SemiBold.ttf in Resources */,
+				678070942D12BA2E00E27BF2 /* VoucherViewController.xib in Resources */,
 				676D86D02D09629500F02EAA /* NunitoSans_7pt-Regular.ttf in Resources */,
 				676D86642D09629500F02EAA /* NunitoSans_10pt-Italic.ttf in Resources */,
 				676D86AF2D09629500F02EAA /* NunitoSans_7pt_Expanded-Light.ttf in Resources */,
@@ -1183,6 +1270,7 @@
 				676D868F2D09629500F02EAA /* NunitoSans_10pt_SemiExpanded-SemiBold.ttf in Resources */,
 				675EF6CB2D081A7A00436A70 /* Raleway-Thin.ttf in Resources */,
 				676D86792D09629500F02EAA /* NunitoSans_10pt_Condensed-Regular.ttf in Resources */,
+				6780708A2D129F9100E27BF2 /* ItemsTableViewCell.xib in Resources */,
 				676D865D2D09629500F02EAA /* NunitoSans_10pt_Expanded-Light.ttf in Resources */,
 				675EF6CE2D081A7A00436A70 /* Raleway-ExtraBoldItalic.ttf in Resources */,
 				676D86B22D09629500F02EAA /* NunitoSans_10pt_Expanded-Regular.ttf in Resources */,
@@ -1256,6 +1344,7 @@
 				67D3A0DA2D0B4EE2007FB92D /* FlashSaleCollectionViewCell.xib in Resources */,
 				675EF6EE2D086C4B00436A70 /* RecoveryPassViewController.xib in Resources */,
 				676D86992D09629500F02EAA /* NunitoSans_7pt_Condensed-Light.ttf in Resources */,
+				677755012D11CABE0002A974 /* PaymentViewController.xib in Resources */,
 				676D859C2D09542000F02EAA /* PasswordRecoveryOTPViewController.xib in Resources */,
 				676D86A82D09629500F02EAA /* NunitoSans_10pt_SemiCondensed-MediumItalic.ttf in Resources */,
 				676D86422D09629500F02EAA /* NunitoSans_7pt_SemiExpanded-ExtraBold.ttf in Resources */,
@@ -1273,6 +1362,7 @@
 				676D86942D09629500F02EAA /* NunitoSans_7pt_SemiCondensed-Regular.ttf in Resources */,
 				676D86552D09629500F02EAA /* NunitoSans_10pt-MediumItalic.ttf in Resources */,
 				675B53772D0AD18900819013 /* CategoriesCollectionViewCell.xib in Resources */,
+				678070992D12C65600E27BF2 /* VouchersTableViewCell.xib in Resources */,
 				676D866A2D09629500F02EAA /* NunitoSans_7pt_Expanded-Bold.ttf in Resources */,
 				676D867A2D09629500F02EAA /* NunitoSans_10pt_Expanded-MediumItalic.ttf in Resources */,
 				676D86472D09629500F02EAA /* NunitoSans_7pt_Expanded-LightItalic.ttf in Resources */,
@@ -1303,6 +1393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				675B53762D0AD18900819013 /* CategoriesCollectionViewCell.swift in Sources */,
+				678070932D12BA2E00E27BF2 /* VoucherViewController.swift in Sources */,
 				675B537B2D0AF0A300819013 /* ProductsCollectionViewCell.swift in Sources */,
 				67D3A0D92D0B4EE2007FB92D /* FlashSaleCollectionViewCell.swift in Sources */,
 				676D86EF2D09748900F02EAA /* OnboardingCollectionViewCell.swift in Sources */,
@@ -1312,6 +1403,8 @@
 				67BCFB5F2D10545D001C5418 /* CartViewController.swift in Sources */,
 				675EF6E32D0850BB00436A70 /* SignInViewController.swift in Sources */,
 				677754F92D11ACEA0002A974 /* StoriesCollectionViewCell.swift in Sources */,
+				6780708E2D12A8ED00E27BF2 /* ShippingOptionsTableViewCell.swift in Sources */,
+				678070982D12C65600E27BF2 /* VouchersTableViewCell.swift in Sources */,
 				676781872D0D8C71005E9AA3 /* WishListTableViewCell.swift in Sources */,
 				67BCFB5A2D1003A3001C5418 /* DayCollectionViewCell.swift in Sources */,
 				676D86E52D09670400F02EAA /* MaximumAttemptsViewController.swift in Sources */,
@@ -1321,6 +1414,7 @@
 				67D3A0DE2D0B58CC007FB92D /* MostPopularCollectionViewCell.swift in Sources */,
 				676D86EA2D09705D00F02EAA /* OnboardingViewController.swift in Sources */,
 				676D86F52D09B45E00F02EAA /* Extension.swift in Sources */,
+				677755002D11CABE0002A974 /* PaymentViewController.swift in Sources */,
 				67BCFB552D0FFED9001C5418 /* RecentlyViewedViewController.swift in Sources */,
 				678533B22D072D0800B950DB /* AppDelegate.swift in Sources */,
 				678533B42D072D0800B950DB /* SceneDelegate.swift in Sources */,
@@ -1330,6 +1424,8 @@
 				676D85A02D095A2A00F02EAA /* NewPasswordViewController.swift in Sources */,
 				675B53802D0B03DE00819013 /* NewItemsCollectionViewCell.swift in Sources */,
 				675B53702D0AC3FD00819013 /* ShopBannerCollectionViewCell.swift in Sources */,
+				6780709D2D12DB4400E27BF2 /* ShippingAddressViewController.swift in Sources */,
+				678070892D129F9100E27BF2 /* ItemsTableViewCell.swift in Sources */,
 				675B536A2D0AB11300819013 /* TabBarViewController.swift in Sources */,
 				677754ED2D11535C0002A974 /* CategoriesViewController.swift in Sources */,
 				675EF6DE2D0837DB00436A70 /* SignUpViewController.swift in Sources */,

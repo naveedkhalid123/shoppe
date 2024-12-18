@@ -11,7 +11,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     var productImgArr = ["product1","product2","product3","product4","product5","product2","product3"]
     var orderStatusArr = ["To Pay","To Recieve","To Review","To Recieve","To Review",]
-    var storiesArr = ["stories1","stories3","stories1","stories3","stories1","stories3",]
+    var storiesArr = ["stories3","stories3","stories3","stories3","stories3","stories3",]
     
     
     @IBOutlet weak var activityButton: UIButton!

@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "stories2.png",
+      "filename" : "giftIcon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "giftIcon@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "giftIcon@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

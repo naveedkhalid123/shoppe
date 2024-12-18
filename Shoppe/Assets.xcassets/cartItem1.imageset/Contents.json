@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "stories2.png",
+      "filename" : "cartItem1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "cartItem1@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "cartItem1@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

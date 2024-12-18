@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans_10pt-Regular.ttf">
+            <string>NunitoSans10pt-Regular</string>
+        </array>
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ItemsTableViewCell" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ItemsTableViewCell" customModule="Shoppe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cartItem1" translatesAutoresizingMaskIntoConstraints="NO" id="6lL-gY-Pq3">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="953-xf-Xf2"/>
+                            <constraint firstAttribute="height" constant="60" id="MCU-xL-QFU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lorem ipsum dolor sit amet consectetur." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfl-66-How">
+                        <rect key="frame" x="62" y="12" width="202" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="Z0B-Tr-0cB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NunitoSans10pt-Regular" family="Nunito Sans 10pt" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="$17,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ku-71-OBB">
+                        <rect key="frame" x="281" y="19.333333333333336" width="56" height="21.333333333333336"/>
+                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="18"/>
+                        <color key="textColor" name="Black"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7WB-MR-JtD">
+                        <rect key="frame" x="36" y="10.999999999999998" width="19.666666666666671" height="16.333333333333329"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icd-Lf-YYF">
+                                <rect key="frame" x="6.3333333333333357" y="-0.33333333333333393" width="6.6666666666666679" height="15.333333333333334"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Light blue"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="icd-Lf-YYF" secondAttribute="trailing" constant="6.6666666666666679" id="DTt-aB-qrw"/>
+                            <constraint firstAttribute="bottom" secondItem="icd-Lf-YYF" secondAttribute="bottom" constant="1.3333333333333286" id="pw8-12-W5i"/>
+                            <constraint firstItem="icd-Lf-YYF" firstAttribute="leading" secondItem="7WB-MR-JtD" secondAttribute="leading" constant="6.3333333333333428" id="tSE-or-2hj"/>
+                            <constraint firstItem="icd-Lf-YYF" firstAttribute="top" secondItem="7WB-MR-JtD" secondAttribute="top" constant="-0.3333333333333357" id="wzD-Qe-w4J"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="11"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7WB-MR-JtD" firstAttribute="leading" secondItem="6lL-gY-Pq3" secondAttribute="trailing" constant="-24" id="1F5-gX-If2"/>
+                    <constraint firstItem="6Ku-71-OBB" firstAttribute="centerY" secondItem="yfl-66-How" secondAttribute="centerY" id="CiL-BV-Dtd"/>
+                    <constraint firstItem="yfl-66-How" firstAttribute="centerY" secondItem="6lL-gY-Pq3" secondAttribute="centerY" id="KML-a4-N8u"/>
+                    <constraint firstAttribute="trailing" secondItem="6Ku-71-OBB" secondAttribute="trailing" constant="2" id="Lzs-8q-RJb"/>
+                    <constraint firstItem="6lL-gY-Pq3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MrZ-Ii-8u4"/>
+                    <constraint firstAttribute="bottom" secondItem="6lL-gY-Pq3" secondAttribute="bottom" id="Psb-Zo-zl7"/>
+                    <constraint firstItem="7WB-MR-JtD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="T5s-A0-nRJ"/>
+                    <constraint firstItem="yfl-66-How" firstAttribute="leading" secondItem="6lL-gY-Pq3" secondAttribute="trailing" constant="19" id="xI2-p7-hCS"/>
+                    <constraint firstItem="6lL-gY-Pq3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yKb-ex-pL0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="itemsDesc" destination="yfl-66-How" id="a3p-0y-9MM"/>
+                <outlet property="itemsImages" destination="6lL-gY-Pq3" id="jIs-2k-sDU"/>
+                <outlet property="itemsNumber" destination="icd-Lf-YYF" id="SqC-uF-A52"/>
+                <outlet property="itemsPrice" destination="6Ku-71-OBB" id="yqe-Z1-9Jy"/>
+            </connections>
+            <point key="canvasLocation" x="83.206106870229007" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cartItem1" width="80" height="80"/>
+        <namedColor name="Black">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light blue">
+            <color red="0.89800000190734863" green="0.92199999094009399" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

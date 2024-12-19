@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToReviewViewController" customModule="Shoppe" customModuleProvider="target">
+            <connections>
+                <outlet property="reviewItemsTableView" destination="54Q-d7-9Fr" id="Vue-jS-5Vl"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="ToReviewViewController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uTy-H1-7Zl">
+                    <rect key="frame" x="0.0" y="384" width="414" height="352"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jt-AS-rVY">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="81"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which item you want to review?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQ3-by-muB">
+                                    <rect key="frame" x="39.666666666666657" y="27.666666666666686" width="335" height="26"/>
+                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="22"/>
+                                    <color key="textColor" name="Black"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97254901960784312" green="0.98039215686274506" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="81" id="MY5-e0-Yyy"/>
+                                <constraint firstItem="DQ3-by-muB" firstAttribute="centerX" secondItem="4jt-AS-rVY" secondAttribute="centerX" id="gRR-kT-fHa"/>
+                                <constraint firstItem="DQ3-by-muB" firstAttribute="centerY" secondItem="4jt-AS-rVY" secondAttribute="centerY" id="pcY-e5-gCm"/>
+                            </constraints>
+                        </view>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="54Q-d7-9Fr">
+                            <rect key="frame" x="25" y="104" width="365" height="248"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="248" id="yLF-Vh-iC1"/>
+                            </constraints>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="4jt-AS-rVY" secondAttribute="trailing" id="2AS-hd-Xt3"/>
+                        <constraint firstItem="4jt-AS-rVY" firstAttribute="leading" secondItem="uTy-H1-7Zl" secondAttribute="leading" id="3Yb-w7-Wwh"/>
+                        <constraint firstItem="4jt-AS-rVY" firstAttribute="top" secondItem="uTy-H1-7Zl" secondAttribute="top" id="Fie-Yh-HXq"/>
+                        <constraint firstItem="54Q-d7-9Fr" firstAttribute="leading" secondItem="uTy-H1-7Zl" secondAttribute="leading" constant="25" id="H3L-XK-Lwj"/>
+                        <constraint firstAttribute="bottom" secondItem="54Q-d7-9Fr" secondAttribute="bottom" id="J6O-fd-uuj"/>
+                        <constraint firstItem="54Q-d7-9Fr" firstAttribute="top" secondItem="4jt-AS-rVY" secondAttribute="bottom" constant="23" id="ZWu-Qd-amp"/>
+                        <constraint firstAttribute="trailing" secondItem="54Q-d7-9Fr" secondAttribute="trailing" constant="24" id="edC-9g-jfj"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="9"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="uTy-H1-7Zl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="N0h-75-bQ5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uTy-H1-7Zl" secondAttribute="trailing" id="NLK-DV-Q4h"/>
+                <constraint firstAttribute="bottom" secondItem="uTy-H1-7Zl" secondAttribute="bottom" id="jd1-6n-W1e"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="19.565217391304348"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Black">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

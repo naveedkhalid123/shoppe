@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans_10pt-Regular.ttf">
+            <string>NunitoSans10pt-Regular</string>
+        </array>
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DonePaymentViewController" customModule="Shoppe" customModuleProvider="target">
+            <connections>
+                <outlet property="doneImgView" destination="0JL-57-iZc" id="Ef5-Yb-P4e"/>
+                <outlet property="trackOrderButton" destination="MAw-wD-82O" id="DZm-nf-uOF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" restorationIdentifier="DonePaymentViewController" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fw6-ZJ-lli">
+                    <rect key="frame" x="14" y="262" width="386" height="232"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lic-Ms-zVh">
+                            <rect key="frame" x="0.0" y="39.3333333333333" width="386" height="193.66666666666663"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Done!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ic-fv-zYv">
+                                    <rect key="frame" x="164.66666666666666" y="56.999999999999993" width="56.666666666666657" height="23.666666666666664"/>
+                                    <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="20"/>
+                                    <color key="textColor" name="Black"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You card has been successfully charged" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzO-bI-oim">
+                                    <rect key="frame" x="72" y="85.666666666666686" width="242" height="18"/>
+                                    <fontDescription key="fontDescription" name="NunitoSans10pt-Regular" family="Nunito Sans 10pt" pointSize="13"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0JL-57-iZc">
+                                    <rect key="frame" x="153" y="-38" width="80" height="80"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doneIcon" translatesAutoresizingMaskIntoConstraints="NO" id="nGH-cT-2fP">
+                                            <rect key="frame" x="15" y="15" width="50" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="50" id="Rgs-3D-aAY"/>
+                                                <constraint firstAttribute="width" constant="50" id="USo-Yh-1Md"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="FtV-eg-4oz"/>
+                                        <constraint firstItem="nGH-cT-2fP" firstAttribute="centerY" secondItem="0JL-57-iZc" secondAttribute="centerY" id="amI-bn-qVY"/>
+                                        <constraint firstAttribute="width" constant="80" id="emT-af-Fif"/>
+                                        <constraint firstItem="nGH-cT-2fP" firstAttribute="centerX" secondItem="0JL-57-iZc" secondAttribute="centerX" id="nha-qU-DTR"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="40"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAw-wD-82O">
+                                    <rect key="frame" x="111.66666666666669" y="123.66666666666669" width="163" height="40"/>
+                                    <color key="backgroundColor" name="Light grey"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="163" id="WdM-r7-KXn"/>
+                                        <constraint firstAttribute="height" constant="40" id="q50-Hc-aai"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Track My Order">
+                                        <color key="titleColor" name="Black"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="9ic-fv-zYv" firstAttribute="top" secondItem="0JL-57-iZc" secondAttribute="bottom" constant="15" id="0BW-tF-7N9"/>
+                                <constraint firstItem="HzO-bI-oim" firstAttribute="centerX" secondItem="MAw-wD-82O" secondAttribute="centerX" id="1AV-Uz-4AC"/>
+                                <constraint firstItem="0JL-57-iZc" firstAttribute="centerX" secondItem="Lic-Ms-zVh" secondAttribute="centerX" id="7x2-WF-ER5"/>
+                                <constraint firstItem="MAw-wD-82O" firstAttribute="top" secondItem="HzO-bI-oim" secondAttribute="bottom" constant="20" id="Wm2-zM-DwC"/>
+                                <constraint firstItem="HzO-bI-oim" firstAttribute="top" secondItem="9ic-fv-zYv" secondAttribute="bottom" constant="5" id="dUL-4r-mqO"/>
+                                <constraint firstItem="MAw-wD-82O" firstAttribute="centerX" secondItem="Lic-Ms-zVh" secondAttribute="centerX" id="gWJ-Lx-oe4"/>
+                                <constraint firstAttribute="bottom" secondItem="MAw-wD-82O" secondAttribute="bottom" constant="30" id="kzy-dg-c5L"/>
+                                <constraint firstItem="9ic-fv-zYv" firstAttribute="centerX" secondItem="HzO-bI-oim" secondAttribute="centerX" id="tWl-LZ-KZH"/>
+                                <constraint firstItem="0JL-57-iZc" firstAttribute="top" secondItem="Lic-Ms-zVh" secondAttribute="top" constant="-38" id="ul2-Qg-h2X"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="19"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Lic-Ms-zVh" firstAttribute="leading" secondItem="Fw6-ZJ-lli" secondAttribute="leading" id="0M1-LA-6ba"/>
+                        <constraint firstItem="Lic-Ms-zVh" firstAttribute="top" secondItem="Fw6-ZJ-lli" secondAttribute="top" constant="39.333333333333314" id="49I-vT-z2w"/>
+                        <constraint firstAttribute="trailing" secondItem="Lic-Ms-zVh" secondAttribute="trailing" id="cer-IG-094"/>
+                        <constraint firstAttribute="bottom" secondItem="Lic-Ms-zVh" secondAttribute="bottom" constant="-1" id="nqF-Sf-2ox"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Fw6-ZJ-lli" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="4jc-Nd-g9U"/>
+                <constraint firstItem="Fw6-ZJ-lli" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="UHT-dN-cJq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Fw6-ZJ-lli" secondAttribute="trailing" constant="14" id="alC-8t-9Fq"/>
+                <constraint firstItem="Fw6-ZJ-lli" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="14" id="l6t-5a-3O5"/>
+            </constraints>
+            <point key="canvasLocation" x="47.826086956521742" y="19.565217391304348"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="doneIcon" width="50" height="50"/>
+        <namedColor name="Black">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Light grey">
+            <color red="0.82400000095367432" green="0.82400000095367432" blue="0.82400000095367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         // code for running the screen
-        let languageVC = ShippingAddressViewController(nibName: "ShippingAddressViewController", bundle: nil)
+        let languageVC = ToReviewViewController(nibName: "ToReviewViewController", bundle: nil)
         let navigationController = UINavigationController(rootViewController: languageVC)
         navigationController.isNavigationBarHidden = true
         self.window = UIWindow(windowScene: windowScene)

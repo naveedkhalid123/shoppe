@@ -256,6 +256,20 @@
 		678533B92D072D0800B950DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678533B72D072D0800B950DB /* Main.storyboard */; };
 		678533BB2D072D0A00B950DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 678533BA2D072D0A00B950DB /* Assets.xcassets */; };
 		678533BE2D072D0A00B950DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 678533BC2D072D0A00B950DB /* LaunchScreen.storyboard */; };
+		67A143F02D1544D70041C001 /* DeliveredOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A143EE2D1544D70041C001 /* DeliveredOrderViewController.swift */; };
+		67A143F12D1544D70041C001 /* DeliveredOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A143EF2D1544D70041C001 /* DeliveredOrderViewController.xib */; };
+		67A143F52D15485A0041C001 /* TrackingOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A143F32D15485A0041C001 /* TrackingOrderTableViewCell.swift */; };
+		67A143F62D15485A0041C001 /* TrackingOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A143F42D15485A0041C001 /* TrackingOrderTableViewCell.xib */; };
+		67A143FA2D1552410041C001 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A143F82D1552410041C001 /* SettingViewController.swift */; };
+		67A143FB2D1552410041C001 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A143F92D1552410041C001 /* SettingViewController.xib */; };
+		67A143FF2D15576B0041C001 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A143FD2D15576B0041C001 /* SettingTableViewCell.swift */; };
+		67A144002D15576B0041C001 /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A143FE2D15576B0041C001 /* SettingTableViewCell.xib */; };
+		67A144042D155EEE0041C001 /* SettingProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A144022D155EEE0041C001 /* SettingProfileViewController.swift */; };
+		67A144052D155EEE0041C001 /* SettingProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A144032D155EEE0041C001 /* SettingProfileViewController.xib */; };
+		67A8414D2D15699800E84BD4 /* SettingAddCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A8414B2D15699800E84BD4 /* SettingAddCardViewController.swift */; };
+		67A8414E2D15699800E84BD4 /* SettingAddCardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A8414C2D15699800E84BD4 /* SettingAddCardViewController.xib */; };
+		67A841522D157BA000E84BD4 /* SettingAddCardPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A841502D157BA000E84BD4 /* SettingAddCardPopUp.swift */; };
+		67A841532D157BA000E84BD4 /* SettingAddCardPopUp.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A841512D157BA000E84BD4 /* SettingAddCardPopUp.xib */; };
 		67B4D8222D14282B00DDBDFA /* ToReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B4D8202D14282B00DDBDFA /* ToReviewViewController.swift */; };
 		67B4D8232D14282B00DDBDFA /* ToReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67B4D8212D14282B00DDBDFA /* ToReviewViewController.xib */; };
 		67B4D8272D142AE300DDBDFA /* ToReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67B4D8252D142AE300DDBDFA /* ToReviewTableViewCell.swift */; };
@@ -533,6 +547,20 @@
 		678533BA2D072D0A00B950DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		678533BD2D072D0A00B950DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		678533BF2D072D0A00B950DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67A143EE2D1544D70041C001 /* DeliveredOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveredOrderViewController.swift; sourceTree = "<group>"; };
+		67A143EF2D1544D70041C001 /* DeliveredOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeliveredOrderViewController.xib; sourceTree = "<group>"; };
+		67A143F32D15485A0041C001 /* TrackingOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingOrderTableViewCell.swift; sourceTree = "<group>"; };
+		67A143F42D15485A0041C001 /* TrackingOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackingOrderTableViewCell.xib; sourceTree = "<group>"; };
+		67A143F82D1552410041C001 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		67A143F92D1552410041C001 /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		67A143FD2D15576B0041C001 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		67A143FE2D15576B0041C001 /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
+		67A144022D155EEE0041C001 /* SettingProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingProfileViewController.swift; sourceTree = "<group>"; };
+		67A144032D155EEE0041C001 /* SettingProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingProfileViewController.xib; sourceTree = "<group>"; };
+		67A8414B2D15699800E84BD4 /* SettingAddCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAddCardViewController.swift; sourceTree = "<group>"; };
+		67A8414C2D15699800E84BD4 /* SettingAddCardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingAddCardViewController.xib; sourceTree = "<group>"; };
+		67A841502D157BA000E84BD4 /* SettingAddCardPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingAddCardPopUp.swift; sourceTree = "<group>"; };
+		67A841512D157BA000E84BD4 /* SettingAddCardPopUp.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingAddCardPopUp.xib; sourceTree = "<group>"; };
 		67B4D8202D14282B00DDBDFA /* ToReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToReviewViewController.swift; sourceTree = "<group>"; };
 		67B4D8212D14282B00DDBDFA /* ToReviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToReviewViewController.xib; sourceTree = "<group>"; };
 		67B4D8252D142AE300DDBDFA /* ToReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToReviewTableViewCell.swift; sourceTree = "<group>"; };
@@ -608,6 +636,7 @@
 		67386B172D13FE24001BFF63 /* TrackOrderViewController */ = {
 			isa = PBXGroup;
 			children = (
+				67A143ED2D1544B60041C001 /* DeliveredOrderViewController */,
 				67B4D8382D1492FF00DDBDFA /* CustomerReviewViewController */,
 				67B4D8332D14909700DDBDFA /* ReviewDoneViewController */,
 				67B4D82E2D148E5700DDBDFA /* OrderHistoryViewController */,
@@ -998,6 +1027,7 @@
 		676D86F12D09B43200F02EAA /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				67A143F72D1552150041C001 /* SettingViewController */,
 				67386B172D13FE24001BFF63 /* TrackOrderViewController */,
 				6780709F2D12F12100E27BF2 /* PaymentMethodViewController */,
 				677754FB2D11CA550002A974 /* PaymentViewController */,
@@ -1184,6 +1214,74 @@
 				678533BF2D072D0A00B950DB /* Info.plist */,
 			);
 			path = Shoppe;
+			sourceTree = "<group>";
+		};
+		67A143ED2D1544B60041C001 /* DeliveredOrderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				67A143F22D1548210041C001 /* TrackingOrderTableViewCell */,
+				67A143EE2D1544D70041C001 /* DeliveredOrderViewController.swift */,
+				67A143EF2D1544D70041C001 /* DeliveredOrderViewController.xib */,
+			);
+			path = DeliveredOrderViewController;
+			sourceTree = "<group>";
+		};
+		67A143F22D1548210041C001 /* TrackingOrderTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				67A143F32D15485A0041C001 /* TrackingOrderTableViewCell.swift */,
+				67A143F42D15485A0041C001 /* TrackingOrderTableViewCell.xib */,
+			);
+			path = TrackingOrderTableViewCell;
+			sourceTree = "<group>";
+		};
+		67A143F72D1552150041C001 /* SettingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				67A8414F2D157B7500E84BD4 /* SettingAddCardPopUp */,
+				67A8414A2D15697A00E84BD4 /* SettingAddCardViewController */,
+				67A144012D155ECE0041C001 /* SettingProfileViewController */,
+				67A143FC2D1557450041C001 /* SettingTableViewCell */,
+				67A143F82D1552410041C001 /* SettingViewController.swift */,
+				67A143F92D1552410041C001 /* SettingViewController.xib */,
+			);
+			path = SettingViewController;
+			sourceTree = "<group>";
+		};
+		67A143FC2D1557450041C001 /* SettingTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				67A143FD2D15576B0041C001 /* SettingTableViewCell.swift */,
+				67A143FE2D15576B0041C001 /* SettingTableViewCell.xib */,
+			);
+			path = SettingTableViewCell;
+			sourceTree = "<group>";
+		};
+		67A144012D155ECE0041C001 /* SettingProfileViewController */ = {
+			isa = PBXGroup;
+			children = (
+				67A144022D155EEE0041C001 /* SettingProfileViewController.swift */,
+				67A144032D155EEE0041C001 /* SettingProfileViewController.xib */,
+			);
+			path = SettingProfileViewController;
+			sourceTree = "<group>";
+		};
+		67A8414A2D15697A00E84BD4 /* SettingAddCardViewController */ = {
+			isa = PBXGroup;
+			children = (
+				67A8414B2D15699800E84BD4 /* SettingAddCardViewController.swift */,
+				67A8414C2D15699800E84BD4 /* SettingAddCardViewController.xib */,
+			);
+			path = SettingAddCardViewController;
+			sourceTree = "<group>";
+		};
+		67A8414F2D157B7500E84BD4 /* SettingAddCardPopUp */ = {
+			isa = PBXGroup;
+			children = (
+				67A841502D157BA000E84BD4 /* SettingAddCardPopUp.swift */,
+				67A841512D157BA000E84BD4 /* SettingAddCardPopUp.xib */,
+			);
+			path = SettingAddCardPopUp;
 			sourceTree = "<group>";
 		};
 		67B4D81B2D14274B00DDBDFA /* ToReviewViewController */ = {
@@ -1407,8 +1505,10 @@
 				676D86B32D09629500F02EAA /* NunitoSans_10pt_SemiCondensed-Light.ttf in Resources */,
 				676D864E2D09629500F02EAA /* NunitoSans_10pt-SemiBold.ttf in Resources */,
 				676D868B2D09629500F02EAA /* NunitoSans_7pt_SemiExpanded-ExtraLightItalic.ttf in Resources */,
+				67A144052D155EEE0041C001 /* SettingProfileViewController.xib in Resources */,
 				678533BE2D072D0A00B950DB /* LaunchScreen.storyboard in Resources */,
 				675EF6C32D081A7A00436A70 /* Raleway-ThinItalic.ttf in Resources */,
+				67A143FB2D1552410041C001 /* SettingViewController.xib in Resources */,
 				676D86C02D09629500F02EAA /* NunitoSans_10pt_Condensed-BoldItalic.ttf in Resources */,
 				676D86F02D09748900F02EAA /* OnboardingCollectionViewCell.xib in Resources */,
 				676D86832D09629500F02EAA /* NunitoSans_7pt_SemiCondensed-ExtraLight.ttf in Resources */,
@@ -1434,6 +1534,7 @@
 				676D86662D09629500F02EAA /* NunitoSans_10pt-ExtraLightItalic.ttf in Resources */,
 				67B4D8372D1490B400DDBDFA /* ReviewDoneViewController.xib in Resources */,
 				67CFCCBA2D109BEE00547CD0 /* AddCartTableViewCell.xib in Resources */,
+				67A143F12D1544D70041C001 /* DeliveredOrderViewController.xib in Resources */,
 				676D86622D09629500F02EAA /* NunitoSans_7pt_SemiCondensed-ExtraBoldItalic.ttf in Resources */,
 				676D86862D09629500F02EAA /* NunitoSans_10pt_SemiExpanded-Light.ttf in Resources */,
 				676D86572D09629500F02EAA /* NunitoSans_10pt_Condensed-ExtraBoldItalic.ttf in Resources */,
@@ -1460,7 +1561,9 @@
 				67386B162D13F157001BFF63 /* DonePaymentViewController.xib in Resources */,
 				676D86592D09629500F02EAA /* NunitoSans_10pt_SemiExpanded-Italic.ttf in Resources */,
 				675EF6D42D081A7A00436A70 /* Raleway-SemiBoldItalic.ttf in Resources */,
+				67A841532D157BA000E84BD4 /* SettingAddCardPopUp.xib in Resources */,
 				676D86A32D09629500F02EAA /* NunitoSans_10pt_SemiExpanded-MediumItalic.ttf in Resources */,
+				67A144002D15576B0041C001 /* SettingTableViewCell.xib in Resources */,
 				675B53812D0B03DE00819013 /* NewItemsCollectionViewCell.xib in Resources */,
 				676D86CE2D09629500F02EAA /* NunitoSans_10pt_SemiCondensed-LightItalic.ttf in Resources */,
 				676D865E2D09629500F02EAA /* NunitoSans_7pt-BoldItalic.ttf in Resources */,
@@ -1489,6 +1592,7 @@
 				676D867E2D09629500F02EAA /* NunitoSans_10pt_SemiCondensed-ExtraBold.ttf in Resources */,
 				676781882D0D8C71005E9AA3 /* WishListTableViewCell.xib in Resources */,
 				676D86482D09629500F02EAA /* NunitoSans_10pt_Condensed-Black.ttf in Resources */,
+				67A8414E2D15699800E84BD4 /* SettingAddCardViewController.xib in Resources */,
 				676D864B2D09629500F02EAA /* NunitoSans_7pt-Medium.ttf in Resources */,
 				676D86BA2D09629500F02EAA /* NunitoSans_10pt_Condensed-ExtraBold.ttf in Resources */,
 				676D86A92D09629500F02EAA /* NunitoSans_7pt_SemiCondensed-BoldItalic.ttf in Resources */,
@@ -1523,6 +1627,7 @@
 				676D86A02D09629500F02EAA /* NunitoSans_10pt_Condensed-ExtraLight.ttf in Resources */,
 				676D86812D09629500F02EAA /* NunitoSans_10pt-Medium.ttf in Resources */,
 				676D86B82D09629500F02EAA /* NunitoSans_10pt_SemiExpanded-Black.ttf in Resources */,
+				67A143F62D15485A0041C001 /* TrackingOrderTableViewCell.xib in Resources */,
 				676D86A22D09629500F02EAA /* NunitoSans_7pt_Expanded-BlackItalic.ttf in Resources */,
 				676D869C2D09629500F02EAA /* NunitoSans_10pt_Expanded-Bold.ttf in Resources */,
 				676D86652D09629500F02EAA /* NunitoSans_10pt_SemiCondensed-SemiBoldItalic.ttf in Resources */,
@@ -1607,16 +1712,20 @@
 				675EF6D92D0827AB00436A70 /* WelcomeScreenViewController.swift in Sources */,
 				67BCFB5F2D10545D001C5418 /* CartViewController.swift in Sources */,
 				67386B152D13F157001BFF63 /* DonePaymentViewController.swift in Sources */,
+				67A143FF2D15576B0041C001 /* SettingTableViewCell.swift in Sources */,
 				675EF6E32D0850BB00436A70 /* SignInViewController.swift in Sources */,
 				67386B102D13E9FB001BFF63 /* NotProceedPaymentViewController.swift in Sources */,
 				677754F92D11ACEA0002A974 /* StoriesCollectionViewCell.swift in Sources */,
 				6780708E2D12A8ED00E27BF2 /* ShippingOptionsTableViewCell.swift in Sources */,
+				67A144042D155EEE0041C001 /* SettingProfileViewController.swift in Sources */,
+				67A143F02D1544D70041C001 /* DeliveredOrderViewController.swift in Sources */,
 				67B4D8362D1490B400DDBDFA /* ReviewDoneViewController.swift in Sources */,
 				67386B202D140243001BFF63 /* OrderTrackingTableViewCell.swift in Sources */,
 				678070982D12C65600E27BF2 /* VouchersTableViewCell.swift in Sources */,
 				676781872D0D8C71005E9AA3 /* WishListTableViewCell.swift in Sources */,
 				67BCFB5A2D1003A3001C5418 /* DayCollectionViewCell.swift in Sources */,
 				676D86E52D09670400F02EAA /* MaximumAttemptsViewController.swift in Sources */,
+				67A8414D2D15699800E84BD4 /* SettingAddCardViewController.swift in Sources */,
 				676D859B2D09542000F02EAA /* PasswordRecoveryOTPViewController.swift in Sources */,
 				675EF6E82D085B6E00436A70 /* PasswordViewController.swift in Sources */,
 				677754F02D11976D0002A974 /* ProfileViewController.swift in Sources */,
@@ -1635,12 +1744,15 @@
 				67CFCCB92D109BEE00547CD0 /* AddCartTableViewCell.swift in Sources */,
 				675B536D2D0AB78200819013 /* ShopViewController.swift in Sources */,
 				673612932D0D6F14001C85CC /* WishListViewController.swift in Sources */,
+				67A143FA2D1552410041C001 /* SettingViewController.swift in Sources */,
 				676D85A02D095A2A00F02EAA /* NewPasswordViewController.swift in Sources */,
+				67A143F52D15485A0041C001 /* TrackingOrderTableViewCell.swift in Sources */,
 				675B53802D0B03DE00819013 /* NewItemsCollectionViewCell.swift in Sources */,
 				675B53702D0AC3FD00819013 /* ShopBannerCollectionViewCell.swift in Sources */,
 				67B4D82C2D148AA800DDBDFA /* DeliveryIncompleteViewController.swift in Sources */,
 				6780709D2D12DB4400E27BF2 /* ShippingAddressViewController.swift in Sources */,
 				678070892D129F9100E27BF2 /* ItemsTableViewCell.swift in Sources */,
+				67A841522D157BA000E84BD4 /* SettingAddCardPopUp.swift in Sources */,
 				675B536A2D0AB11300819013 /* TabBarViewController.swift in Sources */,
 				677754ED2D11535C0002A974 /* CategoriesViewController.swift in Sources */,
 				675EF6DE2D0837DB00436A70 /* SignUpViewController.swift in Sources */,

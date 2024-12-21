@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         // code for running the screen
-        let languageVC = SettingAddCardPopUp(nibName: "SettingAddCardPopUp", bundle: nil)
+        let languageVC = ProductFullDescription(nibName: "ProductFullDescription", bundle: nil)
         let navigationController = UINavigationController(rootViewController: languageVC)
         navigationController.isNavigationBarHidden = true
         self.window = UIWindow(windowScene: windowScene)

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NunitoSans_10pt-Light.ttf">
+            <string>NunitoSans10pt-Light</string>
+        </array>
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutViewController" customModule="Shoppe" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C4m-Vm-wal">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PgE-Kf-emB">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="812"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ieU-an-BIv">
+                                    <rect key="frame" x="0.0" y="122.66666666666669" width="414" height="567"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutImg" translatesAutoresizingMaskIntoConstraints="NO" id="pmI-EK-ECt">
+                                            <rect key="frame" x="161" y="0.0" width="92" height="92"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="92" id="0HK-Wv-eLW"/>
+                                                <constraint firstAttribute="width" constant="92" id="tr2-R3-n9J"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Shoppe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orx-JG-5Oo">
+                                            <rect key="frame" x="20" y="152" width="192" height="33"/>
+                                            <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="28"/>
+                                            <color key="textColor" name="Black"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpX-DE-iVJ">
+                                            <rect key="frame" x="20" y="202" width="335" height="174.66666666666663"/>
+                                            <string key="text">Shoppe - Shopping UI kit" is likely a user interface (UI) kit designed to facilitate the development of e-commerce or shopping-related applications. UI kits are collections of pre-designed elements, components, and templates that developers and designers can use to create consistent and visually appealing user interfaces.</string>
+                                            <fontDescription key="fontDescription" name="NunitoSans10pt-Light" family="Nunito Sans 10pt" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you need help or you have any questions, feel free to contact me by email." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssl-vf-RB0">
+                                            <rect key="frame" x="20" y="397.99999999999994" width="335" height="40.666666666666686"/>
+                                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hello@mydomain.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nct-2g-klH">
+                                            <rect key="frame" x="20" y="448.99999999999994" width="182" height="20"/>
+                                            <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="17"/>
+                                            <color key="textColor" name="Black"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Nct-2g-klH" secondAttribute="bottom" constant="98.000000000000057" id="2cU-xt-pJ5"/>
+                                        <constraint firstItem="Nct-2g-klH" firstAttribute="top" secondItem="Ssl-vf-RB0" secondAttribute="bottom" constant="10.333333333333371" id="4Nc-st-720"/>
+                                        <constraint firstItem="Orx-JG-5Oo" firstAttribute="leading" secondItem="ieU-an-BIv" secondAttribute="leading" constant="20" symbolic="YES" id="4q5-jQ-2S1"/>
+                                        <constraint firstItem="Ssl-vf-RB0" firstAttribute="top" secondItem="UpX-DE-iVJ" secondAttribute="bottom" constant="21.333333333333371" id="8NW-4E-2mF"/>
+                                        <constraint firstItem="pmI-EK-ECt" firstAttribute="top" secondItem="ieU-an-BIv" secondAttribute="top" id="9et-Td-b8k"/>
+                                        <constraint firstAttribute="trailing" secondItem="UpX-DE-iVJ" secondAttribute="trailing" constant="59" id="Mml-vr-7Fl"/>
+                                        <constraint firstItem="UpX-DE-iVJ" firstAttribute="leading" secondItem="ieU-an-BIv" secondAttribute="leading" constant="20" symbolic="YES" id="edM-na-Tpn"/>
+                                        <constraint firstItem="Ssl-vf-RB0" firstAttribute="leading" secondItem="ieU-an-BIv" secondAttribute="leading" constant="20" symbolic="YES" id="etb-Es-vV0"/>
+                                        <constraint firstItem="Orx-JG-5Oo" firstAttribute="top" secondItem="pmI-EK-ECt" secondAttribute="bottom" constant="60" id="fAz-y5-XeB"/>
+                                        <constraint firstItem="Nct-2g-klH" firstAttribute="leading" secondItem="ieU-an-BIv" secondAttribute="leading" constant="20" symbolic="YES" id="hmP-t3-Y2Q"/>
+                                        <constraint firstItem="pmI-EK-ECt" firstAttribute="centerX" secondItem="ieU-an-BIv" secondAttribute="centerX" id="ih7-jh-ymc"/>
+                                        <constraint firstItem="UpX-DE-iVJ" firstAttribute="top" secondItem="Orx-JG-5Oo" secondAttribute="bottom" constant="16.99999999999801" id="oHd-Oc-3fu"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ssl-vf-RB0" secondAttribute="trailing" constant="59" id="wob-r8-rUT"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="ieU-an-BIv" firstAttribute="centerY" secondItem="PgE-Kf-emB" secondAttribute="centerY" id="4j4-QX-CdE"/>
+                                <constraint firstAttribute="trailing" secondItem="ieU-an-BIv" secondAttribute="trailing" id="Y9M-u2-Lt2"/>
+                                <constraint firstItem="ieU-an-BIv" firstAttribute="centerX" secondItem="PgE-Kf-emB" secondAttribute="centerX" id="ovj-Pf-DJ5"/>
+                                <constraint firstItem="ieU-an-BIv" firstAttribute="leading" secondItem="PgE-Kf-emB" secondAttribute="leading" id="xNe-wh-HZO"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="PgE-Kf-emB" firstAttribute="width" secondItem="C4m-Vm-wal" secondAttribute="width" id="R6D-ZP-h1C"/>
+                        <constraint firstAttribute="trailing" secondItem="PgE-Kf-emB" secondAttribute="trailing" id="aAJ-YN-SBZ"/>
+                        <constraint firstItem="PgE-Kf-emB" firstAttribute="height" secondItem="C4m-Vm-wal" secondAttribute="height" priority="250" id="fPB-7e-6vE"/>
+                        <constraint firstItem="PgE-Kf-emB" firstAttribute="top" secondItem="C4m-Vm-wal" secondAttribute="top" id="tic-jB-3vI"/>
+                        <constraint firstItem="PgE-Kf-emB" firstAttribute="leading" secondItem="C4m-Vm-wal" secondAttribute="leading" id="vza-jY-yKU"/>
+                        <constraint firstAttribute="bottom" secondItem="PgE-Kf-emB" secondAttribute="bottom" id="yqu-Aj-rQe"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="fBh-m5-C3L"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="pBT-Qk-SXl"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="C4m-Vm-wal" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="EV4-RX-qwL"/>
+                <constraint firstItem="C4m-Vm-wal" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="WZ9-vz-uIP"/>
+                <constraint firstItem="C4m-Vm-wal" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="hHU-dQ-vgc"/>
+                <constraint firstItem="C4m-Vm-wal" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yJz-a7-nVk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="19.565217391304348"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="aboutImg" width="81.666664123535156" height="92"/>
+        <namedColor name="Black">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentHistoryViewController" customModule="Shoppe" customModuleProvider="target">
+            <connections>
+                <outlet property="paymentHistoryTableView" destination="xNT-02-cbN" id="5OM-Dw-y4K"/>
+                <outlet property="paymentMethodCardCollectionView" destination="EIO-En-KSQ" id="sBD-97-yVW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Vm-rC-3hR">
+                    <rect key="frame" x="0.0" y="20" width="414" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WR4-VK-H1h">
+                            <rect key="frame" x="20" y="8.6666666666666679" width="111" height="33"/>
+                            <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="28"/>
+                            <color key="textColor" name="Black"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="WR4-VK-H1h" firstAttribute="leading" secondItem="0Vm-rC-3hR" secondAttribute="leading" constant="20" id="9mA-RS-Y43"/>
+                        <constraint firstItem="WR4-VK-H1h" firstAttribute="centerY" secondItem="0Vm-rC-3hR" secondAttribute="centerY" id="IB9-OT-ZIh"/>
+                        <constraint firstAttribute="height" constant="50" id="ZEj-sV-Ma9"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Methods" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2A-GF-FpN">
+                    <rect key="frame" x="20" y="77" width="135" height="19"/>
+                    <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="EIO-En-KSQ">
+                    <rect key="frame" x="20" y="124" width="300" height="155"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="155" id="6fW-Ka-eLB"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="lvz-18-h5s">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAC-uo-ahM">
+                    <rect key="frame" x="349" y="124" width="45" height="155"/>
+                    <color key="backgroundColor" name="theme"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="5Zp-6P-Be2"/>
+                        <constraint firstAttribute="height" constant="155" id="LQj-qK-IAN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" name="white"/>
+                    </state>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xNT-02-cbN">
+                    <rect key="frame" x="0.0" y="295" width="414" height="441"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eAC-uo-ahM" secondAttribute="trailing" constant="20" id="2K7-6v-GkT"/>
+                <constraint firstItem="eAC-uo-ahM" firstAttribute="centerY" secondItem="EIO-En-KSQ" secondAttribute="centerY" id="327-GP-w6x"/>
+                <constraint firstItem="q2A-GF-FpN" firstAttribute="top" secondItem="0Vm-rC-3hR" secondAttribute="bottom" constant="7" id="DdS-NX-f5C"/>
+                <constraint firstItem="EIO-En-KSQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="FJq-JI-KJe"/>
+                <constraint firstItem="eAC-uo-ahM" firstAttribute="leading" secondItem="EIO-En-KSQ" secondAttribute="trailing" constant="29" id="K6Z-mq-7TR"/>
+                <constraint firstItem="xNT-02-cbN" firstAttribute="top" secondItem="EIO-En-KSQ" secondAttribute="bottom" constant="16" id="NFV-89-c5D"/>
+                <constraint firstItem="EIO-En-KSQ" firstAttribute="top" secondItem="q2A-GF-FpN" secondAttribute="bottom" constant="28" id="Qqw-KH-jWl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="0Vm-rC-3hR" secondAttribute="trailing" id="ROe-Ab-Qul"/>
+                <constraint firstAttribute="bottom" secondItem="xNT-02-cbN" secondAttribute="bottom" id="ReF-Bo-gVi"/>
+                <constraint firstItem="xNT-02-cbN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Uea-g5-Fku"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xNT-02-cbN" secondAttribute="trailing" id="VV8-BY-OT6"/>
+                <constraint firstItem="q2A-GF-FpN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="cyT-UP-KYL"/>
+                <constraint firstItem="0Vm-rC-3hR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hjE-xP-Ojk"/>
+                <constraint firstItem="0Vm-rC-3hR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="pxT-dh-0fv"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="19.565217391304348"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Black">
+            <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="theme">
+            <color red="0.0" green="0.29800000786781311" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

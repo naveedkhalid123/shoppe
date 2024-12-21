@@ -47,10 +47,21 @@
                                     <color key="textColor" name="Black"/>
                                     <nil key="highlightedColor"/>
                                 </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8nM-yt-T3D">
+                                    <rect key="frame" x="359" y="23" width="35" height="35"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="35" id="hn0-8I-qay"/>
+                                        <constraint firstAttribute="width" constant="35" id="sTI-Et-GaO"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="delete"/>
+                                </button>
                             </subviews>
                             <color key="backgroundColor" red="0.97254901959999995" green="0.98039215690000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="81" id="CdT-xJ-VvB"/>
+                                <constraint firstItem="8nM-yt-T3D" firstAttribute="centerY" secondItem="tSr-W4-fDN" secondAttribute="centerY" id="NpS-bd-9SG"/>
+                                <constraint firstAttribute="trailing" secondItem="8nM-yt-T3D" secondAttribute="trailing" constant="20" symbolic="YES" id="aIw-yG-Wzj"/>
                                 <constraint firstItem="tSr-W4-fDN" firstAttribute="centerY" secondItem="zIT-Ho-1XD" secondAttribute="centerY" id="qVK-Qb-wbu"/>
                                 <constraint firstItem="tSr-W4-fDN" firstAttribute="leading" secondItem="zIT-Ho-1XD" secondAttribute="leading" constant="20" symbolic="YES" id="qen-IK-m9z"/>
                             </constraints>
@@ -199,6 +210,7 @@
         </view>
     </objects>
     <resources>
+        <image name="delete" width="35" height="35"/>
         <namedColor name="Black">
             <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

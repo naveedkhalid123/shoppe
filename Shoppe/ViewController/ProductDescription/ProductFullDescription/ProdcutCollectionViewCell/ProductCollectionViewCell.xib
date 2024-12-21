@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCollectionViewCell" customModule="Shoppe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fullProduct1" translatesAutoresizingMaskIntoConstraints="NO" id="RKD-dq-qVs">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="439"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RKD-dq-qVs" secondAttribute="bottom" id="0U6-2F-i50"/>
+                <constraint firstAttribute="trailing" secondItem="RKD-dq-qVs" secondAttribute="trailing" id="56y-6T-7au"/>
+                <constraint firstItem="RKD-dq-qVs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Y5n-Fl-gQY"/>
+                <constraint firstItem="RKD-dq-qVs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zkw-14-2Co"/>
+            </constraints>
+            <connections>
+                <outlet property="fullProductImage" destination="RKD-dq-qVs" id="QU0-K0-l1n"/>
+            </connections>
+            <point key="canvasLocation" x="-38.167938931297705" y="19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="fullProduct1" width="375" height="439"/>
+    </resources>
+</document>

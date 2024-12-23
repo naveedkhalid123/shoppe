@@ -21,4 +21,9 @@ class NewPasswordViewController: UIViewController {
         repeatPasswordTxtField.layer.cornerRadius = 9
     }
 
+    
+    
+    @IBAction func cancelButtonPresses(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

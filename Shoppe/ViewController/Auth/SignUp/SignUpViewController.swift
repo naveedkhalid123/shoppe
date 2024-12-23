@@ -33,4 +33,17 @@ class SignUpViewController: UIViewController {
            textField.leftView = paddingView
            textField.leftViewMode = .always
        }
+    
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+        let vc = OnboardingViewController(nibName: "OnboardingViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+        self.navigationController?.popViewController( animated: true)
+
+    }
+    
+    
 }

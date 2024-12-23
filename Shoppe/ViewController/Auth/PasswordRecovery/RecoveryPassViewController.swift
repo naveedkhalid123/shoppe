@@ -14,5 +14,23 @@ class RecoveryPassViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
 
+    @IBAction func SMSButtonPressed(_ sender: UIButton) {
+        let vc = PasswordRecoveryOTPViewController(nibName: "PasswordRecoveryOTPViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    @IBAction func emailButtonPreesed(_ sender: UIButton) {
+        let vc = NewPasswordViewController(nibName: "NewPasswordViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+    
 }

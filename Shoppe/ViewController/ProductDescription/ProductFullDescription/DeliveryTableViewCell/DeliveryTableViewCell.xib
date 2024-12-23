@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DeliveryTableViewCell" id="KGk-i7-Jjw" customClass="DeliveryTableViewCell" customModule="Shoppe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aTj-UJ-H1m">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Standard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqS-E3-EUc">
+                                <rect key="frame" x="20" y="10.666666666666664" width="68" height="19"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="16"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hhi-Xr-qKV">
+                                <rect key="frame" x="98" y="7" width="71" height="26"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5-7 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4st-Lf-Yd0">
+                                        <rect key="frame" x="10" y="5" width="51" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="51" id="0rJ-BN-ou3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
+                                        <color key="textColor" name="theme"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Light blue"/>
+                                <constraints>
+                                    <constraint firstItem="4st-Lf-Yd0" firstAttribute="centerX" secondItem="Hhi-Xr-qKV" secondAttribute="centerX" id="KNt-t2-z3v"/>
+                                    <constraint firstItem="4st-Lf-Yd0" firstAttribute="leading" secondItem="Hhi-Xr-qKV" secondAttribute="leading" constant="10" id="L6m-Ns-zxi"/>
+                                    <constraint firstItem="4st-Lf-Yd0" firstAttribute="top" secondItem="Hhi-Xr-qKV" secondAttribute="top" constant="5" id="ZFa-KJ-haL"/>
+                                    <constraint firstItem="4st-Lf-Yd0" firstAttribute="centerY" secondItem="Hhi-Xr-qKV" secondAttribute="centerY" id="diE-FY-cRD"/>
+                                    <constraint firstAttribute="bottom" secondItem="4st-Lf-Yd0" secondAttribute="bottom" constant="5" id="sdg-FO-Vbj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$3,00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQh-N8-fNq">
+                                <rect key="frame" x="311" y="10.666666666666664" width="43" height="19"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Hhi-Xr-qKV" firstAttribute="leading" secondItem="HqS-E3-EUc" secondAttribute="trailing" constant="10" id="Aae-Hg-gJh"/>
+                            <constraint firstItem="Hhi-Xr-qKV" firstAttribute="centerY" secondItem="HqS-E3-EUc" secondAttribute="centerY" id="Ebd-pL-Tfd"/>
+                            <constraint firstItem="bQh-N8-fNq" firstAttribute="centerY" secondItem="Hhi-Xr-qKV" secondAttribute="centerY" id="Ncg-5m-GAH"/>
+                            <constraint firstAttribute="trailing" secondItem="Hhi-Xr-qKV" secondAttribute="trailing" constant="205" id="R8e-QJ-viK"/>
+                            <constraint firstItem="HqS-E3-EUc" firstAttribute="centerY" secondItem="aTj-UJ-H1m" secondAttribute="centerY" id="YLn-Tj-sAo"/>
+                            <constraint firstAttribute="trailing" secondItem="bQh-N8-fNq" secondAttribute="trailing" constant="20" id="tF7-xl-79d"/>
+                            <constraint firstItem="HqS-E3-EUc" firstAttribute="leading" secondItem="aTj-UJ-H1m" secondAttribute="leading" constant="20" symbolic="YES" id="yC2-k3-maa"/>
+                            <constraint firstAttribute="height" constant="40" id="ypr-wV-4ic"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aTj-UJ-H1m" secondAttribute="bottom" constant="10" id="XoR-d3-8WM"/>
+                    <constraint firstItem="aTj-UJ-H1m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hSP-29-KOz"/>
+                    <constraint firstItem="aTj-UJ-H1m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="stR-nU-wjH"/>
+                    <constraint firstAttribute="trailing" secondItem="aTj-UJ-H1m" secondAttribute="trailing" id="ulL-Zn-a8e"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="deliveryDaysLbl" destination="4st-Lf-Yd0" id="lYj-Y2-zk1"/>
+                <outlet property="deliveryPriceLbl" destination="bQh-N8-fNq" id="AUI-cT-e5i"/>
+                <outlet property="deliveryTypeLbl" destination="HqS-E3-EUc" id="IFv-cT-qw3"/>
+                <outlet property="deliveryView" destination="aTj-UJ-H1m" id="paA-Rq-xdO"/>
+            </connections>
+            <point key="canvasLocation" x="85.496183206106863" y="19.718309859154932"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Light blue">
+            <color red="0.89800000190734863" green="0.92199999094009399" blue="0.98799997568130493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="theme">
+            <color red="0.0" green="0.29800000786781311" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

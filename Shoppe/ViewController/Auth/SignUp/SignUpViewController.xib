@@ -181,6 +181,9 @@
                                             <integer key="value" value="16"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="doneButtonPressed:" destination="-1" eventType="touchUpInside" id="Dhs-V7-5Di"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JUT-Ek-7SW">
                                     <rect key="frame" x="183" y="731" width="48" height="35"/>
@@ -192,6 +195,9 @@
                                     <state key="normal" title="Cancel">
                                         <color key="titleColor" name="Black"/>
                                     </state>
+                                    <connections>
+                                        <action selector="cancelButtonPressed:" destination="-1" eventType="touchUpInside" id="iqd-am-XCP"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

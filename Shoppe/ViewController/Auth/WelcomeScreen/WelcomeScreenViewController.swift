@@ -15,4 +15,15 @@ class WelcomeScreenViewController: UIViewController {
     
 
     }
+    
+    @IBAction func getStartedButtonPressed(_ sender: UIButton) {
+        let vc = SignUpViewController(nibName: "SignUpViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+        let vc = SignInViewController(nibName: "SignInViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

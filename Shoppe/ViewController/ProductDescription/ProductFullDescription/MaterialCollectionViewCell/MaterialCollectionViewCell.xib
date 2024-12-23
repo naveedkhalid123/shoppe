@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MaterialCollectionViewCell" customModule="Shoppe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="96" height="25"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="96" height="25"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m15-QV-juW">
+                        <rect key="frame" x="0.0" y="0.0" width="96" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cotton 95%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBs-X6-dNP">
+                                <rect key="frame" x="11" y="4" width="73" height="17"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="Light pink"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KBs-X6-dNP" secondAttribute="trailing" constant="12" id="VIr-oG-5pm"/>
+                            <constraint firstItem="KBs-X6-dNP" firstAttribute="top" secondItem="m15-QV-juW" secondAttribute="top" constant="4" id="Z3D-Ai-MEa"/>
+                            <constraint firstAttribute="bottom" secondItem="KBs-X6-dNP" secondAttribute="bottom" constant="4" id="bO2-bd-WZI"/>
+                            <constraint firstItem="KBs-X6-dNP" firstAttribute="leading" secondItem="m15-QV-juW" secondAttribute="leading" constant="11" id="f4Z-n7-6Me"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="4"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="m15-QV-juW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0c4-eM-QIU"/>
+                <constraint firstAttribute="trailing" secondItem="m15-QV-juW" secondAttribute="trailing" id="5y1-Pt-YZ7"/>
+                <constraint firstItem="m15-QV-juW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8ld-9h-5mD"/>
+                <constraint firstAttribute="bottom" secondItem="m15-QV-juW" secondAttribute="bottom" id="ko9-I2-vwU"/>
+            </constraints>
+            <connections>
+                <outlet property="materialLbl" destination="KBs-X6-dNP" id="B8y-MW-NRA"/>
+            </connections>
+            <point key="canvasLocation" x="138.93129770992365" y="19.366197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="Light pink">
+            <color red="1" green="0.92199999094009399" blue="0.92199999094009399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

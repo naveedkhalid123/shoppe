@@ -67,7 +67,7 @@
                                     </constraints>
                                     <fontDescription key="fontDescription" name="NunitoSans10pt-Regular" family="Nunito Sans 10pt" pointSize="22"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="Next">
+                                    <state key="normal" title="Login">
                                         <color key="titleColor" name="white"/>
                                     </state>
                                     <userDefinedRuntimeAttributes>
@@ -86,6 +86,9 @@
                                     <state key="normal" title="Cancel">
                                         <color key="titleColor" name="Black"/>
                                     </state>
+                                    <connections>
+                                        <action selector="cancelButtonPressed:" destination="-1" eventType="touchUpInside" id="OHl-Ib-9gq"/>
+                                    </connections>
                                 </button>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7bZ-ac-Q2f">
                                     <rect key="frame" x="20" y="529" width="374" height="52"/>
@@ -107,6 +110,9 @@
                                     <state key="normal" title="Forgot your password?">
                                         <color key="titleColor" name="Black"/>
                                     </state>
+                                    <connections>
+                                        <action selector="forgotPasswordButtonPressed:" destination="-1" eventType="touchUpInside" id="ch8-35-q5V"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

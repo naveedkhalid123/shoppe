@@ -15,4 +15,17 @@ class PasswordRecoveryOTPViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
+    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+    @IBAction func sendAgainButtonPressed(_ sender: UIButton) {
+            let vc = MaximumAttemptsViewController(nibName: "MaximumAttemptsViewController", bundle: nil)
+            vc.modalPresentationStyle = .fullScreen // Optional: Set the presentation style
+            self.present(vc, animated: true, completion: nil)
+    
+    }
+    
 }

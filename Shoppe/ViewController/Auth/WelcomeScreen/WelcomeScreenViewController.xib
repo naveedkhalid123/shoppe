@@ -84,6 +84,9 @@
                                             <integer key="value" value="16"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="getStartedButtonPressed:" destination="-1" eventType="touchUpInside" id="MM2-BQ-CBo"/>
+                                    </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xUf-P3-c7K">
                                     <rect key="frame" x="98.333333333333329" y="711" width="217.33333333333337" height="30"/>
@@ -102,6 +105,9 @@
                                             </constraints>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" image="nextBtn"/>
+                                            <connections>
+                                                <action selector="loginButtonPressed:" destination="-1" eventType="touchUpInside" id="3KJ-LJ-MO2"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </stackView>

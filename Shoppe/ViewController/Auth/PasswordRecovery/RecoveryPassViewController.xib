@@ -74,6 +74,9 @@
                                                         <constraint firstAttribute="width" constant="200" id="vXg-R7-rz5"/>
                                                     </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <connections>
+                                                        <action selector="SMSButtonPressed:" destination="-1" eventType="touchUpInside" id="7A1-I7-rAO"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SMS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGz-cX-7EW">
                                                     <rect key="frame" x="83.333333333333343" y="11" width="33.333333333333343" height="18"/>
@@ -116,6 +119,9 @@
                                                         <constraint firstAttribute="height" constant="40" id="O9C-gL-7Em"/>
                                                     </constraints>
                                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <connections>
+                                                        <action selector="emailButtonPreesed:" destination="-1" eventType="touchUpInside" id="2n5-M9-j7c"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yev-4j-foh">
                                                     <rect key="frame" x="81.666666666666657" y="11" width="36.666666666666657" height="18"/>
@@ -178,6 +184,9 @@
                                     <state key="normal" title="Cancel">
                                         <color key="titleColor" name="Black"/>
                                     </state>
+                                    <connections>
+                                        <action selector="cancelButtonPressed:" destination="-1" eventType="touchUpInside" id="NvW-EQ-ZYN"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>

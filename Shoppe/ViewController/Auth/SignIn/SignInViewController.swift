@@ -29,4 +29,17 @@ class SignInViewController: UIViewController {
            textField.leftViewMode = .always
        }
 
+    @IBAction func cancelButtonPressed(_ sender: UIButton) {
+   
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    
+    @IBAction func forgotPasswordButtonPressed(_ sender: UIButton) {
+        
+        let vc = RecoveryPassViewController(nibName: "RecoveryPassViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }

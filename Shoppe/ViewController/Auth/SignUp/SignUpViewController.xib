@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -22,6 +23,7 @@
                 <outlet property="contactTxtField" destination="FQK-l0-K1f" id="P0e-FF-i0T"/>
                 <outlet property="emailTxtField" destination="lSq-Sf-QJQ" id="egd-GJ-LX7"/>
                 <outlet property="passwordTxtField" destination="PuE-VV-TzM" id="FJs-OR-iob"/>
+                <outlet property="previewButton" destination="bjL-aI-r60" id="dZb-ch-dtc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -68,7 +70,7 @@
                                         <constraint firstAttribute="height" constant="52" id="d2Y-Ey-1AQ"/>
                                     </constraints>
                                     <color key="textColor" name="Black"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PuE-VV-TzM">
@@ -78,7 +80,7 @@
                                         <constraint firstAttribute="height" constant="52" id="x5X-i6-0r5"/>
                                     </constraints>
                                     <color key="textColor" name="Black"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjL-aI-r60">
@@ -87,8 +89,12 @@
                                         <constraint firstAttribute="width" constant="22" id="KA2-L9-HEe"/>
                                         <constraint firstAttribute="height" constant="22" id="PAj-lP-42k"/>
                                     </constraints>
+                                    <color key="tintColor" name="Black"/>
                                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" image="eye-slash"/>
+                                    <state key="normal" image="eye.slash.fill" catalog="system"/>
+                                    <connections>
+                                        <action selector="previewButtonPressed:" destination="-1" eventType="touchUpInside" id="jfd-mf-WZz"/>
+                                    </connections>
                                 </button>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaA-B9-zP1">
                                     <rect key="frame" x="20" y="544" width="374" height="52"/>
@@ -144,7 +150,7 @@
                                                 <constraint firstAttribute="height" constant="52" id="iDr-Wd-kzc"/>
                                             </constraints>
                                             <color key="textColor" name="Black"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                     </subviews>
@@ -257,7 +263,7 @@
         <image name="FLAG" width="24" height="18"/>
         <image name="Upload Photo" width="90" height="90"/>
         <image name="arrow-down" width="16" height="16"/>
-        <image name="eye-slash" width="16" height="16"/>
+        <image name="eye.slash.fill" catalog="system" width="128" height="96"/>
         <image name="welcomeImg" width="375" height="308"/>
         <namedColor name="Bg grey">
             <color red="0.97299998998641968" green="0.97299998998641968" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

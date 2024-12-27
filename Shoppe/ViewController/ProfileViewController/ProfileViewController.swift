@@ -9,6 +9,9 @@ import UIKit
 class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     
+    
+    
+    
     var productImgArr = ["product1","product2","product3","product4","product5","product2","product3"]
     var orderStatusArr = ["To Pay","To Recieve","To Review","To Recieve","To Review",]
     var storiesArr = ["stories3","stories3","stories3","stories3","stories3","stories3",]
@@ -76,4 +79,12 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
             return CGSize(width: (collectionView.frame.width / 3) - 6, height: 175)
         }
     }
+    
+    
+    @IBAction func settingButtonPressed(_ sender: UIButton) {
+    
+        let vc = SettingViewController(nibName: "SettingViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }

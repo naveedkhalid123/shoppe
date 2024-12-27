@@ -1,0 +1,20 @@
+PODS:
+  - DPOTPView (1.5.12)
+  - Toast-Swift (5.1.1)
+
+DEPENDENCIES:
+  - DPOTPView
+  - Toast-Swift (~> 5.1.1)
+
+SPEC REPOS:
+  trunk:
+    - DPOTPView
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  DPOTPView: 28d8a0a84a2ff4b1e4a7712065aba1cbb14e2704
+  Toast-Swift: 7a03a532afe3a560d4044bc7c237e2864d295173
+
+PODFILE CHECKSUM: 16083305f692a0dc961d6aa7e664c64d5d9d70d1
+
+COCOAPODS: 1.16.2

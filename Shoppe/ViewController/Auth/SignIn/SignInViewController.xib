@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -20,6 +21,7 @@
             <connections>
                 <outlet property="emailTxtField" destination="ZWc-wm-B0a" id="QcV-h6-ElO"/>
                 <outlet property="passTxtField" destination="7bZ-ac-Q2f" id="l89-eq-lFi"/>
+                <outlet property="previewButtonPressed" destination="fiZ-KY-eCe" id="msS-kz-lTh"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -56,7 +58,7 @@
                                         <constraint firstAttribute="height" constant="52" id="a6p-X9-QEv"/>
                                     </constraints>
                                     <color key="textColor" name="Black"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQM-7l-J2c">
@@ -75,6 +77,9 @@
                                             <integer key="value" value="16"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="loginButtonPressed:" destination="-1" eventType="touchUpInside" id="fPL-F6-JMj"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="30j-zp-xVW">
                                     <rect key="frame" x="183" y="731" width="48" height="35"/>
@@ -97,7 +102,7 @@
                                         <constraint firstAttribute="height" constant="52" id="21t-Zu-XqN"/>
                                     </constraints>
                                     <color key="textColor" name="Black"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                 </textField>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z04-VX-RjH">
@@ -112,6 +117,19 @@
                                     </state>
                                     <connections>
                                         <action selector="forgotPasswordButtonPressed:" destination="-1" eventType="touchUpInside" id="ch8-35-q5V"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiZ-KY-eCe">
+                                    <rect key="frame" x="352" y="544" width="22" height="22"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="eGw-rL-dRr"/>
+                                        <constraint firstAttribute="width" constant="22" id="vXL-en-DxB"/>
+                                    </constraints>
+                                    <color key="tintColor" name="Black"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="eye.slash.fill" catalog="system"/>
+                                    <connections>
+                                        <action selector="previewButtonPressed:" destination="-1" eventType="touchUpInside" id="Te3-ek-Oim"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -129,10 +147,12 @@
                                 <constraint firstItem="nQM-7l-J2c" firstAttribute="leading" secondItem="kAs-me-N5G" secondAttribute="leading" constant="20" symbolic="YES" id="pZL-A0-0gn"/>
                                 <constraint firstItem="ZWc-wm-B0a" firstAttribute="leading" secondItem="kAs-me-N5G" secondAttribute="leading" constant="20" symbolic="YES" id="r0s-bD-srh"/>
                                 <constraint firstAttribute="trailing" secondItem="7bZ-ac-Q2f" secondAttribute="trailing" constant="20" symbolic="YES" id="sYM-OU-HJc"/>
+                                <constraint firstItem="fiZ-KY-eCe" firstAttribute="centerY" secondItem="7bZ-ac-Q2f" secondAttribute="centerY" id="shG-J5-3IN"/>
                                 <constraint firstItem="30j-zp-xVW" firstAttribute="centerX" secondItem="nQM-7l-J2c" secondAttribute="centerX" id="soA-VQ-MbA"/>
                                 <constraint firstAttribute="trailing" secondItem="ZWc-wm-B0a" secondAttribute="trailing" constant="20" symbolic="YES" id="td3-VZ-cXN"/>
                                 <constraint firstAttribute="trailing" secondItem="nQM-7l-J2c" secondAttribute="trailing" constant="20" symbolic="YES" id="vFA-aL-776"/>
                                 <constraint firstItem="62b-Yz-yVx" firstAttribute="leading" secondItem="kAs-me-N5G" secondAttribute="leading" constant="20" symbolic="YES" id="yS6-Q3-qLd"/>
+                                <constraint firstAttribute="trailing" secondItem="fiZ-KY-eCe" secondAttribute="trailing" constant="40" id="ymf-FL-GUi"/>
                                 <constraint firstItem="7bZ-ac-Q2f" firstAttribute="leading" secondItem="kAs-me-N5G" secondAttribute="leading" constant="20" symbolic="YES" id="zVP-8S-T4T"/>
                             </constraints>
                         </view>
@@ -168,6 +188,7 @@
     </objects>
     <resources>
         <image name="Bubbles" width="375" height="812"/>
+        <image name="eye.slash.fill" catalog="system" width="128" height="96"/>
         <namedColor name="Bg grey">
             <color red="0.97299998998641968" green="0.97299998998641968" blue="0.97299998998641968" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

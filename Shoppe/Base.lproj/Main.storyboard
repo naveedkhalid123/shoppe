@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Ow-Rl-Jog">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Ow-Rl-Jog">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,6 +21,9 @@
         </array>
         <array key="Raleway-Regular.ttf">
             <string>Raleway-Regular</string>
+        </array>
+        <array key="Raleway-SemiBold.ttf">
+            <string>Raleway-SemiBold</string>
         </array>
     </customFonts>
     <scenes>
@@ -234,7 +238,7 @@
                                                             <constraint firstAttribute="height" constant="36" id="iTc-Ni-Ifu"/>
                                                         </constraints>
                                                         <color key="textColor" name="Black"/>
-                                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="16"/>
+                                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DiG-DG-Uar">
@@ -301,6 +305,9 @@
                                                         </constraints>
                                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                         <state key="normal" image="nextBtn"/>
+                                                        <connections>
+                                                            <action selector="categoriesButtonPressed:" destination="7Jj-Rk-XSP" eventType="touchUpInside" id="tgz-PP-dnx"/>
+                                                        </connections>
                                                     </button>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q6k-Ha-SAw">
                                                         <rect key="frame" x="2" y="50" width="368" height="593"/>
@@ -712,6 +719,7 @@
                     <size key="freeformSize" width="412" height="2646"/>
                     <connections>
                         <outlet property="bannerPageControl" destination="NUm-u6-134" id="tZJ-be-C0o"/>
+                        <outlet property="categoriesButton" destination="Xm9-0B-f1M" id="Bkh-WT-ce5"/>
                         <outlet property="categoriesCollectionView" destination="q6k-Ha-SAw" id="oBf-kZ-WCP"/>
                         <outlet property="flashDealsCollectiionView" destination="jDj-pm-j07" id="9NV-5A-nU2"/>
                         <outlet property="justForYouCollectionView" destination="xC5-Rn-JVg" id="e1c-O3-HkI"/>
@@ -729,7 +737,7 @@
         <!--Categories View Controller-->
         <scene sceneID="gVe-dC-7vT">
             <objects>
-                <viewController id="acQ-F6-988" customClass="CategoriesViewController" customModule="Shoppe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CategoriesViewController" id="acQ-F6-988" customClass="CategoriesViewController" customModule="Shoppe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="geS-aN-KYF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="763"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1154,6 +1162,9 @@
                                                                 </constraints>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="Settings"/>
+                                                                <connections>
+                                                                    <action selector="settingButtonPressed:" destination="fI8-Ta-yuV" eventType="touchUpInside" id="3Bw-Oa-j1K"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -1390,10 +1401,10 @@
             </objects>
             <point key="canvasLocation" x="2010.144927536232" y="1563.5869565217392"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="ZLc-63-BSd">
             <objects>
-                <tabBarController restorationIdentifier="TabBarViewController" storyboardIdentifier="TabBarViewController" id="3Ow-Rl-Jog" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" id="3Ow-Rl-Jog" customClass="TabBarViewController" customModule="Shoppe" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="XWx-wS-PZl">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

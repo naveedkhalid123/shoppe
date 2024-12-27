@@ -9,6 +9,11 @@ import UIKit
 
 class ShopViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    
+    
+    @IBOutlet weak var categoriesButton: UIButton!
+    
+    
     var shopBannerArr = ["shopBanner", "shopBanner","shopBanner"]
     
  
@@ -212,6 +217,28 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
         let currentPage = Int(scrollView.contentOffset.x / shopBannerCollectionView.bounds.width)
         bannerPageControl.currentPage = currentPage
         }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == categoriesCollectionView {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "CategoriesViewController") as! CategoriesViewController
+            self.navigationController?.pushViewController(vc, animated: true)
+            return
+        } 
+      
     }
+    
+    
+    
+    @IBAction func categoriesButtonPressed(_ sender: UIButton) {
+        let vc = storyboard?.instantiateViewController(identifier: "CategoriesViewController") as! CategoriesViewController
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    
+}
    
+
+
 

@@ -54,19 +54,25 @@ class OnboardingViewController: UIViewController, UICollectionViewDelegate, UICo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "OnboardingCollectionViewCell", for: indexPath) as! OnboardingCollectionViewCell
-        
+        cell.btnStart.addTarget(self, action:#selector(handleRegister), for: .touchUpInside)
         cell.onboardingImg.image = UIImage(named: onboardingArr[indexPath.row]["image"] ?? "")
         cell.onboardingHead.text = onboardingArr[indexPath.row]["head"]
         cell.onboardingSubHead.text = onboardingArr[indexPath.row]["subhead"]
         return cell
     }
     
+    @objc func handleRegister(sender: UIButton){
+        UserDefaults.standard.saveData(forKey: "onboarding", value: "true")
+        let vc = WelcomeScreenViewController(nibName: "WelcomeScreenViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.frame.width, height: 614)
     }
     
-    
-    
-    
+
 
 }
+
+

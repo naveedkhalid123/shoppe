@@ -21,12 +21,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         // code for running the screen
-        let languageVC = WelcomeScreenViewController(nibName: "WelcomeScreenViewController", bundle: nil)
-        let navigationController = UINavigationController(rootViewController: languageVC)
-        navigationController.isNavigationBarHidden = true
-        self.window = UIWindow(windowScene: windowScene)
-        self.window?.rootViewController = navigationController
-        self.window?.makeKeyAndVisible()
+        if UserDefaults.standard.retreiveData(forKey: "onboarding") == "true" {
+            let languageVC = WelcomeScreenViewController(nibName: "WelcomeScreenViewController", bundle: nil)
+            let navigationController = UINavigationController(rootViewController: languageVC)
+            navigationController.isNavigationBarHidden = true
+            self.window = UIWindow(windowScene: windowScene)
+            self.window?.rootViewController = navigationController
+            self.window?.makeKeyAndVisible()
+        }else {
+            let languageVC = OnboardingViewController(nibName: "OnboardingViewController", bundle: nil)
+            let navigationController = UINavigationController(rootViewController: languageVC)
+            navigationController.isNavigationBarHidden = true
+            self.window = UIWindow(windowScene: windowScene)
+            self.window?.rootViewController = navigationController
+            self.window?.makeKeyAndVisible()
+        }
+       
 
     }
 

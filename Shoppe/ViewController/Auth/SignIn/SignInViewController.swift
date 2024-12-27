@@ -12,6 +12,10 @@ class SignInViewController: UIViewController {
     
     @IBOutlet weak var emailTxtField: UITextField!
     @IBOutlet weak var passTxtField: UITextField!
+    @IBOutlet weak var previewButtonPressed: UIButton!
+    
+    var isPasswordVisible = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -42,4 +46,52 @@ class SignInViewController: UIViewController {
     }
     
     
+    @IBAction func loginButtonPressed(_ sender: UIButton) {
+//        
+//        if Utility.shared.isEmpty(emailTxtField.text ?? ""){
+//            showAlert(message: "Enter the email")
+//            return
+//        }
+//        
+//        if Utility.shared.isValidEmail(emailTxtField.text ?? ""){
+//            showAlert(message: "Email is not valid")
+//            return
+//        }
+//        
+//        
+//        if Utility.shared.isEmpty(passTxtField.text ?? ""){
+//            showAlert(message: "Enter the password")
+//            return
+//        }
+//        
+//        if passTxtField.text?.count ?? 0 < 6{
+//            showAlert(message: "Password must be greater than 6")
+//            return
+//        }
+        
+        // code for moving from nib screens to tabbar screens
+        // from login to the home screen we use this code
+        let story = UIStoryboard(name: "Main", bundle: nil)
+        if let vc = story.instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController {
+            let navigationController = UINavigationController(rootViewController: vc)
+            navigationController.isNavigationBarHidden = true
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    @IBAction func previewButtonPressed(_ sender: UIButton) {
+        // Toggle password visibility
+        isPasswordVisible.toggle()
+        
+        // Update the password text field's secure entry property based on the isPasswordVisible flag
+        passTxtField.isSecureTextEntry = !isPasswordVisible
+        
+        // Optionally, change the button title or icon to reflect the state (optional)
+        let buttonTitle = isPasswordVisible ? "eye.slash" : "eye.slash.fill"
+        previewButtonPressed.setImage(UIImage(systemName: buttonTitle), for: .normal)
+        
+    }
+    
+    
+
 }

@@ -8,28 +8,56 @@
 import UIKit
 
 class RecoveryPassViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var SMSImage: UIImageView!
+    @IBOutlet weak var EmailImage: UIImageView!
+    
+    var didSelectImage = true
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
     @IBAction func SMSButtonPressed(_ sender: UIButton) {
-        let vc = PasswordRecoveryOTPViewController(nibName: "PasswordRecoveryOTPViewController", bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
+
+        didSelectImage = true
+        SMSImage.image = UIImage(named: "Check")
+        EmailImage.image = UIImage(named: "Check Empty")
+       
+        
     }
     
     
     @IBAction func emailButtonPreesed(_ sender: UIButton) {
-        let vc = NewPasswordViewController(nibName: "NewPasswordViewController", bundle: nil)
-        self.navigationController?.pushViewController(vc, animated: true)
+
+        
+        didSelectImage = false
+        EmailImage.image = UIImage(named: "redCheck")
+        SMSImage.image = UIImage(named: "emptyBlue")
+       
     }
     
     @IBAction func cancelButtonPressed(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
     }
+    
+    
+    
+    @IBAction func nextButtonPressed(_ sender: UIButton) {
+        
+        if didSelectImage == true {
+            let vc = PasswordRecoveryOTPViewController(nibName: "PasswordRecoveryOTPViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+        } else {
+            let vc = NewPasswordViewController(nibName: "NewPasswordViewController", bundle: nil)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
     
     
     

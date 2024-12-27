@@ -28,7 +28,8 @@ class PasswordViewController: UIViewController, DPOTPViewDelegate {
             if text.count == 4 {
                 print("move to nextscreen")
             }else {
-                self.view.makeToast("Please Enter Complete OTP",position: .top)
+                //self.view.makeToast("Please Enter Complete OTP",position: .top)
+                showAlert(message: "Please Enter Complete OTP")
             }
            
         }else{

@@ -34,6 +34,8 @@ class CategoriesViewController: UIViewController, UICollectionViewDelegate, UICo
         categoriesCollectionView.isScrollEnabled = true
 
         adjustCategoriesCollectionViewHeight()
+        
+        self.tabBarController?.tabBar.isHidden = false
     }
     
     func adjustCategoriesCollectionViewHeight() {

@@ -34,7 +34,7 @@ extension UserDefaults {
 
 
 extension UIViewController {
-    func showAlert(message: String, title: String = "Error") {
+    func showAlert(message: String, title: String = "Message") {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(okAction)

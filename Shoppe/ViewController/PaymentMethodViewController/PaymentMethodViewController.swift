@@ -8,12 +8,25 @@ class PaymentMethodViewController: UIViewController, UICollectionViewDelegate, U
     @IBOutlet weak var paymentCollectionView: UICollectionView!
     @IBOutlet weak var addButton: UIButton!
     
+     // For adding and removing the blur effect, we declare blur actions in the scren where we applying the blur action and call the dsimiss action in the original screen
+    var dismissHandler: (() -> Void)?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addButton.layer.cornerRadius = 11
         setupCollectionView()
     }
+    
+    // code for closing ther screen when the popup open , then user will click on the view and pop will close
+   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+       var touch: UITouch? = touches.first
+       dismissHandler?()
+       if touch?.view == self.view {
+           self.dismiss(animated: true)
+       }
+       
+   }
     
     func setupCollectionView() {
         paymentCollectionView.delegate = self
@@ -39,5 +52,20 @@ class PaymentMethodViewController: UIViewController, UICollectionViewDelegate, U
         return CGSize(width: collectionView.frame.width, height: 155)
     }
     
-  
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    
+    
+    @IBAction func addPaymentButtonPressed(_ sender: UIButton) {
+        
+        let vc = SettingAddCardPopUp(nibName: "SettingAddCardPopUp", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        self.present(vc, animated: true)
+        
+    }        
+    
+    
+    
 }

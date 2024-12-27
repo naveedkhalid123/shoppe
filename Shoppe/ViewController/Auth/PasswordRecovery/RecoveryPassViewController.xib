@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -19,6 +20,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecoveryPassViewController" customModule="Shoppe" customModuleProvider="target">
             <connections>
+                <outlet property="EmailImage" destination="wkH-oh-gBn" id="Ypy-L6-eZW"/>
+                <outlet property="SMSImage" destination="EoZ-jy-GDZ" id="xQs-xO-HBD"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -85,10 +88,10 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Check" translatesAutoresizingMaskIntoConstraints="NO" id="EoZ-jy-GDZ">
-                                                    <rect key="frame" x="170" y="9" width="22" height="22"/>
+                                                    <rect key="frame" x="170" y="9.6666666666666856" width="21" height="21"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="22" id="L8a-cY-73e"/>
-                                                        <constraint firstAttribute="height" constant="22" id="eu4-wI-Lyb"/>
+                                                        <constraint firstAttribute="width" constant="21" id="L8a-cY-73e"/>
+                                                        <constraint firstAttribute="height" constant="21" id="eu4-wI-Lyb"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
@@ -100,7 +103,7 @@
                                                 <constraint firstItem="KGz-cX-7EW" firstAttribute="centerX" secondItem="Tpy-7z-8f0" secondAttribute="centerX" id="a6P-CZ-NI0"/>
                                                 <constraint firstItem="KGz-cX-7EW" firstAttribute="centerY" secondItem="Tpy-7z-8f0" secondAttribute="centerY" id="aKU-h3-eER"/>
                                                 <constraint firstItem="IG6-YX-U9p" firstAttribute="leading" secondItem="Tpy-7z-8f0" secondAttribute="leading" id="fG2-k7-nM7"/>
-                                                <constraint firstAttribute="trailing" secondItem="EoZ-jy-GDZ" secondAttribute="trailing" constant="8" id="gTa-pn-s9c"/>
+                                                <constraint firstAttribute="trailing" secondItem="EoZ-jy-GDZ" secondAttribute="trailing" constant="9" id="gTa-pn-s9c"/>
                                                 <constraint firstItem="IG6-YX-U9p" firstAttribute="top" secondItem="Tpy-7z-8f0" secondAttribute="top" id="mB3-3F-MBh"/>
                                                 <constraint firstAttribute="height" constant="40" id="wKH-l5-bj2"/>
                                             </constraints>
@@ -173,6 +176,9 @@
                                             <integer key="value" value="16"/>
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="nextButtonPressed:" destination="-1" eventType="touchUpInside" id="EFe-c5-NAL"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxA-az-4Ot">
                                     <rect key="frame" x="183" y="710" width="48" height="35"/>

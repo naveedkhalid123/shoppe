@@ -14,6 +14,18 @@ class SettingAddCardPopUp: UIViewController {
     @IBOutlet weak var validTxtField: UITextField!
     @IBOutlet weak var cvvTxtField: UITextField!
     @IBOutlet weak var saveButton: UIButton!
+    var dismissHandler: (() -> Void)?
+    
+    
+    // code for closing ther screen when the popup open , then user will click on the view and pop will close
+   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+       var touch: UITouch? = touches.first
+       dismissHandler?()
+       if touch?.view == self.view {
+           self.dismiss(animated: true)
+       }
+       
+   }
     
     override func viewDidLoad() {
         super.viewDidLoad()

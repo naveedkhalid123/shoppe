@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,27 +18,27 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" restorationIdentifier="SettingTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingTableViewCell" rowHeight="45" id="KGk-i7-Jjw" customClass="SettingTableViewCell" customModule="Shoppe" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SettingTableViewCell" rowHeight="45" id="KGk-i7-Jjw" customClass="SettingTableViewCell" customModule="Shoppe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z94-qj-83g">
-                        <rect key="frame" x="19.999999999999996" y="0.0" width="60.666666666666657" height="19"/>
-                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="16"/>
+                        <rect key="frame" x="20" y="0.0" width="53" height="16.666666666666668"/>
+                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vietnam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUu-JX-I3L">
-                        <rect key="frame" x="207" y="-1" width="60" height="21"/>
-                        <fontDescription key="fontDescription" name="NunitoSans10pt-Regular" family="Nunito Sans 10pt" pointSize="15"/>
+                        <rect key="frame" x="215.66666666666666" y="-0.66666666666666607" width="51.333333333333343" height="18"/>
+                        <fontDescription key="fontDescription" name="NunitoSans10pt-Regular" family="Nunito Sans 10pt" pointSize="13"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nTQ-tQ-VbS">
-                        <rect key="frame" x="283" y="1" width="17" height="17"/>
+                        <rect key="frame" x="283" y="-0.33333333333333393" width="17" height="17.333333333333336"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="17" id="9lg-SZ-sJC"/>
                             <constraint firstAttribute="height" constant="17" id="bZ0-O8-yxq"/>
@@ -47,10 +48,10 @@
                     </button>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="bottom" secondItem="z94-qj-83g" secondAttribute="bottom" constant="23.333333333333332" id="2Fj-uh-Nqn"/>
                     <constraint firstItem="nTQ-tQ-VbS" firstAttribute="centerY" secondItem="GUu-JX-I3L" secondAttribute="centerY" id="6O1-Lo-oCr"/>
                     <constraint firstItem="nTQ-tQ-VbS" firstAttribute="leading" secondItem="GUu-JX-I3L" secondAttribute="trailing" constant="16" id="JS5-25-MwS"/>
                     <constraint firstItem="GUu-JX-I3L" firstAttribute="centerY" secondItem="z94-qj-83g" secondAttribute="centerY" id="Ky1-IM-avt"/>
-                    <constraint firstAttribute="bottom" secondItem="z94-qj-83g" secondAttribute="bottom" constant="33" id="Trh-sh-p5f"/>
                     <constraint firstItem="z94-qj-83g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jC0-9b-ual"/>
                     <constraint firstItem="z94-qj-83g" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kbZ-q7-bJD"/>
                     <constraint firstAttribute="trailing" secondItem="nTQ-tQ-VbS" secondAttribute="trailing" constant="20" symbolic="YES" id="tyn-w0-1hJ"/>

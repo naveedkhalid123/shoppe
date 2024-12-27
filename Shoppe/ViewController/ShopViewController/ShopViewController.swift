@@ -219,15 +219,21 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
     
     
+  
+    
+    
+    
+    // for selecting and displaying the the view controller which is connected to the tab bar
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == categoriesCollectionView {
-            let vc = storyboard?.instantiateViewController(withIdentifier: "CategoriesViewController") as! CategoriesViewController
-            self.navigationController?.pushViewController(vc, animated: true)
-            return
-        } 
-      
+            if let window = UIApplication.shared.keyWindow,
+               let tabBarVC = storyboard?.instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController {
+                tabBarVC.selectedIndex = 2
+                window.rootViewController = tabBarVC
+                window.makeKeyAndVisible()
+            }
+        }
     }
-    
     
     
     @IBAction func categoriesButtonPressed(_ sender: UIButton) {

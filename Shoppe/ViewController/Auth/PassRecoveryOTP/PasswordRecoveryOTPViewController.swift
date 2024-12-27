@@ -15,6 +15,8 @@ class PasswordRecoveryOTPViewController: UIViewController, DPOTPViewDelegate {
     
 
     @IBOutlet weak var dpOTPView: DPOTPView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,10 +29,34 @@ class PasswordRecoveryOTPViewController: UIViewController, DPOTPViewDelegate {
     }
     
     
+    // MARK: - Blur Effect
+    func addBlurEffect() {
+        let blurEffect = UIBlurEffect(style: .extraLight)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.view.bounds
+        blurEffectView.tag = 10
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        blurEffectView.alpha = 0.7
+        self.view.addSubview(blurEffectView)
+    }
+    
+    func removeBlurEffect() {
+        if let blurEffectView = self.view.viewWithTag(10) {
+            blurEffectView.removeFromSuperview()
+        }
+    }
+    
+    
     @IBAction func sendAgainButtonPressed(_ sender: UIButton) {
-            let vc = MaximumAttemptsViewController(nibName: "MaximumAttemptsViewController", bundle: nil)
-              vc.modalPresentationStyle = .overFullScreen // Optional: Set the presentation style
-            self.present(vc, animated: true, completion: nil)
+        self.addBlurEffect()
+        let vc = MaximumAttemptsViewController(nibName: "MaximumAttemptsViewController", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        vc.presentationController?.delegate = self
+        vc.dismissHandler = { [weak self] in
+            self?.removeBlurEffect()
+        }
+        self.present(vc, animated: true)
     
     }
     
@@ -39,7 +65,8 @@ class PasswordRecoveryOTPViewController: UIViewController, DPOTPViewDelegate {
             if text.count == 4 {
                 print("Move to the next screen ")
             } else {
-                self.view.makeToast("Please Enter Complete OTP",position: .top)
+               // self.view.makeToast("Please Enter Complete OTP",position: .top)
+                showAlert(message: "Please Enter Complete OTP")
             }
         } else {
             
@@ -65,4 +92,12 @@ class PasswordRecoveryOTPViewController: UIViewController, DPOTPViewDelegate {
     }
     
     
+}
+
+
+// MARK: - Presentation Controller Delegate
+extension PasswordRecoveryOTPViewController: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        self.removeBlurEffect()
+    }
 }

@@ -28,6 +28,7 @@ class PaymentHistoryViewController: UIViewController, UICollectionViewDelegate, 
  
     @IBOutlet weak var paymentMethodCardCollectionView: UICollectionView!
     @IBOutlet weak var paymentHistoryTableView: UITableView!
+    @IBOutlet weak var addCardButton: UIButton!
     
 
     override func viewDidLoad() {
@@ -40,6 +41,8 @@ class PaymentHistoryViewController: UIViewController, UICollectionViewDelegate, 
         paymentHistoryTableView.delegate = self
         paymentHistoryTableView.dataSource = self
         paymentHistoryTableView.register(UINib(nibName: "PaymentHistoryTableViewCell", bundle: nil),forCellReuseIdentifier: "PaymentHistoryTableViewCell")
+        
+        addCardButton.layer.cornerRadius = 4
     }
     
   

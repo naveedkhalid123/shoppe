@@ -64,6 +64,7 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.countryNamesLbl.text = data["countryNamesLbl"]
         cell.countryCurrencyLbl.text = data["countryCurrencyLbl"]
         
+        
         return cell
     }
     
@@ -91,46 +92,63 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     // MARK: - Table View Did Select
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("indexPath", indexPath.row)
-        switch indexPath.row {
-        case 0:
-            let vc = SettingProfileViewController(nibName: "SettingProfileViewController", bundle: nil)
-            self.navigationController?.pushViewController(vc, animated: true)
-        case 1:
-            self.addBlurEffect()
-            let vc = ShippingAddressViewController(nibName: "ShippingAddressViewController", bundle: nil)
-            vc.modalPresentationStyle = .overFullScreen
-            vc.modalTransitionStyle = .crossDissolve
-            vc.presentationController?.delegate = self
-            vc.dismissHandler = { [weak self] in
-                self?.removeBlurEffect()
+   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.section {
+        case 0: // Personal section
+            switch indexPath.row {
+            case 0:
+                let vc = SettingProfileViewController(nibName: "SettingProfileViewController", bundle: nil)
+                self.navigationController?.pushViewController(vc, animated: true)
+            case 1:
+                self.addBlurEffect()
+                let vc = ShippingAddressViewController(nibName: "ShippingAddressViewController", bundle: nil)
+                vc.modalPresentationStyle = .overFullScreen
+                vc.modalTransitionStyle = .crossDissolve
+                vc.presentationController?.delegate = self
+                vc.dismissHandler = { [weak self] in
+                    self?.removeBlurEffect()
+                }
+                self.present(vc, animated: true)
+            case 2:
+                let vc = SettingAddCardViewController(nibName: "SettingAddCardViewController", bundle: nil)
+                self.navigationController?.pushViewController(vc, animated: true)
+            default:
+                break
             }
-            self.present(vc, animated: true)
-            
-        case 2:
-            let vc = SettingAddCardViewController(nibName: "SettingAddCardViewController", bundle: nil)
-            self.navigationController?.pushViewController(vc, animated: true)
-        case 3:
-            let vc = ChooseCountryViewController(nibName: "ChooseCountryViewController", bundle: nil)
-            self.navigationController?.pushViewController(vc, animated: true)
-        case 4:
-            let vc = ChooseCountryViewController(nibName: "ChooseCountryViewController", bundle: nil)
-            self.navigationController?.pushViewController(vc, animated: true)
-        case 5:
-            let vc = ChooseCountryViewController(nibName: "ChooseCountryViewController", bundle: nil)
-            self.navigationController?.pushViewController(vc, animated: true)
-        case 6:
-            let vc = AboutViewController(nibName: "AboutViewController", bundle: nil)
-            self.navigationController?.pushViewController(vc, animated: true)
-        case 7:
-            let vc = ChooseLanguageViewController(nibName: "ChooseLanguageViewController", bundle: nil)
-            self.navigationController?.pushViewController(vc, animated: true)
+        case 1: // Shop section
+            switch indexPath.row {
+            case 0:
+                let vc = ChooseCountryViewController(nibName: "ChooseCountryViewController", bundle: nil)
+                self.navigationController?.pushViewController(vc, animated: true)
+            case 1:
+                let vc = ChooseCountryViewController(nibName: "ChooseCountryViewController", bundle: nil)
+                self.navigationController?.pushViewController(vc, animated: true)
+            case 2:
+                let vc = ChooseCountryViewController(nibName: "ChooseCountryViewController", bundle: nil)
+                self.navigationController?.pushViewController(vc, animated: true)
+            case 3:
+                let vc = AboutViewController(nibName: "AboutViewController", bundle: nil)
+                self.navigationController?.pushViewController(vc, animated: true)
+            default:
+                break
+            }
+        case 2: // Account section
+            switch indexPath.row {
+            case 0:
+                let vc = ChooseLanguageViewController(nibName: "ChooseLanguageViewController", bundle: nil)
+                self.navigationController?.pushViewController(vc, animated: true)
+            case 1:
+                let vc = AboutViewController(nibName: "AboutViewController", bundle: nil)
+                self.navigationController?.pushViewController(vc, animated: true)
+            default:
+                break
+            }
         default:
-            let vc = AboutViewController(nibName: "AboutViewController", bundle: nil)
-            self.navigationController?.pushViewController(vc, animated: true)
+            break
         }
     }
+
+    
     
     
     // Code for adding header section in table view

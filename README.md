@@ -76,6 +76,6 @@ Advanced analytics for admins.
 Support for multiple languages and regions
 
 👤 Author
-Developed and maintained by Muhammd Naveed Khalid.
+Developed and maintained by Muhammad Naveed Khalid.
 
 

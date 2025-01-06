@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseCore
+import IQKeyboardManager
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,9 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        
-//         code for checking fonts embeded in the projects
+        // Firebase configuration code
+        FirebaseApp.configure()
+        // keyboardManager
+        IQKeyboardManager.shared().isEnabled = true
 
+//         code for checking fonts embeded in the projects
 //        UIFont.familyNames.forEach({ familyName in
 //             let fontNames = UIFont.fontNames(forFamilyName: familyName)
 //             print(familyName, fontNames)

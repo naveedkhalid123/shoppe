@@ -1,5 +1,6 @@
 
 import UIKit
+import FirebaseAuth
 
 class SettingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -16,10 +17,13 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     @IBOutlet weak var settingTableView: UITableView!
     
+    @IBOutlet weak var logoutBtn: UIButton!
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        logoutBtn.layer.cornerRadius = 10
         settingTableView.delegate = self
         settingTableView.dataSource = self
         settingTableView.register(UINib(nibName: "SettingTableViewCell", bundle: nil), forCellReuseIdentifier: "SettingTableViewCell")
@@ -179,6 +183,21 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     
     @IBAction func deleteAccountButtonPressed(_ sender: UIButton) {
+//        self.addBlurEffect()
+//        let vc = DeleteAccountViewController(nibName: "DeleteAccountViewController", bundle: nil)
+//        vc.modalPresentationStyle = .overFullScreen
+//        vc.modalTransitionStyle = .crossDissolve
+//        vc.presentationController?.delegate = self
+//        vc.dismissHandler = { [weak self] in
+//            self?.removeBlurEffect()
+//        }
+//        self.present(vc, animated: true)
+    }
+    
+    
+    
+    @IBAction func logoutButtonPressed(_ sender: UIButton) {
+        
         self.addBlurEffect()
         let vc = DeleteAccountViewController(nibName: "DeleteAccountViewController", bundle: nil)
         vc.modalPresentationStyle = .overFullScreen
@@ -188,7 +207,27 @@ class SettingViewController: UIViewController, UITableViewDelegate, UITableViewD
             self?.removeBlurEffect()
         }
         self.present(vc, animated: true)
+        
+        let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+        } catch let signOutError as NSError {
+          print("Error signing out: %@", signOutError)
+        }
+        
+        self.gotoHomeController()
+        
     }
+    
+    func gotoHomeController() {
+            let vc = SignUpOptionsViewController(nibName: "SignUpOptionsViewController", bundle: nil)
+            let nav = UINavigationController(rootViewController: vc)
+            nav.navigationBar.isHidden = true
+            if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
+                sceneDelegate.window?.rootViewController = nav
+            }
+        }
+    
 }
 
 // MARK: - Presentation Controller Delegate

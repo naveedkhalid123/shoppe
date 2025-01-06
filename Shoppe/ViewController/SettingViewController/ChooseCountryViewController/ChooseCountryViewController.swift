@@ -6,29 +6,28 @@
 //
 
 import UIKit
+import SearchTextField
 
 class ChooseCountryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
  
     var countriesArr = ["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan"]
     
     @IBOutlet weak var countryTableView: UITableView!
-    @IBOutlet weak var countrySearchField: UISearchBar!
+   
+    @IBOutlet weak var seachTextField: SearchTextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         countryTableView.delegate = self
         countryTableView.dataSource = self
         countryTableView.register(UINib(nibName: "CountryTableViewCell", bundle: nil), forCellReuseIdentifier: "CountryTableViewCell")
-        setupSearchBar()
+        self.tabBarController?.tabBar.isHidden = false
+        seachTextField.filterStrings(["Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Aruba", "Australia", "Austria", "Azerbaijan"])
+
+
+       
     }
-    
-    private func setupSearchBar() {
-        if let textField = countrySearchField.value(forKey: "searchField") as? UITextField {
-               textField.backgroundColor = UIColor(named: "Light blue")
-               textField.layer.cornerRadius = 9
-               textField.clipsToBounds = true
-        }
-    }
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return countriesArr.count
@@ -44,3 +43,5 @@ class ChooseCountryViewController: UIViewController, UITableViewDelegate, UITabl
         return 52
     }
 }
+
+

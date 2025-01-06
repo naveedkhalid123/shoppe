@@ -8,7 +8,9 @@
 import UIKit
 
 class SelectImgCollectionViewCell: UICollectionViewCell {
-
+    
+    @IBOutlet weak var selectedImages: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -10,19 +10,23 @@ import DPOTPView
 import Toast_Swift
 
 class PasswordRecoveryOTPViewController: UIViewController, DPOTPViewDelegate {
-   
     
+    var isLogin = false
     
-
+    var image: UIImage?
+    var email = ""
+    var number = ""
+    
+    @IBOutlet weak var lblNumber: UILabel!
     @IBOutlet weak var dpOTPView: DPOTPView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.lblNumber.text = number
         dpOTPView.dpOTPViewDelegate = self
     }
-
+    
     
     @IBAction func cancelButtonPressed(_ sender: UIButton) {
         self.navigationController?.popViewController(animated: true)
@@ -57,15 +61,61 @@ class PasswordRecoveryOTPViewController: UIViewController, DPOTPViewDelegate {
             self?.removeBlurEffect()
         }
         self.present(vc, animated: true)
-    
+        
     }
     
     func dpOTPViewAddText(_ text: String, at position: Int) {
-        if position == 3 {
-            if text.count == 4 {
+        if position == 5 {
+            if text.count == 6 {
                 print("Move to the next screen ")
+                
+                Utility.shared.showToastActivity()
+                let verificationID = UserDefaults.standard.string(forKey: "authVerificationID") ?? ""
+                
+                if isLogin {
+                    FirebaseAuth.shared.loginWithPhone(
+                        verificationID:verificationID ,
+                        verificationCode: text) { success, error in
+                            if let error = error {
+                                print("Error during OTP verification: \(error.localizedDescription)")
+                                return
+                            }
+                            Utility.shared.hideToastActivity()
+                            let story = UIStoryboard(name: "Main", bundle: nil)
+                            if let vc = story.instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController {
+                                let navigationController = UINavigationController(rootViewController: vc)
+                                navigationController.isNavigationBarHidden = true
+                                self.navigationController?.pushViewController(vc, animated: true)
+                            }
+
+                            
+                        }
+                }else {
+                    FirebaseAuth.shared.verifyOTPAndSaveUserData(
+                        verificationID: verificationID,
+                        verificationCode: text,
+                        email: self.email,
+                        profileImage: self.image!,
+                        phoneNumber: number
+                    ) { success, error in
+                        if let error = error {
+                            print("Error during OTP verification: \(error.localizedDescription)")
+                            return
+                        }
+                        Utility.shared.hideToastActivity()
+                        
+                        for controller in self.navigationController!.viewControllers as Array {
+                            if controller.isKind(of: WelcomeScreenViewController.self) {
+                                self.navigationController!.popToViewController(controller, animated:    true)
+                                break
+                            }
+                        }
+                        
+                    }
+                }
+                
             } else {
-               // self.view.makeToast("Please Enter Complete OTP",position: .top)
+                // self.view.makeToast("Please Enter Complete OTP",position: .top)
                 showAlert(message: "Please Enter Complete OTP")
             }
         } else {
@@ -73,7 +123,7 @@ class PasswordRecoveryOTPViewController: UIViewController, DPOTPViewDelegate {
         }
     }
     
-
+    
     
     func dpOTPViewRemoveText(_ text: String, at position: Int) {
         
@@ -93,6 +143,7 @@ class PasswordRecoveryOTPViewController: UIViewController, DPOTPViewDelegate {
     
     
 }
+
 
 
 // MARK: - Presentation Controller Delegate

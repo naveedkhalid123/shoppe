@@ -20,8 +20,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChooseCountryViewController" customModule="Shoppe" customModuleProvider="target">
             <connections>
-                <outlet property="countrySearchField" destination="Kei-Qw-eoh" id="c7f-Vd-UwS"/>
                 <outlet property="countryTableView" destination="YWk-dr-Da8" id="JBJ-vB-N9G"/>
+                <outlet property="seachTextField" destination="P9N-NS-YK8" id="b3N-U4-Bhv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -53,36 +53,34 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Kei-Qw-eoh">
-                    <rect key="frame" x="20" y="119" width="374" height="56"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="56" id="P9b-U0-8cs"/>
-                    </constraints>
-                    <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="4rQ-Ae-6YL"/>
-                    </connections>
-                </searchBar>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YWk-dr-Da8">
                     <rect key="frame" x="0.0" y="195" width="414" height="541"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P9N-NS-YK8" customClass="SearchTextField" customModule="SearchTextField">
+                    <rect key="frame" x="20" y="128" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="HgK-Cw-9jt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="EvP-pw-xfK" firstAttribute="top" secondItem="RMx-mZ-cM5" secondAttribute="bottom" constant="7" id="3zg-8W-Oao"/>
+                <constraint firstItem="P9N-NS-YK8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="4Ly-1K-7ke"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YWk-dr-Da8" secondAttribute="trailing" id="6TI-lL-mWa"/>
-                <constraint firstItem="Kei-Qw-eoh" firstAttribute="top" secondItem="EvP-pw-xfK" secondAttribute="bottom" constant="23" id="J0u-PD-9Hg"/>
-                <constraint firstItem="YWk-dr-Da8" firstAttribute="top" secondItem="Kei-Qw-eoh" secondAttribute="bottom" constant="20" id="NDO-Q4-OOj"/>
+                <constraint firstItem="P9N-NS-YK8" firstAttribute="top" secondItem="EvP-pw-xfK" secondAttribute="bottom" constant="32" id="AhM-UH-WJX"/>
                 <constraint firstItem="RMx-mZ-cM5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Ox7-oX-tZi"/>
                 <constraint firstItem="YWk-dr-Da8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="PRC-FS-geg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RMx-mZ-cM5" secondAttribute="trailing" id="TG6-Mg-z0H"/>
                 <constraint firstAttribute="bottom" secondItem="YWk-dr-Da8" secondAttribute="bottom" id="V2T-cZ-nqD"/>
                 <constraint firstItem="EvP-pw-xfK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="ZEp-vA-POn"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Kei-Qw-eoh" secondAttribute="trailing" constant="20" id="cfX-m6-Hn7"/>
-                <constraint firstItem="Kei-Qw-eoh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="fji-VJ-GEp"/>
+                <constraint firstItem="YWk-dr-Da8" firstAttribute="top" secondItem="P9N-NS-YK8" secondAttribute="bottom" constant="27" id="bBc-UV-7Od"/>
                 <constraint firstItem="RMx-mZ-cM5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="iIE-n8-T0s"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P9N-NS-YK8" secondAttribute="trailing" constant="20" id="jEp-KK-IXe"/>
             </constraints>
             <point key="canvasLocation" x="89.855072463768124" y="19.565217391304348"/>
         </view>

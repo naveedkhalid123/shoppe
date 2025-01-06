@@ -8,10 +8,16 @@
 import UIKit
 
 class DashboardCollectionViewCell: UICollectionViewCell {
-
+    
+    
+    
+    
+    @IBOutlet weak var viewLbl: UIView!
+    @IBOutlet weak var dashboardLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        viewLbl.layer.cornerRadius = 18
     }
 
 }

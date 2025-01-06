@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignInViewController: UIViewController {
     
@@ -47,36 +48,60 @@ class SignInViewController: UIViewController {
     
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-//        
-//        if Utility.shared.isEmpty(emailTxtField.text ?? ""){
-//            showAlert(message: "Enter the email")
-//            return
-//        }
-//        
-//        if Utility.shared.isValidEmail(emailTxtField.text ?? ""){
-//            showAlert(message: "Email is not valid")
-//            return
-//        }
-//        
-//        
-//        if Utility.shared.isEmpty(passTxtField.text ?? ""){
-//            showAlert(message: "Enter the password")
-//            return
-//        }
-//        
-//        if passTxtField.text?.count ?? 0 < 6{
-//            showAlert(message: "Password must be greater than 6")
-//            return
-//        }
         
-        // code for moving from nib screens to tabbar screens
-        // from login to the home screen we use this code
-        let story = UIStoryboard(name: "Main", bundle: nil)
-        if let vc = story.instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController {
-            let navigationController = UINavigationController(rootViewController: vc)
-            navigationController.isNavigationBarHidden = true
-            self.navigationController?.pushViewController(vc, animated: true)
+        if Utility.shared.isEmpty(emailTxtField.text ?? ""){
+            showAlert(message: "Enter the email")
+            return
         }
+        
+        if Utility.shared.isValidEmail(emailTxtField.text ?? ""){
+            showAlert(message: "Email is not valid")
+            return
+        }
+        
+        
+        if Utility.shared.isEmpty(passTxtField.text ?? ""){
+            showAlert(message: "Enter the password")
+            return
+        }
+        
+        if passTxtField.text?.count ?? 0 < 6{
+            showAlert(message: "Password must be greater than 6")
+            return
+        }
+        
+        
+        FirebaseAuth.shared.signIn(email: emailTxtField!.text ?? "", password: passTxtField!.text ?? "") { authResult, error in
+            if let error = error {
+                print("Error signing in: \(error.localizedDescription)")
+                return
+            }
+
+
+                        
+            if Auth.auth().currentUser?.email == "admin@gmail.com" {
+                let story = UIStoryboard(name: "Main", bundle: nil)
+                if let vc = story.instantiateViewController(withIdentifier: "DashboardViewController") as? DashboardViewController {
+                    let navigationController = UINavigationController(rootViewController: vc)
+                    navigationController.isNavigationBarHidden = true
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            } else {
+                // Navigate to ShopViewController
+                // Code for moving from nib screens to tab bar screens
+                // From login to the home screen, we use this code
+                let story = UIStoryboard(name: "Main", bundle: nil)
+                if let vc = story.instantiateViewController(withIdentifier: "TabBarViewController") as? TabBarViewController {
+                    let navigationController = UINavigationController(rootViewController: vc)
+                    navigationController.isNavigationBarHidden = true
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            }
+
+           
+        }
+        
+       
     }
     
     @IBAction func previewButtonPressed(_ sender: UIButton) {

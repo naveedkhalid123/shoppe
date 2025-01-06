@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -34,23 +34,26 @@
                             <constraint firstAttribute="height" constant="338" id="j2e-sr-bkS"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q33-LS-igO">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q33-LS-igO">
                         <rect key="frame" x="127" y="384" width="72.333333333333314" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="P3r-4D-N4s"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="28"/>
                         <color key="textColor" name="Black"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mi5-Ds-7MR">
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="mi5-Ds-7MR">
                         <rect key="frame" x="13" y="438" width="300" height="132"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0I-aU-srm">
-                                <rect key="frame" x="24.666666666666657" y="0.0" width="250.99999999999997" height="132"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0I-aU-srm">
+                                <rect key="frame" x="24.666666666666671" y="0.0" width="250.66666666666663" height="132"/>
                                 <fontDescription key="fontDescription" name="NunitoSans10pt-Light" family="Nunito Sans 10pt" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URP-V2-MXz">
-                                <rect key="frame" x="50" y="0.0" width="200" height="50"/>
+                                <rect key="frame" x="50" y="162" width="200" height="50"/>
                                 <color key="backgroundColor" name="theme"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="V9z-7U-xPq"/>
@@ -68,6 +71,14 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="L0I-aU-srm" firstAttribute="leading" secondItem="mi5-Ds-7MR" secondAttribute="leading" constant="24.666666666666657" id="DD9-dn-uBU"/>
+                            <constraint firstItem="L0I-aU-srm" firstAttribute="top" secondItem="mi5-Ds-7MR" secondAttribute="top" id="IkU-0z-CWw"/>
+                            <constraint firstAttribute="trailing" secondItem="L0I-aU-srm" secondAttribute="trailing" constant="24.666666666666742" id="QCU-CP-rcX"/>
+                            <constraint firstItem="URP-V2-MXz" firstAttribute="centerX" secondItem="L0I-aU-srm" secondAttribute="centerX" id="TEc-mV-lnU"/>
+                            <constraint firstItem="L0I-aU-srm" firstAttribute="centerX" secondItem="mi5-Ds-7MR" secondAttribute="centerX" id="fvf-4q-qjC"/>
+                            <constraint firstItem="URP-V2-MXz" firstAttribute="top" secondItem="L0I-aU-srm" secondAttribute="bottom" constant="30" id="xuf-vL-UeX"/>
+                        </constraints>
                     </stackView>
                 </subviews>
             </view>

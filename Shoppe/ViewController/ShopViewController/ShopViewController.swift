@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ShopViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class ShopViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     
@@ -16,53 +16,56 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
     
     var shopBannerArr = ["shopBanner", "shopBanner","shopBanner"]
     
- 
+    
     
     var categoriesArr = [["item1":"image1","item2":"image2","item3":"image3","item4":"image4","itemName":"Clothing","itemNumber":"109"],
-                        ["item1":"image5","item2":"image6","item3":"image7","item4":"image8","itemName":"Shoes","itemNumber":"530"],
-                        ["item1":"image9","item2":"image10","item3":"image11","item4":"image12","itemName":"Bags","itemNumber":"87"],
-                        ["item1":"image13","item2":"image14","item3":"image15","item4":"image16","itemName":"Lingerie","itemNumber":"218"],
-                        ["item1":"image17","item2":"image18","item3":"image19","item4":"image20","itemName":"Watch","itemNumber":"218"],
-                        ["item1":"image21","item2":"image22","item3":"image23","item4":"image24","itemName":"Hoodies","itemNumber":"109"],]
+                         ["item1":"image5","item2":"image6","item3":"image7","item4":"image8","itemName":"Shoes","itemNumber":"530"],
+                         ["item1":"image9","item2":"image10","item3":"image11","item4":"image12","itemName":"Bags","itemNumber":"87"],
+                         ["item1":"image13","item2":"image14","item3":"image15","item4":"image16","itemName":"Lingerie","itemNumber":"218"],
+                         ["item1":"image17","item2":"image18","item3":"image19","item4":"image20","itemName":"Watch","itemNumber":"218"],
+                         ["item1":"image21","item2":"image22","item3":"image23","item4":"image24","itemName":"Hoodies","itemNumber":"109"],]
     
     var productImgArr = ["product1","product2","product3","product4","product5","product2","product3"]
     
     var newItemsArr   = [["image":"item5","desc":"Lorem ipsum dolor sit amet consectetur.","price":"$17,00"],
-                        ["image":"item4","desc":"Lorem ipsum dolor sit amet consectetur.","price":"$25,00"],
-                        ["image":"item5","desc":"Lorem ipsum dolor sit amet consectetur.","price":"$17,00"],]
+                         ["image":"item4","desc":"Lorem ipsum dolor sit amet consectetur.","price":"$25,00"],
+                         ["image":"item5","desc":"Lorem ipsum dolor sit amet consectetur.","price":"$17,00"],]
     
     var flashSaleArr  = [["image":"sale1","discount":"-20%"],
-                        ["image":"sale2","discount":"-20%"],
-                        ["image":"sale3","discount":"-20%"],
-                        ["image":"sale4","discount":"-20%"],
-                        ["image":"sale5","discount":"-20%"],
-                        ["image":"sale6","discount":"-20%"],
-                        ["image":"sale4","discount":"-20%"],
-                        ["image":"sale5","discount":"-20%"],]
+                         ["image":"sale2","discount":"-20%"],
+                         ["image":"sale3","discount":"-20%"],
+                         ["image":"sale4","discount":"-20%"],
+                         ["image":"sale5","discount":"-20%"],
+                         ["image":"sale6","discount":"-20%"],
+                         ["image":"sale4","discount":"-20%"],
+                         ["image":"sale5","discount":"-20%"],]
     
     var popularDealsArr = [["image":"popular1","price":"1780","update":"New"],
-                          ["image":"popular2","price":"1780","update":"Hot"],
-                          ["image":"pouplar3","price":"1780","update":"New"],
-                          ["image":"popular2","price":"1780","update":"New"],]
+                           ["image":"popular2","price":"1780","update":"Hot"],
+                           ["image":"pouplar3","price":"1780","update":"New"],
+                           ["image":"popular2","price":"1780","update":"New"],]
     
     var justForYouArr  = [["image":"foryou1","desc":"Lorem ipsum dolor sit amet consectetur","price":"$17,00"],
-                         ["image":"foryou2","desc":"Lorem ipsum dolor sit amet consectetur","price":"$12,00"],
-                         ["image":"foryou3","desc":"Lorem ipsum dolor sit amet consectetur","price":"$16,00"],
-                         ["image":"foryou4","desc":"Lorem ipsum dolor sit amet consectetur","price":"$25,00"],
-                         ["image":"foryou5","desc":"Lorem ipsum dolor sit amet consectetur","price":"$17,00"],
-                         ["image":"foryou6","desc":"Lorem ipsum dolor sit amet consectetur","price":"$41,00"],]
+                          ["image":"foryou2","desc":"Lorem ipsum dolor sit amet consectetur","price":"$12,00"],
+                          ["image":"foryou3","desc":"Lorem ipsum dolor sit amet consectetur","price":"$16,00"],
+                          ["image":"foryou4","desc":"Lorem ipsum dolor sit amet consectetur","price":"$25,00"],
+                          ["image":"foryou5","desc":"Lorem ipsum dolor sit amet consectetur","price":"$17,00"],
+                          ["image":"foryou6","desc":"Lorem ipsum dolor sit amet consectetur","price":"$41,00"],]
     
     
     
     @IBOutlet weak var bannerPageControl: UIPageControl!
     @IBOutlet weak var shopTxtField: UITextField!
-    @IBOutlet weak var shopBannerCollectionView: UICollectionView!    
+    @IBOutlet weak var cameraButton: UIButton!
+    @IBOutlet weak var shopBannerCollectionView: UICollectionView!
     @IBOutlet weak var categoriesCollectionView: UICollectionView!
     @IBOutlet weak var productsCollectionView: UICollectionView!
     @IBOutlet weak var newItemsCollectionView: UICollectionView!
     @IBOutlet weak var flashDealsCollectiionView: UICollectionView!
     @IBOutlet weak var mostPopularCollectionView: UICollectionView!
     @IBOutlet weak var justForYouCollectionView: UICollectionView!
+    
+    
     
     
     override func viewDidLoad() {
@@ -120,7 +123,7 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     
-
+    
     
     // MARK: - UICollectionView DataSource Methods
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -140,7 +143,7 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
         } else {
             return justForYouArr.count
         }
-
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -187,7 +190,7 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
     }
     
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         if collectionView == shopBannerCollectionView {
             return CGSize(width: collectionView.frame.width, height: 135)
@@ -207,8 +210,8 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-            return 10 // Bottom spacing of 10 points
-        }
+        return 10 // Bottom spacing of 10 points
+    }
     
     
     
@@ -216,10 +219,10 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         let currentPage = Int(scrollView.contentOffset.x / shopBannerCollectionView.bounds.width)
         bannerPageControl.currentPage = currentPage
-        }
+    }
     
     
-  
+    
     
     
     
@@ -235,16 +238,55 @@ class ShopViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
     }
     
-    
     @IBAction func categoriesButtonPressed(_ sender: UIButton) {
-        let vc = storyboard?.instantiateViewController(identifier: "CategoriesViewController") as! CategoriesViewController
-        navigationController?.pushViewController(vc, animated: true)
-        
+        if let tabBarVC = storyboard?.instantiateViewController(withIdentifier: "TabBarViewController") as? UITabBarController {
+            tabBarVC.selectedIndex = 2
+    
+            if let navigationController = tabBarVC.viewControllers?[2] as? UINavigationController,
+               let categoriesVC = storyboard?.instantiateViewController(withIdentifier: "CategoriesViewController") as? CategoriesViewController {
+                navigationController.pushViewController(categoriesVC, animated: false)
+            }
+    
+            if let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) {
+                window.rootViewController = tabBarVC
+                window.makeKeyAndVisible()
+            }
+        }
+    }
+
+    
+    
+    @IBAction func cameraButtonPressed(_ sender: UIButton) {
+        if UIImagePickerController.isSourceTypeAvailable(.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = .camera
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        } else {
+            let alert = UIAlertController(
+                title: "Camera Not Available",
+                message: "This device does not support camera functionality.",
+                preferredStyle: .alert
+            )
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        if let image = info[.originalImage] as? UIImage {
+            print("Image captured successfully")
+        } else {
+            print("No image was selected")
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        print("User cancelled the image picker")
+        // Dismiss the picker
+        picker.dismiss(animated: true, completion: nil)
+    }
     
 }
-   
-
-
-

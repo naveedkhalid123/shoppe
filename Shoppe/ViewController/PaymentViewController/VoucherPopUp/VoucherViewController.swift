@@ -10,6 +10,17 @@ import UIKit
 class VoucherViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
 
+    // code for closing ther screen when the popup open , then user will click on the view and pop will close
+    var dismissHandler: (() -> Void)?
+   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+       var touch: UITouch? = touches.first
+       dismissHandler?()
+       if touch?.view == self.view {
+           self.dismiss(animated: true)
+       }
+       
+   }
+    
     var vouchersArr = [["validUptoLbl":"Valid Until 5.16.20","voucherCategoryLbl":"First Purchase","discountDesLbl":"5% off for your next order"],
                        ["validUptoLbl":"Valid Until 5.16.20","voucherCategoryLbl":"Gift From Customer Care","discountDesLbl":"15% off for your next order"],
                        ["validUptoLbl":"Valid Until 5.16.20","voucherCategoryLbl":"First Purchase","discountDesLbl":"5% off for your next order"],]

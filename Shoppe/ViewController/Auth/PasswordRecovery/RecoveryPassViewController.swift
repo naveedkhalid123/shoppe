@@ -38,7 +38,11 @@ class RecoveryPassViewController: UIViewController {
         didSelectImage = false
         EmailImage.image = UIImage(named: "redCheck")
         SMSImage.image = UIImage(named: "emptyBlue")
-       
+        
+        
+        
+
+
     }
     
     @IBAction func cancelButtonPressed(_ sender: UIButton) {
@@ -53,7 +57,7 @@ class RecoveryPassViewController: UIViewController {
             let vc = PasswordRecoveryOTPViewController(nibName: "PasswordRecoveryOTPViewController", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
         } else {
-            let vc = NewPasswordViewController(nibName: "NewPasswordViewController", bundle: nil)
+            let vc = EmailVerification(nibName: "EmailVerification", bundle: nil)
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

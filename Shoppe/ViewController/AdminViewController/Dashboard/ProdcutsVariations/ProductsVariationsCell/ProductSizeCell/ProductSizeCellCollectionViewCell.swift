@@ -8,10 +8,15 @@
 import UIKit
 
 class ProductSizeCellCollectionViewCell: UICollectionViewCell {
-
+    
+    
+    @IBOutlet weak var sizeLbl: UILabel!
+    
+    @IBOutlet weak var sizeView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        sizeView.layer.cornerRadius = 4
     }
 
 }

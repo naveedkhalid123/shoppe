@@ -17,6 +17,8 @@ class PaymentViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tabBarController?.tabBar.isHidden = false
+        
         if let themeColor = UIColor(named: "theme") {
         addVoucherButton.layer.borderColor = themeColor.cgColor
         }
@@ -24,7 +26,7 @@ class PaymentViewController: UIViewController, UITableViewDelegate, UITableViewD
         addVoucherButton.layer.cornerRadius = 11
         addVoucherButton.clipsToBounds = true
 
-        cardButton.layer.cornerRadius = 18
+        cardButton.layer.cornerRadius = 12
         cardButton.backgroundColor = UIColor(named: "Light blue")
 
         payButton.layer.cornerRadius = 11
@@ -36,8 +38,89 @@ class PaymentViewController: UIViewController, UITableViewDelegate, UITableViewD
         shippingOptionsTableView.delegate = self
         shippingOptionsTableView.dataSource = self
         shippingOptionsTableView.register(UINib(nibName: "ShippingOptionsTableViewCell", bundle: nil), forCellReuseIdentifier: "ShippingOptionsTableViewCell")
+        
+        
     }
-
+    
+    
+    @IBAction func editShippingAddressBtnPressed(_ sender: UIButton) {
+        let vc = EditShippingAddressViewController(nibName: "EditShippingAddressViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    
+    @IBAction func addVoucherButtonPressed(_ sender: UIButton) {
+        self.addBlurEffect()
+        let vc = VoucherViewController(nibName: "VoucherViewController", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        vc.presentationController?.delegate = self
+        vc.dismissHandler = { [weak self] in
+            self?.removeBlurEffect()
+        }
+        self.present(vc, animated: true)
+        
+    }
+    
+    
+    
+    // MARK: - Blur Effect
+    func addBlurEffect() {
+        let blurEffect = UIBlurEffect(style: .extraLight)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.view.bounds
+        blurEffectView.tag = 10
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        blurEffectView.alpha = 0.7
+        self.view.addSubview(blurEffectView)
+    }
+    
+    func removeBlurEffect() {
+        if let blurEffectView = self.view.viewWithTag(10) {
+            blurEffectView.removeFromSuperview()
+        }
+    }
+    
+    
+    
+    @IBAction func editPaymentMethodBtnPressed(_ sender: UIButton) {
+        self.addBlurEffect()
+        let vc = PaymentMethodViewController(nibName: "PaymentMethodViewController", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        vc.presentationController?.delegate = self
+        vc.dismissHandler = { [weak self] in
+            self?.removeBlurEffect()
+        }
+        self.present(vc, animated: true)
+    }
+    
+    
+    
+    @IBAction func payButtonPressed(_ sender: UIButton) {
+        self.addBlurEffect()
+        let vc = DonePaymentViewController(nibName: "DonePaymentViewController", bundle: nil)
+        vc.dismissHandler = { [weak self] in
+            self?.removeBlurEffect()
+            
+            
+            // when we assign the new root , then the prevoius tabbar become remove , that why  we assign the dismissHandler?() function in  the track order button and give the path for next view controller here under the payButtonPressed
+            let vc = ToReceiveViewController(nibName: "ToReceiveViewController", bundle: nil)
+            self?.navigationController?.pushViewController(vc, animated: true)
+        }
+        
+        // Code for entering rootviewcontroller , when add a navigaion controller progmatically , when enters from storyboard to the nib
+        let navigation = UINavigationController(rootViewController: vc)
+        navigation.isNavigationBarHidden = true
+       
+        navigation.modalPresentationStyle = .overFullScreen
+        navigation.modalTransitionStyle = .crossDissolve
+        navigation.presentationController?.delegate = self
+       
+        self.present(navigation, animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == itemsTableView {
             return itemsArr.count
@@ -79,3 +162,12 @@ class PaymentViewController: UIViewController, UITableViewDelegate, UITableViewD
 
 
 
+
+
+
+// MARK: - Presentation Controller Delegate
+extension PaymentViewController: UIAdaptivePresentationControllerDelegate {
+    func presentationControllerDidDismiss(_ presentationController: UIPresentationController) {
+        self.removeBlurEffect()
+    }
+}

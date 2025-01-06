@@ -8,10 +8,13 @@
 import UIKit
 
 class ProductsColorCell: UICollectionViewCell {
-
+    
+    @IBOutlet weak var colorView: UIView!
+    @IBOutlet weak var colorLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        colorView.layer.cornerRadius = 4
     }
 
 }

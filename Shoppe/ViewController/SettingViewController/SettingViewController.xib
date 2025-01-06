@@ -23,6 +23,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingViewController" customModule="Shoppe" customModuleProvider="target">
             <connections>
+                <outlet property="logoutBtn" destination="GzE-RI-KCc" id="gaf-p5-z0y"/>
                 <outlet property="settingTableView" destination="PfX-dj-Ozh" id="4Ng-V6-uQG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -85,13 +86,32 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GzE-RI-KCc">
+                                            <rect key="frame" x="310" y="0.0" width="84" height="30"/>
+                                            <color key="backgroundColor" name="theme"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="84" id="FCn-fj-vZv"/>
+                                                <constraint firstAttribute="height" constant="30" id="hnC-Ub-1JJ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="13"/>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Logout">
+                                                <color key="titleColor" name="white"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="deleteAccountButtonPressed:" destination="-1" eventType="touchUpInside" id="ZL1-8e-DZf"/>
+                                                <action selector="logoutButtonPressed:" destination="-1" eventType="touchUpInside" id="jFJ-iK-QU0"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstItem="fN6-al-zgW" firstAttribute="top" secondItem="AiS-90-dVI" secondAttribute="top" id="4Ew-g5-UG4"/>
                                         <constraint firstItem="N94-JM-YLJ" firstAttribute="top" secondItem="QWe-nF-o7V" secondAttribute="bottom" id="5xg-Q3-uHD"/>
                                         <constraint firstItem="N94-JM-YLJ" firstAttribute="leading" secondItem="AiS-90-dVI" secondAttribute="leading" constant="20" symbolic="YES" id="HLt-Sj-vA8"/>
+                                        <constraint firstAttribute="trailing" secondItem="GzE-RI-KCc" secondAttribute="trailing" constant="20" symbolic="YES" id="Iss-S9-Esn"/>
                                         <constraint firstItem="fN6-al-zgW" firstAttribute="leading" secondItem="AiS-90-dVI" secondAttribute="leading" constant="20" id="f7g-jx-nGa"/>
+                                        <constraint firstItem="GzE-RI-KCc" firstAttribute="centerY" secondItem="fN6-al-zgW" secondAttribute="centerY" constant="1" id="hRd-BU-zC2"/>
                                         <constraint firstAttribute="height" constant="87" id="igR-De-N1p"/>
                                         <constraint firstItem="QWe-nF-o7V" firstAttribute="leading" secondItem="AiS-90-dVI" secondAttribute="leading" constant="20" id="iin-cE-X1A"/>
                                         <constraint firstItem="QWe-nF-o7V" firstAttribute="top" secondItem="fN6-al-zgW" secondAttribute="bottom" constant="20" id="iyN-aH-ccr"/>
@@ -140,6 +160,12 @@
     <resources>
         <namedColor name="Black">
             <color red="0.125" green="0.125" blue="0.125" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="theme">
+            <color red="0.0" green="0.29800000786781311" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

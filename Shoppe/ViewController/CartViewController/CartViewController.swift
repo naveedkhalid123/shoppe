@@ -19,14 +19,20 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     var cartItemsArr = [["image":"cart1","cartDesc":"Lorem ipsum dolor sit amet consectetur.","cartColorAndSize":"Pink, Size M","price":"$17,00"],
                         ["image":"list4","cartDesc":"Lorem ipsum dolor sit amet consectetur.","cartColorAndSize":"Pink, Size M","price":"$17,00"],]
+    
+    
   
+    
+    @IBOutlet weak var editShippingAddress: UIButton!
+    
     @IBOutlet weak var wishListTableView: UITableView!
     @IBOutlet weak var cartTableView: UITableView!
     
     @IBOutlet weak var cartTableViewHeight: NSLayoutConstraint!
-    
     @IBOutlet weak var wishListTableViewHeight: NSLayoutConstraint!
     
+    @IBOutlet weak var checkoutButton: UIButton!
+    var checkoutButtonSelected = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,12 +45,40 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
         cartTableView.register(UINib(nibName: "AddCartTableViewCell", bundle: nil), forCellReuseIdentifier: "AddCartTableViewCell")
         wishListTableView.rowHeight = 109
         cartTableView.rowHeight = 109
-        
+       
         wishListTableViewHeight.constant = CGFloat(wishListArr.count * 109)
         cartTableViewHeight.constant = CGFloat(cartItemsArr.count * 109)
         
         
     }
+    
+    
+    @IBAction func editShippingAddressBtnPressed(_ sender: UIButton) {
+        let vc = EditShippingAddressViewController(nibName: "EditShippingAddressViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+
+    
+    
+    
+    @IBAction func checkoutButtonPressed(_ sender: UIButton) {
+        if checkoutButtonSelected == true {
+            // Update button appearance
+            checkoutButton.layer.backgroundColor = UIColor(named: "theme")?.cgColor
+            checkoutButton.setTitleColor(.white, for: .normal)
+            
+            // Navigate to PaymentViewController using Nib
+            let paymentVC = PaymentViewController(nibName: "PaymentViewController", bundle: nil)
+            self.navigationController?.pushViewController(paymentVC, animated: true)
+        } else {
+            // Update button appearance
+            checkoutButton.layer.backgroundColor = UIColor(named: "Bg grey")?.cgColor
+            checkoutButton.setTitleColor(.black, for: .normal)
+        }
+    }
+
+
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if tableView == wishListTableView {

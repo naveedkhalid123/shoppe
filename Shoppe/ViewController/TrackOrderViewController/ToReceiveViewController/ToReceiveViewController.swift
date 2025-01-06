@@ -26,6 +26,7 @@ class ToReceiveViewController: UIViewController, UITableViewDelegate, UITableVie
         orderTrackingTableView.delegate = self
         orderTrackingTableView.dataSource = self
         orderTrackingTableView.register(UINib(nibName: "OrderTrackingTableViewCell", bundle: nil), forCellReuseIdentifier: "OrderTrackingTableViewCell")
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

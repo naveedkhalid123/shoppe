@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UIAdaptivePresentationControllerDelegate{
     
     
     
@@ -81,6 +81,40 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     
+    
+    // MARK: - Blur Effect
+    func addBlurEffect() {
+        let blurEffect = UIBlurEffect(style: .extraLight)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = self.view.bounds
+        blurEffectView.tag = 10
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        blurEffectView.alpha = 0.7
+        self.view.addSubview(blurEffectView)
+    }
+    
+    func removeBlurEffect() {
+        if let blurEffectView = self.view.viewWithTag(10) {
+            blurEffectView.removeFromSuperview()
+        }
+    }
+    
+    
+    
+    @IBAction func vouchersButtonPressed(_ sender: UIButton) {
+        self.addBlurEffect()
+
+        let vc = VoucherViewController(nibName: "VoucherViewController", bundle: nil)
+        vc.modalPresentationStyle = .overFullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        vc.presentationController?.delegate = self
+        vc.dismissHandler = { [weak self] in
+            self?.removeBlurEffect()
+        }
+        self.present(vc, animated: true)
+    }
+    
+    
     @IBAction func settingButtonPressed(_ sender: UIButton) {
     
         let vc = SettingViewController(nibName: "SettingViewController", bundle: nil)
@@ -88,3 +122,4 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
 }
+

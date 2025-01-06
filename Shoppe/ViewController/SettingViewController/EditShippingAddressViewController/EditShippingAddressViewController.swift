@@ -16,6 +16,8 @@ class EditShippingAddressViewController: UIViewController {
     @IBOutlet weak var phoneNumberTxtField: UITextField!
     @IBOutlet weak var saveChangesButton: UIButton!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addressTxtField.layer.cornerRadius = 9
@@ -30,8 +32,17 @@ class EditShippingAddressViewController: UIViewController {
         addPadding(to: townTxtField)
         addPadding(to: postcodeTxtField)
         addPadding(to: phoneNumberTxtField)
+        
+        self.tabBarController?.tabBar.isHidden = false
 
     }
+    
+    
+    @IBAction func chooseCountryBtnPressed(_ sender: UIButton) {
+        let vc = ChooseCountryViewController(nibName: "ChooseCountryViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     
     func addPadding(to textField: UITextField) {
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: 12, height: textField.frame.height))

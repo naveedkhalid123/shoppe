@@ -20,7 +20,8 @@ class PasswordViewController: UIViewController, DPOTPViewDelegate {
     }
     
     @IBAction func nowNowButtonPressed(_ sender: UIButton) {
-        self.navigationController?.popViewController(animated: true)
+        let vc = SignInViewController(nibName: "SignInViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     func dpOTPViewAddText(_ text: String, at position: Int) {

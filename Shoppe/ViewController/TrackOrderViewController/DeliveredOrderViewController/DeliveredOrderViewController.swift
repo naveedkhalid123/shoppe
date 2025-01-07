@@ -14,15 +14,8 @@ class DeliveredOrderViewController: UIViewController, UITableViewDelegate, UITab
                                     ["orderStatus":"On the Way to Logistic Facility","orderDescription":"Your parcel is packed and will be handed over to our deliverypartner.","orderTimeAndDate":"April,19 12:31"],
                                     ["orderStatus":"Arrived at Logistic Facility","orderDescription":"Your parcel is packed and will be handed over to our delivery partner.","orderTimeAndDate":"April,19 16:20"],
                                     ["orderStatus":"Shipped","orderDescription":"Your parcel is packed and will be handed over to our delivery partner.","orderTimeAndDate":"April,19 19:07"],
-                                    ["orderStatus":"Out for Delivery","orderDescription":"Your parcel is packed and will be handed over to our delivery partner.","orderTimeAndDate":"April,22 11:10"],
-                                    ["orderStatus":"Delivered","orderDescription":"Your parcel is packed and will be handed over to our delivery partner.","orderTimeAndDate":"April,19 12:31"],
-                                    ["orderStatus":"Shipped","orderDescription":"Your parcel is packed and will be handed over to our delivery partner.","orderTimeAndDate":"April,19 19:07"],
-                                    ["orderStatus":"Out for Delivery","orderDescription":"Your parcel is packed and will be handed over to our delivery partner.","orderTimeAndDate":"April,22 11:10"],
-                                    ["orderStatus":"Delivered","orderDescription":"Your parcel is packed and will be handed over to our delivery partner.","orderTimeAndDate":"April,19 12:31"],
-                                    ["orderStatus":"On the Way to Logistic Facility","orderDescription":"Your parcel is packed and will be handed over to our deliverypartner.","orderTimeAndDate":"April,19 12:31"],
-                                    ["orderStatus":"Arrived at Logistic Facility","orderDescription":"Your parcel is packed and will be handed over to our delivery partner.","orderTimeAndDate":"April,19 16:20"],
-                                    ["orderStatus":"Shipped","orderDescription":"Your parcel is packed and will be handed over to our delivery partner.","orderTimeAndDate":"April,19 19:07"],]
-    
+                                    ["orderStatus":"Out for Delivery","orderDescription":"Your parcel is packed and will be handed over to our delivery partner.","orderTimeAndDate":"April,22 11:10"],]
+                                  
     
     
     @IBOutlet weak var trackingOrderTableView: UITableView!

@@ -67,7 +67,7 @@ Firebase: Backend powered by Firebase for authentication, database, and storage.
 Payment Integration: Secure payment handling through integrated gateways.
 
 🎨 Visual Preview
-click here for visuals:
+click here for visuals: https://drive.google.com/drive/folders/1W2OjMVz4z8NBzJRpvqiuSGkKey4_fGAV?usp=sharing
 
 🔮 Future Enhancements
 

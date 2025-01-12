@@ -70,6 +70,9 @@ Payment Integration: Secure payment handling through integrated gateways.
 
 [![Alt Text](https://github.com/naveedkhalid123/shoppe/blob/de83836bde40c6c58c6bfe65d2be37f23fffbed5/shoppe2.png)](https://github.com/naveedkhalid123/shoppe)
 
+[![Shoppe Preview](https://github.com/naveedkhalid123/shoppe/blob/e0a1a56831fff5f911ab480a2e1d4bc93e46f0e1/shoppe3.png)](https://github.com/naveedkhalid123/shoppe)
+
+
 🔮 Future Enhancements
 
 AI-powered product recommendations.

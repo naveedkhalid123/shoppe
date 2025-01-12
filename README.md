@@ -76,8 +76,7 @@ Payment Integration: Secure payment handling through integrated gateways.
 
 [![Shoppe Product Showcase](https://github.com/naveedkhalid123/shoppe/blob/41b3ae5040f749394f1c7a183430ed66935d8b88/shoppe5.png)](https://github.com/naveedkhalid123/shoppe)
 
-[![Shoppe Product Showcase](https://github.com/naveedkhalid123/shoppe/blob/41b3ae5040f749394f1c7a183430ed66935d8b88/shoppe5.png)](https://github.com/naveedkhalid123/shoppe)
-
+[![Shoppe Dashboard](https://github.com/naveedkhalid123/shoppe/blob/d792a8ae2e5703ed9eaa7e87c697596179d44d89/shoppe6.png)](https://github.com/naveedkhalid
 
 
 🔮 Future Enhancements

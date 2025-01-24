@@ -89,7 +89,7 @@ AI-powered product recommendations.
 Advanced analytics for admins.
 Support for multiple languages and regions
 
-👤 Author
-Developed and maintained by Muhammad Naveed Khalid.
+
+Developed by Muhammad Naveed Khalid
 
 
